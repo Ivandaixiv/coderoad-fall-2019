@@ -8,7 +8,7 @@
  * @copyright 2015 Your Name or Company
  *
  * @wordpress-plugin
- * Plugin Name: Code Road Theme  Functionality
+ * Plugin Name: Code Road
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      Your Name
