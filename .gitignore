@@ -43,7 +43,7 @@ themes/coderoad/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/coderoad/gulpfile.js
+themes/coderoad/gulpfile.*
 themes/coderoad/build/*
 
 gulpfile.js
