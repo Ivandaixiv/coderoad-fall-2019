@@ -39,26 +39,9 @@ themes/*
 
 # Ignore npm packages #
 # =================== #
-themes/[YOUR-THEME-NAME]/node_modules/*
+themes/coderoad/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/[YOUR-THEME-NAME]/gulpfile.js
-themes/[YOUR-THEME-NAME]/build/*
-@percevil
- 
-Leave a comment
-Attach files to your comment
-Attach files by dragging & dropping, selecting or pasting them.
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+themes/coderoad/gulpfile.js
+themes/coderoad/build/*
