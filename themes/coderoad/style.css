@@ -803,6 +803,11 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 <<<<<<< HEAD
+.site-info {
+  background-color: #40389e;
+  height: 200px; }
+=======
+<<<<<<< HEAD
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,3 +866,4 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 >>>>>>> b46070540982480a57b8d0e7b7257e9c7ce0038f
+>>>>>>> 40cecd9750aef7f0072d49d9a1b91c296f45e279
