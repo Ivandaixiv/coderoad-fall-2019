@@ -25,7 +25,15 @@ function red_starter_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
 	) );
-
+	register_nav_menus( array(
+		'support' => esc_html( 'Support Menu' ),
+	) );
+	register_nav_menus( array(
+		'about-us' => esc_html( 'About Us Menu' ),
+	) );
+	register_nav_menus( array(
+		'resources' => esc_html( 'Resources Menu' ),
+	) );
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
 		'search-form',
