@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="376px" height="188px" viewBox="0 0 376 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Component/Footer/Mobile@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component/Footer/Mobile">
+            <g id="Footer" stroke-width="1" fill-rule="evenodd">
+                <rect id="Rectangle" fill="#40389E" x="0" y="0" width="376" height="188"></rect>
+                <g id="Footer-Right" transform="translate(29.000000, 25.000000)" fill="#FFFFFF">
+                    <g id="Resources">
+                        <text font-family="SpaceMono-Bold, Space Mono" font-size="12" font-weight="bold">
+                            <tspan x="0" y="13">Resources</tspan>
+                        </text>
+                        <text id="Get-Started" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0" y="35">Get Started</tspan>
+                        </text>
+                        <text id="Create-tutorial" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0" y="52">Create tutorial</tspan>
+                        </text>
+                        <text id="VS-Code" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="1" y="69">VS Code</tspan>
+                        </text>
+                        <g id="Account-2" transform="translate(0.000000, 76.000000)" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <text id="Account">
+                                <tspan x="2.13162821e-14" y="10">Account</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="About-Us" transform="translate(136.000000, 0.000000)">
+                        <text font-family="SpaceMono-Bold, Space Mono" font-size="12" font-weight="bold">
+                            <tspan x="0" y="13">About Us</tspan>
+                        </text>
+                        <text id="Team" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0" y="35">Team</tspan>
+                        </text>
+                        <text id="Jobs" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0" y="52">Jobs</tspan>
+                        </text>
+                        <text id="Press" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0" y="69">Press</tspan>
+                        </text>
+                    </g>
+                    <g id="Support" transform="translate(251.000000, 0.000000)">
+                        <text font-family="SpaceMono-Bold, Space Mono" font-size="12" font-weight="bold">
+                            <tspan x="1" y="13">Support</tspan>
+                        </text>
+                        <text id="FAQ" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="1" y="34">FAQ</tspan>
+                        </text>
+                        <text id="Privacy-Policy" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0.625" y="51">Privacy Policy</tspan>
+                        </text>
+                        <text id="Contact-Us" font-family="Montserrat-Medium, Montserrat" font-size="10" font-weight="400">
+                            <tspan x="0.625" y="68">Contact Us</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Footer-left" stroke-width="1" fill-rule="evenodd" transform="translate(51.000000, 149.000000)" fill="#FFFFFF" font-family="Montserrat-Regular, Montserrat" font-size="8" font-weight="normal" letter-spacing="0.857142857">
+                <text id="English-(Canada)">
+                    <tspan x="0" y="8">English (Canada)</tspan>
+                </text>
+            </g>
+            <path d="M36.5,144 C40.0898509,144 43,146.686292 43,150 C43,151.933725 42.0089948,153.653792 40.4702184,154.751064 L39.1818182,159 L37.5488384,155.922295 C37.2074136,155.973423 36.8570691,156 36.5,156 C32.9101491,156 30,153.313708 30,150 C30,146.686292 32.9101491,144 36.5,144 Z" id="Combined-Shape-Copy" fill="#FFFFFF" fill-rule="evenodd"></path>
+            <text id="©-CodeRoad-2019" font-family="Montserrat-SemiBold, Montserrat" font-size="8" font-weight="500" line-spacing="24" fill="#FFFFFF">
+                <tspan x="152" y="172">© CodeRoad 2019</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

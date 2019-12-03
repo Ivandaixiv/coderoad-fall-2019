@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="29px" viewBox="0 0 38 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Shape@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tutorial-Profile-Copy" transform="translate(-958.000000, -632.000000)" fill="#0D8DD3" fill-rule="nonzero" stroke="#0D8DD3">
+            <g id="Popup" transform="translate(332.000000, 211.000000)">
+                <g id="Icons" transform="translate(531.000000, 418.000000)">
+                    <path d="M129.75,4 L98.25,4 C97.0073593,4 96,5.0697621 96,6.38938053 L96,28.6106195 C96,29.9302379 97.0073593,31 98.25,31 L129.75,31 C130.992641,31 132,29.9302379 132,28.6106195 L132,6.38938053 C132,5.0697621 130.992641,4 129.75,4 Z M98,6 L108,17 L98,28 L98,6 Z M119.315534,17.0829268 L119.315534,17.0829268 L114.5,22 L109.684466,17.004878 L109.684466,17.004878 L99,6 L130,6 L119.315534,17.0829268 Z M109.157767,18 L113.973301,23.2148148 C114.265877,23.5253757 114.734123,23.5253757 115.026699,23.2148148 L119.842233,18 L130,29 L99,29 L109.157767,18 Z M120,17.9594096 L130,7 L130,29 L120,17.9594096 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

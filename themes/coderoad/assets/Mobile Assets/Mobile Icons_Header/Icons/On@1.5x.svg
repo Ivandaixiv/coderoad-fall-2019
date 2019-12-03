@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="24px" viewBox="0 0 48 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Controls/Switches/On@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Controls/Switches/On" transform="translate(-3.000000, -1.000000)">
+            <g id="Artboard-1" transform="translate(4.000000, 2.000000)">
+                <ellipse id="Oval" fill="#4FB5E0" fill-rule="nonzero" cx="11.6828571" cy="3.97" rx="3.06938776" ry="3.2"></ellipse>
+                <rect id="Rectangle" stroke="#231F20" stroke-width="0.5" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="46.6332533" height="22" rx="11"></rect>
+                <rect id="Rectangle" fill="#7BC9A7" fill-rule="nonzero" x="2" y="2" width="43" height="18" rx="9"></rect>
+                <circle id="Oval" fill="#197B59" fill-rule="nonzero" cx="36" cy="11" r="9"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

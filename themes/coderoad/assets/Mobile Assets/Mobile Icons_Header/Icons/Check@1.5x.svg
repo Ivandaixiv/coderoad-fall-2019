@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="33px" viewBox="0 0 35 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title> Icons/Check@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-57.9%" y="-63.2%" width="217.1%" height="226.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.133333333   0 0 0 0 0.749019608   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tutorial-Profile" transform="translate(-21.000000, -783.000000)">
+            <g id="Components" transform="translate(26.000000, 782.000000)">
+                <g id="-Icons/Check" transform="translate(0.000000, 2.000000)">
+                    <g id="Group-8" stroke-width="1" fill-rule="evenodd" transform="translate(2.181818, 2.000000)" fill="#000000">
+                        <g id="Group-6">
+                            <g id="Fill-4" filter="url(#filter-1)">
+                                <path d="M10.3636364,19 C4.63988151,19 0,14.7467753 0,9.5 C0,4.25322472 4.63988151,0 10.3636364,0 C16.0873912,0 20.7272727,4.25322472 20.7272727,9.5 C20.7272727,14.7467753 16.0873912,19 10.3636364,19 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <polyline id="Path-2" stroke="#FFFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="7.63636364 11.1098024 11.6948717 15 18.5454545 8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

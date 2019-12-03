@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="285px" height="72px" viewBox="0 0 285 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Button/Desktop/Large/Disabled@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Button/Desktop/Large/Disabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#40389E" x="0" y="0" width="285" height="72" rx="8"></rect>
+        <text id="Type-something-Copy" font-family="SpaceMono-Bold, Space Mono" font-size="24" font-weight="bold" fill="#FFFFFF">
+            <tspan x="40" y="45">Type something</tspan>
+        </text>
+    </g>
+</svg>

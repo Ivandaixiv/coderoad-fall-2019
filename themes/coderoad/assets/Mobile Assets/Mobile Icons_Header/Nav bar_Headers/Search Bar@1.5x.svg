@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="47px" viewBox="0 0 335 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Search Bar@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tutorials-List/Search" transform="translate(-20.000000, -53.000000)">
+            <g id="Search-Bar" transform="translate(20.000000, 53.000000)">
+                <rect id="Rectangle" stroke="#292929" fill="#FFFFFF" x="0.5" y="0.5" width="334" height="46" rx="5"></rect>
+                <g id="Icons/Search" transform="translate(9.000000, 8.000000)">
+                    <g id="Group-4-Copy" transform="translate(1.920000, 1.920000)" stroke="#22BFDE">
+                        <circle id="Oval" stroke-width="1.92" cx="11.52" cy="11.52" r="10.56"></circle>
+                        <line x1="20.5527273" y1="19.62" x2="28.4072727" y2="25.5" id="Line-5" stroke-width="1.92" stroke-linecap="square"></line>
+                    </g>
+                    <g id="Group-4" transform="translate(0.960000, 2.880000)" stroke="#262626">
+                        <circle id="Oval" stroke-width="1.92" cx="11.52" cy="11.52" r="10.56"></circle>
+                        <line x1="20.5527273" y1="19.62" x2="28.4072727" y2="25.5" id="Line-5" stroke-width="1.92" stroke-linecap="square"></line>
+                    </g>
+                </g>
+                <text id="Search-for-tutorial…" font-family="Montserrat-Medium, Montserrat" font-size="14" font-weight="400" letter-spacing="-0.2" fill="#989696">
+                    <tspan x="68" y="29">Search for tutorial…</tspan>
+                </text>
+                <g id="Icons/Cross" transform="translate(311.000000, 15.000000)" fill="#6F6D6D">
+                    <path d="M1.70710678,0.292893219 L8.424,7.01 L15.1421356,0.292893219 C15.5326599,-0.0976310729 16.1658249,-0.0976310729 16.5563492,0.292893219 C16.9468735,0.683417511 16.9468735,1.31658249 16.5563492,1.70710678 L9.839,8.424 L16.5563492,15.1421356 C16.9468735,15.5326599 16.9468735,16.1658249 16.5563492,16.5563492 C16.1658249,16.9468735 15.5326599,16.9468735 15.1421356,16.5563492 L8.424,9.839 L1.70710678,16.5563492 C1.31658249,16.9468735 0.683417511,16.9468735 0.292893219,16.5563492 C-0.0976310729,16.1658249 -0.0976310729,15.5326599 0.292893219,15.1421356 L7.01,8.424 L0.292893219,1.70710678 C-0.0976310729,1.31658249 -0.0976310729,0.683417511 0.292893219,0.292893219 C0.683417511,-0.0976310729 1.31658249,-0.0976310729 1.70710678,0.292893219 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

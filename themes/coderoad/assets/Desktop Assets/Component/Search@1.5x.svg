@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="72px" viewBox="0 0 420 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Form/Search@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Form/Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy" transform="translate(19.000000, 17.000000)">
+            <rect id="Rectangle-Copy-3" stroke="#424242" x="0.5" y="0.5" width="382" height="37" rx="5"></rect>
+            <text id="Search…" font-family="Montserrat-Regular, Montserrat" font-size="16" font-weight="normal" fill="#707070">
+                <tspan x="53" y="24">Search…</tspan>
+            </text>
+        </g>
+        <g id="Icons/Search" transform="translate(30.000000, 20.000000)">
+            <g id="Group-4-Copy" transform="translate(2.022222, 2.022222)" stroke="#22BFDE">
+                <circle id="Oval" stroke-width="2" cx="12.1333333" cy="12.1333333" r="11.1333333"></circle>
+                <line x1="21.6469697" y1="20.6645833" x2="29.919697" y2="26.8576389" id="Line-5" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+            <g id="Group-4" transform="translate(1.011111, 3.033333)" stroke="#262626">
+                <circle id="Oval" stroke-width="2" cx="12.1333333" cy="12.1333333" r="11.1333333"></circle>
+                <line x1="21.6469697" y1="20.6645833" x2="29.919697" y2="26.8576389" id="Line-5" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

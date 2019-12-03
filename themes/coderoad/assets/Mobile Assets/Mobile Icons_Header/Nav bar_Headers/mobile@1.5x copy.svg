@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="42px" viewBox="0 0 323 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Top bar/mobile@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.2198252,14.0179296 L18.4047812,21.3118426 C18.71163,21.6233446 18.7116442,22.123468 18.4048131,22.4349874 C18.1038965,22.740502 17.6122869,22.7442293 17.3067723,22.4433127 C17.3039918,22.4405741 17.301232,22.4378145 17.2984931,22.4350342 L10.1132808,15.1412665 L10.1102627,15.1443304 L9,14.0176583 L9.00319775,14.0144121 L9,14.011166 L10.1062726,12.8874904 L10.109773,12.8910439 L17.325584,5.56572841 C17.6275906,5.25913872 18.1209553,5.25542335 18.427545,5.55742991 C18.4302959,5.56013966 18.4330266,5.56286982 18.4357369,5.56562016 C18.7436533,5.87808756 18.7437023,6.37987304 18.4358467,6.69240048 L11.2198252,14.0179296 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-bar/mobile" transform="translate(-1.000000, 0.000000)">
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="1" y="0" width="323" height="42"></rect>
+            <text id="Settings" font-family="SpaceMono-Bold, Space Mono" font-size="18" font-weight="bold" fill="#292929">
+                <tspan x="112" y="27">Settings</tspan>
+            </text>
+            <line x1="14" y1="41.5" x2="323" y2="41.5" id="Line" stroke-opacity="0.290646853" stroke="#979797" stroke-width="1" stroke-linecap="square"></line>
+            <g id="Glyphs/Navigation-or-Toolbar/Back" transform="translate(0.000000, 7.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Arrow" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="_/Color/System/Blue" mask="url(#mask-2)" fill="#3F576B" fill-rule="evenodd">
+                    <rect id="Color" x="0" y="0" width="28" height="28"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
