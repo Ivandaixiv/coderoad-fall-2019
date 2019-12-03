@@ -28,8 +28,9 @@
 
 				<nav id="site-navigation" class="main-navigation toggled" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<img src="<?php echo get_template_directory_uri();?>" alt="Search Button">
-					<img src="<?php echo get_template_directory_uri();?>" alt="Profile Button">
+					<a href="#"><img src="<?php echo get_template_directory_uri();?>" alt="Search Button"></a>
+					<?php echo get_search_form();?>
+					<a href="#"><img src="<?php echo get_template_directory_uri();?>" alt="Profile Button"></a>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
