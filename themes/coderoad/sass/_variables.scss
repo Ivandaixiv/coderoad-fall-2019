@@ -22,7 +22,29 @@ $color__link-hover: midnightblue;
 // Typography
 
 $font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// Custom colours
+
+// Primary Colours
+$color__primary-light: #29cfff;
+$color__primary-medium: #22b4de;
+$color__primary-dark: #157c99;
+
+// Secondary Colours
+$color__secondary-light: #9389ff;
+$color__secondary-medium: #6054e1;
+$color__secondary-dark: #40389e;
+
+// Neutral Colors Green
+$color__green-light: #41ffbe;
+$color__green-medium: #2ed199;
+$color__green-dark: #187b59;
+
+// Neutral Colors Blue
+$color__blue-light: #8bbbe5;
+$color__blue-medium: #6487a5;
+$color__blue-dark: #3f576b;
