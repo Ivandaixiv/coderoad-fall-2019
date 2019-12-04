@@ -1,9 +1,15 @@
 .site-content{
-    font-family: $font__paragraph;
+    
     font-size: 16px;
     line-height: 2.5rem;
- 
+    h2{
+        font-family: $font__header;
+    }
+    a{
+        font-family: $font__paragraph;
+    }
 }
+
 .entry-title{
     display: none;
 }
@@ -32,12 +38,9 @@ a{
     color: black;
     display: flex;
     justify-content: center;
-   
     text-decoration: none;
- 
 }
 }
-
 
 .tutorial-h2 {
     display: flex;
@@ -52,60 +55,41 @@ a{
         &::before {
             content: '';
             height: 22px;
-            width: 161px;
+            width: 165px;
             background-color: #41ffbe;
             border: 1px solid #41ffbe;
             border-radius: 6px;
             position:absolute;
-            right:111px;
-            bottom: 23px;
-            z-index: 0;
+            left:139px;
+            bottom: 4px;
+            z-index: -1;
         }
     }
 }
 
-.profile-h2{
-    display: flex;
-    justify-content: center;    
-}
-
-.tutorial-accent{
-    height: 22px;
-    width: 161px;
-    background-color: #41ffbe;
-    border: 1px solid #41ffbe;
-    border-radius: 6px;
-    position:absolute;
-    right:111px;
-    bottom: 23px;
-    z-index: 0;
-}
-
-.profile-accent{
-    height: 24px;
-    width:115px;
-    background-color: #9389ff;
-    border: 1px solid #9389ff;
-    border-radius: 6px;
-    position:absolute;
-    right:238px;
-    bottom: 23px;
-    top: 33px;
-    z-index: 0;
-}
- .profile-h2 {
+.profile-h2 {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    position: relative;    
-}
-.profile-container {
-    h2{
-        z-index: 99;
+    position: relative; 
+    
+    h2 {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            content: '';
+            height: 28px;
+            width: 93px;
+            background-color: #8bbbe5;
+            border: 1px solid #8bbbe5;
+            border-radius: 6px;
+            position:absolute;
+            left:32px;
+            bottom: -1px;
+            z-index: -1;
+        }
     }
 }
-
-
-
 
 
