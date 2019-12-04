@@ -17,7 +17,7 @@
         </div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="container-contact">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

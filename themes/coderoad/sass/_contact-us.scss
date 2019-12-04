@@ -2,9 +2,16 @@
     height: 34px;	
     width: 135px;	
     color: #292929;
-    font-family: ".SF NS Display";
+    font-family: $font__header;
     font-size: 24px;
     line-height: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-title-container{
+    position: relative;
+    text-align: center;
 }
 
 .contact-rectangle{
@@ -14,6 +21,10 @@
     transform: rotate(360deg);
     border-radius: 4px;
     background-color: $color__secondary-light;  
+    position: absolute;
+    bottom: 0px;
+    right: 73px;
+    z-index: -1;
 }
 
 .contact-form-submit{
@@ -21,7 +32,7 @@
     width: 238px;
     border-radius: 8px;    
     background-color: #29CFFF;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: $font__header;
 }
 
@@ -37,4 +48,16 @@
     width: 312px;
     border: 1px solid #9389FF;
     border-radius: 8px;
+    position: relative;
+
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-question{
+    font-family: $font__header;
 }
