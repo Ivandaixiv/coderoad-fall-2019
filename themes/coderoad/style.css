@@ -889,8 +889,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .main-navigation .icon-search {
-    z-index: 2; }
   .main-navigation .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
