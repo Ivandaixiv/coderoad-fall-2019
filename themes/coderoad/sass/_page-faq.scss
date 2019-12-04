@@ -20,10 +20,11 @@ body{
 .tutorial-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;   
- 
-   
-    
+    justify-content: center; 
+
+    h2{
+       z-index: 99;
+    }    
 }
 .link-container {
     margin-bottom: 13px;
@@ -40,29 +41,51 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    position: relative; 
-    z-index: 99;
-   
+    position: relative;    
 }
 
 .profile-h2{
     display: flex;
-    justify-content: center; 
-    z-index: 99;
-   
-    
+    justify-content: center;    
 }
 
 .tutorial-accent{
-    height: 30px;
-    width: 193px;
+    height: 22px;
+    width: 161px;
     background-color: #41ffbe;
     border: 1px solid #41ffbe;
-    border-radius: 8px;
+    border-radius: 6px;
     position:absolute;
-    right:80px;
-    bottom: 19px;
+    right:111px;
+    bottom: 23px;
     z-index: 0;
+}
+
+.profile-accent{
+    height: 24px;
+    width:115px;
+    background-color: #9389ff;
+    border: 1px solid #9389ff;
+    border-radius: 6px;
+    position:absolute;
+    right:238px;
+    bottom: 23px;
+    top: 33px;
+    z-index: 0;
+
+}
+ .profile-h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;    
+}
+.profile-container {
+    h2{
+        z-index: 99;
+    }
+
+
 }
 
 
