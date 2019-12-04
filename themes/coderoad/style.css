@@ -859,18 +859,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .main-navigation .navbar-tools {
+  .main-navigation .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-<<<<<<< HEAD
 
 body {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 16px;
   line-height: 2.5rem; }
-=======
->>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
 
 .entry-title {
   display: none; }
@@ -926,7 +923,6 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-<<<<<<< HEAD
           justify-content: center;
   z-index: 99; }
 
@@ -940,9 +936,6 @@ body {
   right: 80px;
   bottom: 19px;
   z-index: 0; }
-=======
-          justify-content: center; }
->>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
 
 .contact-title {
   height: 34px;
