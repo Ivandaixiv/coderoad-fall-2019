@@ -804,13 +804,6 @@ object {
 /* Front page */
 .site-info {
   background-color: #40389e;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  height: 200px; }
-=======
-<<<<<<< HEAD
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
   height: 300px; }
 
 .footer-navigation {
@@ -852,13 +845,6 @@ a {
   .support a {
     text-decoration: none;
     color: white; }
-<<<<<<< HEAD
-=======
-=======
-  height: 200px; }
->>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11
->>>>>>> 82dcf755c0a8f2772b34b65fff12bb552e9e4a39
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
 
 .main-navigation {
   display: -webkit-box;
@@ -867,25 +853,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
   .main-navigation .navbar-tools {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> bc28a9660adf97b6393aaec2bea30a97cb00e83a
->>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11
->>>>>>> 82dcf755c0a8f2772b34b65fff12bb552e9e4a39
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
 
 .entry-title {
   display: none; }
@@ -936,15 +907,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
 
 .contact-title {
   height: 34px;
@@ -980,9 +942,3 @@ a {
   width: 312px;
   border: 1px solid #9389FF;
   border-radius: 8px; }
-<<<<<<< HEAD
-=======
->>>>>>> bc28a9660adf97b6393aaec2bea30a97cb00e83a
->>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11
->>>>>>> 82dcf755c0a8f2772b34b65fff12bb552e9e4a39
->>>>>>> 817720b230b5c1e96d18e80b27437a5d1e28ddd7
