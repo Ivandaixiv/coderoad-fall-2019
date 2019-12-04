@@ -46,3 +46,4 @@ themes/coderoad/node_modules/*
 themes/coderoad/gulpfile.js
 themes/coderoad/build/*
 gulpfile.js
+style.css
