@@ -804,6 +804,7 @@ object {
 /* Front page */
 .site-info {
   background-color: #40389e;
+<<<<<<< HEAD
   height: 300px; }
 
 .footer-navigation {
@@ -843,6 +844,9 @@ object {
   .support a {
     text-decoration: none;
     color: white; }
+=======
+  height: 200px; }
+>>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11
 
 .main-navigation {
   display: -webkit-box;
@@ -851,6 +855,16 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  .main-navigation .navbar-tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+=======
+>>>>>>> bc28a9660adf97b6393aaec2bea30a97cb00e83a
+>>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11
 
 .entry-title {
   display: none; }
@@ -901,3 +915,44 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+.contact-title {
+  height: 34px;
+  width: 135px;
+  color: #292929;
+  font-family: ".SF NS Display";
+  font-size: 24px;
+  line-height: 28px; }
+
+.contact-rectangle {
+  height: 22.16px;
+  width: 119.1px;
+  opacity: 0.75;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 4px;
+  background-color: #9389ff; }
+
+.contact-form-submit {
+  height: 114px;
+  width: 312px;
+  border: 1px solid #9389ff;
+  border-radius: 8px; }
+
+.contact-form-email {
+  border: 1px solid #9389ff;
+  border-radius: 8px;
+  height: 47px;
+  width: 312px; }
+
+.contact-form-question {
+  height: 114px;
+  width: 312px;
+  border: 1px solid #9389FF;
+  border-radius: 8px; }
+>>>>>>> bc28a9660adf97b6393aaec2bea30a97cb00e83a
+>>>>>>> 328dcd9fc0921797b22d98d6a7446b29e9187f11

@@ -1,4 +1,7 @@
 .main-navigation {
     display: flex;
     justify-content: space-between;
+    .navbar-tools {
+        display: flex;
+    }
 }
