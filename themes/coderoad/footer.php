@@ -13,15 +13,25 @@
 				<div class="site-info">
 				<nav id="site-navigation toggled" class="footer-navigation" role="navigation">
 				<div class="resources">
-				<h5>Resources</h5>
+				<h5><?php
+					$resourceMenuObject = wp_get_nav_menu_object("resources" );
+					echo $resourceMenuObject->name;
+				?></h5>
 				<?php wp_nav_menu( array( 'theme_location' => 'resources', 'menu_id' => '4' ) ); ?>
+				
                  </div>
 				 <div class="about-us">
-				<h5>About Us</h5>
+				 <h5><?php
+					$resourceMenuObject = wp_get_nav_menu_object("about-us" );
+					echo $resourceMenuObject->name;
+				?></h5>
 				<?php wp_nav_menu( array( 'theme_location' => 'about-us', 'menu_id' => '5' ) ); ?>
                 </div>
 				<div class="support">
-				<h5>Support</h5>
+				<h5><?php
+					$resourceMenuObject = wp_get_nav_menu_object("support" );
+					echo $resourceMenuObject->name;
+				?></h5>
 				<?php wp_nav_menu( array( 'theme_location' => 'support', 'menu_id' => '6' ) ); ?>
                 </div>
 				</nav>
