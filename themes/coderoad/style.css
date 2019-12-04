@@ -814,21 +814,9 @@ object {
     font-size: 16px; }
 
 ul {
-<<<<<<< HEAD
-  text-align: left;
-=======
-<<<<<<< HEAD
-  text-align: left;
-=======
-<<<<<<< HEAD
   font-size: 14px;
   margin: 0;
   padding: 0;
-=======
-  text-align: left;
->>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
->>>>>>> 8cdf45257eb8e9584c3c172a628bf5861a6215ea
->>>>>>> 1f57d08607c3b4e35857169a7ad267e1ed96d5ef
   list-style: none;
   font-family: "Montserrat"; }
 
@@ -917,18 +905,6 @@ a {
     transition: 2s; }
 
 .site-content {
-<<<<<<< HEAD
-  font-family: "Montserrat";
-=======
-<<<<<<< HEAD
-  font-family: "Montserrat";
-=======
-<<<<<<< HEAD
-  font-family: "Montserrat";
-=======
->>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
->>>>>>> 8cdf45257eb8e9584c3c172a628bf5861a6215ea
->>>>>>> 1f57d08607c3b4e35857169a7ad267e1ed96d5ef
   font-size: 16px;
   line-height: 2.5rem; }
   .site-content h2 {
@@ -990,69 +966,14 @@ a {
     .tutorial-h2 h2::before {
       content: '';
       height: 22px;
-<<<<<<< HEAD
-      width: 161px;
-=======
-<<<<<<< HEAD
-      width: 161px;
-=======
-<<<<<<< HEAD
-      width: 161px;
-=======
       width: 165px;
->>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
->>>>>>> 8cdf45257eb8e9584c3c172a628bf5861a6215ea
->>>>>>> 1f57d08607c3b4e35857169a7ad267e1ed96d5ef
       background-color: #41ffbe;
       border: 1px solid #41ffbe;
       border-radius: 6px;
       position: absolute;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8cdf45257eb8e9584c3c172a628bf5861a6215ea
->>>>>>> 1f57d08607c3b4e35857169a7ad267e1ed96d5ef
-      right: 111px;
-      bottom: 23px;
-      z-index: 0; }
-
-.profile-h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.tutorial-accent {
-  height: 22px;
-  width: 161px;
-  background-color: #41ffbe;
-  border: 1px solid #41ffbe;
-  border-radius: 6px;
-  position: absolute;
-  right: 111px;
-  bottom: 23px;
-  z-index: 0; }
-
-.profile-accent {
-  height: 24px;
-  width: 115px;
-  background-color: #9389ff;
-  border: 1px solid #9389ff;
-  border-radius: 6px;
-  position: absolute;
-  right: 238px;
-  bottom: 23px;
-  top: 33px;
-  z-index: 0; }
-=======
       left: 139px;
       bottom: 4px;
       z-index: -1; }
->>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
 
 .profile-h2 {
   display: -webkit-box;
@@ -1063,15 +984,6 @@ a {
           justify-content: center;
   margin-top: 30px;
   position: relative; }
-<<<<<<< HEAD
-
-.profile-container h2 {
-  z-index: 99; }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
   .profile-h2 h2 {
     position: relative;
     display: inline-block; }
@@ -1086,9 +998,6 @@ a {
       left: 32px;
       bottom: -1px;
       z-index: -1; }
->>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
->>>>>>> 8cdf45257eb8e9584c3c172a628bf5861a6215ea
->>>>>>> 1f57d08607c3b4e35857169a7ad267e1ed96d5ef
 
 .contact-title {
   height: 34px;
