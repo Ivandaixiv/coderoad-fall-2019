@@ -815,7 +815,8 @@ object {
   .resources h5 {
     font-family: "Space Mono";
     font-weight: bold;
-    font-style: normal; }
+    font-style: normal;
+    font-size: 16px; }
 
 ul {
   list-style: none;
@@ -827,6 +828,11 @@ a {
 
 .about-us {
   color: white; }
+  .about-us h5 {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px; }
   .about-us ul {
     list-style: none; }
   .about-us a {
@@ -835,6 +841,11 @@ a {
 
 .support {
   color: white; }
+  .support h5 {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px; }
   .support ul {
     list-style: none; }
   .support a {
