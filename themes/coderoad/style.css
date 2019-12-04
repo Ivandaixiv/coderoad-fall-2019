@@ -852,14 +852,11 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-<<<<<<< HEAD
 
 body {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 16px;
   line-height: 2.5rem; }
-=======
->>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
 
 .entry-title {
   display: none; }
@@ -885,6 +882,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .tutorial-container h2 {
+    z-index: 99; }
 
 .link-container {
   margin-bottom: 13px; }
@@ -906,8 +905,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
-  position: relative;
-  z-index: 99; }
+  position: relative; }
 
 .profile-h2 {
   display: -webkit-box;
@@ -915,23 +913,43 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-<<<<<<< HEAD
-          justify-content: center;
-  z-index: 99; }
+          justify-content: center; }
 
 .tutorial-accent {
-  height: 30px;
-  width: 193px;
+  height: 22px;
+  width: 161px;
   background-color: #41ffbe;
   border: 1px solid #41ffbe;
-  border-radius: 8px;
+  border-radius: 6px;
   position: absolute;
-  right: 80px;
-  bottom: 19px;
+  right: 111px;
+  bottom: 23px;
   z-index: 0; }
-=======
-          justify-content: center; }
->>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
+
+.profile-accent {
+  height: 24px;
+  width: 115px;
+  background-color: #9389ff;
+  border: 1px solid #9389ff;
+  border-radius: 6px;
+  position: absolute;
+  right: 238px;
+  bottom: 23px;
+  top: 33px;
+  z-index: 0; }
+
+.profile-h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  position: relative; }
+
+.profile-container h2 {
+  z-index: 99; }
 
 .contact-title {
   height: 34px;
