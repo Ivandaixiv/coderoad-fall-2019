@@ -491,12 +491,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
   line-height: 1;
   padding: .6rem 1rem .4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
@@ -868,6 +863,14 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+<<<<<<< HEAD
+
+body {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 16px;
+  line-height: 2.5rem; }
+=======
+>>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
 
 .entry-title {
   display: none; }
@@ -894,14 +897,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.link-container a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none; }
+.link-container {
+  margin-bottom: 13px; }
+  .link-container a {
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none; }
 
 .tutorial-h2 {
   display: -webkit-box;
@@ -909,7 +915,10 @@ a {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 99; }
 
 .profile-h2 {
   display: -webkit-box;
@@ -917,7 +926,23 @@ a {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+<<<<<<< HEAD
+          justify-content: center;
+  z-index: 99; }
+
+.tutorial-accent {
+  height: 30px;
+  width: 193px;
+  background-color: #41ffbe;
+  border: 1px solid #41ffbe;
+  border-radius: 8px;
+  position: absolute;
+  right: 80px;
+  bottom: 19px;
+  z-index: 0; }
+=======
           justify-content: center; }
+>>>>>>> 80269f6d82bbd35ed49f5d03fe2ef1a9305db92b
 
 .contact-title {
   height: 34px;
@@ -937,10 +962,12 @@ a {
   background-color: #9389ff; }
 
 .contact-form-submit {
-  height: 114px;
-  width: 312px;
-  border: 1px solid #9389ff;
-  border-radius: 8px; }
+  height: 53px;
+  width: 238px;
+  border-radius: 8px;
+  background-color: #29CFFF;
+  font-size: 20px;
+  font-family: "Space Mono"; }
 
 .contact-form-email {
   border: 1px solid #9389ff;

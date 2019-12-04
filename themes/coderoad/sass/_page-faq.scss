@@ -1,5 +1,9 @@
-.site-content{
+body{
     
+    font-family: $font__code;
+    font-size: 16px;
+    line-height: 2.5rem;
+ 
 }
 .entry-title{
     display: none;
@@ -16,27 +20,52 @@
 .tutorial-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
+ 
    
     
 }
-.link-container a{
+.link-container {
+    margin-bottom: 13px;
+a{
+    color: black;
     display: flex;
     justify-content: center;
     text-decoration: none;
-  
+}
 }
 
 
-.tutorial-h2{
+.tutorial-h2 {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    position: relative; 
+    z-index: 99;
+   
 }
 
 .profile-h2{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    z-index: 99;
+   
+    
 }
+
+.tutorial-accent{
+    height: 30px;
+    width: 193px;
+    background-color: #41ffbe;
+    border: 1px solid #41ffbe;
+    border-radius: 8px;
+    position:absolute;
+    right:80px;
+    bottom: 19px;
+    z-index: 0;
+}
+
+
 
 
 

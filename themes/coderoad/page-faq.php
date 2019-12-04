@@ -23,7 +23,9 @@ get_header();?>
     
     <section class="tutorial-container">
         <div class="tutorial-h2">
-            <h2>Tutorials/ Creating</h2>
+            <h2 >Tutorials/ Creating</h2>
+            <div class="tutorial-accent"></div>
+          
         </div>
         <div class="link-container">
             <a href="">Where an I see my progress?</a>
