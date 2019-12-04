@@ -490,11 +490,10 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: black;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -521,8 +520,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 8px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -819,6 +817,7 @@ object {
     font-size: 16px; }
 
 ul {
+  text-align: left;
   list-style: none;
   font-family: "Montserrat"; }
 
@@ -864,8 +863,8 @@ a {
     display: -ms-flexbox;
     display: flex; }
 
-body {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+.site-content {
+  font-family: "Montserrat";
   font-size: 16px;
   line-height: 2.5rem; }
 
@@ -917,6 +916,20 @@ body {
           justify-content: center;
   margin-top: 30px;
   position: relative; }
+  .tutorial-h2 h2 {
+    position: relative;
+    display: inline-block; }
+    .tutorial-h2 h2::before {
+      content: '';
+      height: 22px;
+      width: 161px;
+      background-color: #41ffbe;
+      border: 1px solid #41ffbe;
+      border-radius: 6px;
+      position: absolute;
+      right: 111px;
+      bottom: 23px;
+      z-index: 0; }
 
 .profile-h2 {
   display: -webkit-box;
@@ -924,12 +937,7 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-<<<<<<< HEAD
           justify-content: center; }
-=======
-          justify-content: center;
-  z-index: 99; }
->>>>>>> 026f9adc9a7f63b186eba5b204c3f3c29dd340c1
 
 .tutorial-accent {
   height: 22px;
@@ -941,7 +949,6 @@ body {
   right: 111px;
   bottom: 23px;
   z-index: 0; }
-<<<<<<< HEAD
 
 .profile-accent {
   height: 24px;
@@ -967,16 +974,20 @@ body {
 
 .profile-container h2 {
   z-index: 99; }
-=======
->>>>>>> 026f9adc9a7f63b186eba5b204c3f3c29dd340c1
 
 .contact-title {
   height: 34px;
   width: 135px;
   color: #292929;
-  font-family: ".SF NS Display";
+  font-family: "Space Mono";
   font-size: 24px;
-  line-height: 28px; }
+  line-height: 28px;
+  text-align: center;
+  width: 100%; }
+
+.contact-title-container {
+  position: relative;
+  text-align: center; }
 
 .contact-rectangle {
   height: 22.16px;
@@ -985,14 +996,18 @@ body {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   border-radius: 4px;
-  background-color: #9389ff; }
+  background-color: #9389ff;
+  position: absolute;
+  bottom: 0px;
+  right: 73px;
+  z-index: -1; }
 
 .contact-form-submit {
   height: 53px;
   width: 238px;
   border-radius: 8px;
   background-color: #29CFFF;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: "Space Mono"; }
 
 .contact-form-email {
@@ -1005,4 +1020,17 @@ body {
   height: 114px;
   width: 312px;
   border: 1px solid #9389FF;
-  border-radius: 8px; }
+  border-radius: 8px;
+  position: relative; }
+
+.container-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+.contact-question {
+  font-family: "Space Mono"; }
