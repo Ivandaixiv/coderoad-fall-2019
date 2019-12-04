@@ -28,11 +28,14 @@ body{
 }
 .link-container {
     margin-bottom: 13px;
+    
 a{
     color: black;
     display: flex;
     justify-content: center;
+   
     text-decoration: none;
+ 
 }
 }
 
@@ -41,7 +44,25 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    position: relative;    
+    position: relative; 
+    
+    h2 {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            content: '';
+            height: 22px;
+            width: 161px;
+            background-color: #41ffbe;
+            border: 1px solid #41ffbe;
+            border-radius: 6px;
+            position:absolute;
+            right:111px;
+            bottom: 23px;
+            z-index: 0;
+        }
+    }
 }
 
 .profile-h2{
@@ -72,7 +93,6 @@ a{
     bottom: 23px;
     top: 33px;
     z-index: 0;
-
 }
  .profile-h2 {
     display: flex;
@@ -84,8 +104,6 @@ a{
     h2{
         z-index: 99;
     }
-
-
 }
 
 
