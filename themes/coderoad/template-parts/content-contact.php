@@ -9,9 +9,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		
+        
         <?php the_title( '<h1 class="contact-title">', '</h1>' ); ?>
-        <?php echo "<h2>Question?</h2>"; ?>
+        <div class="contact-title-container">
+        <h2 class="contact-question"><?php echo 'Question?'; ?></h2>
+        <div class="contact-rectangle"></div>
+        </div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

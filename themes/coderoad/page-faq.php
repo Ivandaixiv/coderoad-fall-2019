@@ -20,9 +20,6 @@ get_header();?>
     <div class="search-container">
         <form action=""></form>
     </div>
-    <?php echo get_search_form ();
-    ?>
-    
     
     <section class="tutorial-container">
         <div class="tutorial-h2">

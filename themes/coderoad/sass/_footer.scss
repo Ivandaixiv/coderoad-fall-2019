@@ -1,4 +1,44 @@
 .site-info {
   background-color: $color__secondary-dark;
-  height: 200px;
+  height: 300px;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+}
+.resources {
+  color: white;
+  h5 {
+    font-family: $font__header;
+    font-weight: normal;
+    font-style: normal;
+  }
+  ul {
+    list-style: none;
+    font-family: $font__paragraph;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.about-us {
+  color: white;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.support {
+  color: white;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
