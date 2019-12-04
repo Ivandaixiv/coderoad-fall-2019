@@ -36,6 +36,7 @@ plugins/*
 # ====================================================== #
 themes/*
 !themes/coderoad/
+themes/coderoad/style.css
 
 # Ignore npm packages #
 # =================== #
@@ -46,4 +47,3 @@ themes/coderoad/node_modules/*
 themes/coderoad/gulpfile.js
 themes/coderoad/build/*
 gulpfile.js
-style.css
