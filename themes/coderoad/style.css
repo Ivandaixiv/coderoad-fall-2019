@@ -816,9 +816,13 @@ object {
     font-size: 16px; }
 
 ul {
+<<<<<<< HEAD
   font-size: 14px;
   margin: 0;
   padding: 0;
+=======
+  text-align: left;
+>>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
   list-style: none;
   font-family: "Montserrat"; }
 
@@ -896,9 +900,16 @@ a {
     display: flex; }
 
 .site-content {
+<<<<<<< HEAD
   font-family: "Montserrat";
+=======
+>>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
   font-size: 16px;
   line-height: 2.5rem; }
+  .site-content h2 {
+    font-family: "Space Mono"; }
+  .site-content a {
+    font-family: "Montserrat"; }
 
 .entry-title {
   display: none; }
@@ -954,11 +965,16 @@ a {
     .tutorial-h2 h2::before {
       content: '';
       height: 22px;
+<<<<<<< HEAD
       width: 161px;
+=======
+      width: 165px;
+>>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
       background-color: #41ffbe;
       border: 1px solid #41ffbe;
       border-radius: 6px;
       position: absolute;
+<<<<<<< HEAD
       right: 111px;
       bottom: 23px;
       z-index: 0; }
@@ -993,6 +1009,11 @@ a {
   bottom: 23px;
   top: 33px;
   z-index: 0; }
+=======
+      left: 139px;
+      bottom: 4px;
+      z-index: -1; }
+>>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
 
 .profile-h2 {
   display: -webkit-box;
@@ -1003,9 +1024,26 @@ a {
           justify-content: center;
   margin-top: 30px;
   position: relative; }
+<<<<<<< HEAD
 
 .profile-container h2 {
   z-index: 99; }
+=======
+  .profile-h2 h2 {
+    position: relative;
+    display: inline-block; }
+    .profile-h2 h2::before {
+      content: '';
+      height: 28px;
+      width: 101px;
+      background-color: #8bbbe5;
+      border: 1px solid #8bbbe5;
+      border-radius: 6px;
+      position: absolute;
+      left: 32px;
+      bottom: -1px;
+      z-index: -1; }
+>>>>>>> dbfd04a49f28caa2c3ff6a0e550e22d924dea2d6
 
 .contact-title {
   height: 34px;
