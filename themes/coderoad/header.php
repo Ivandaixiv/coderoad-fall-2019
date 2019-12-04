@@ -28,11 +28,8 @@
 
 				<nav id="site-navigation" class="main-navigation toggled" role="navigation">
 					<a href="#"></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class="navbar-tools">
-						<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/Desktop Assets/Icons/Search.png" alt="Search Button"></a>
-						<?php echo get_search_form();?>
-					</div>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>		
+					<?php echo get_search_form();?>				
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

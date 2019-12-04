@@ -5,7 +5,7 @@
 		</label>
 		<button class="search-submit">
 			<span class="icon-search" aria-hidden="true">
-				<i class="fa fa-search"></i>
+				<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/Desktop Assets/Icons/Search.png" alt="Search Button"></a>
 			</span>
 			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
 		</button>
