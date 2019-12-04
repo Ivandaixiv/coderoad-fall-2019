@@ -12,10 +12,18 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 				<nav id="site-navigation toggled" class="footer-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'support', 'menu_id' => '6' ) ); ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'about-us', 'menu_id' => '5' ) ); ?>
+				<div class="resources">
+				<h5>Resources</h5>
 				<?php wp_nav_menu( array( 'theme_location' => 'resources', 'menu_id' => '4' ) ); ?>
-
+                 </div>
+				 <div class="about-us">
+				<h5>About Us</h5>
+				<?php wp_nav_menu( array( 'theme_location' => 'about-us', 'menu_id' => '5' ) ); ?>
+                </div>
+				<div class="support">
+				<h5>Support</h5>
+				<?php wp_nav_menu( array( 'theme_location' => 'support', 'menu_id' => '6' ) ); ?>
+                </div>
 				</nav>
 						
 				</div><!-- .site-info -->
