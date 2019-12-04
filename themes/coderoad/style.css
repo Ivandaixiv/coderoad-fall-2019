@@ -802,16 +802,13 @@ object {
   height: 300px; }
 
 .footer-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 3em;
+  padding-top: 1em; }
 
 .resources {
-  color: white; }
+  color: #ffffff; }
   .resources h5 {
     font-family: "Space Mono";
     font-weight: bold;
@@ -819,38 +816,72 @@ object {
     font-size: 16px; }
 
 ul {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-family: "Montserrat"; }
 
 a {
+  text-align: left;
   text-decoration: none;
-  color: white; }
+  color: #ffffff; }
 
 .about-us {
-  color: white; }
+  color: #ffffff; }
   .about-us h5 {
     font-family: "Space Mono";
     font-weight: bold;
     font-style: normal;
     font-size: 16px; }
   .about-us ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     list-style: none; }
   .about-us a {
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
 
 .support {
-  color: white; }
+  color: #ffffff; }
   .support h5 {
     font-family: "Space Mono";
     font-weight: bold;
     font-style: normal;
     font-size: 16px; }
   .support ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     list-style: none; }
   .support a {
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 3em;
+  margin-top: 3em; }
+  .language svg {
+    margin-top: 6px; }
+  .language p {
+    font-size: 10px;
+    margin-left: 5px;
+    font-family: "Montserrat";
+    color: #ffffff; }
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Montserrat"; }
 
 .main-navigation {
   display: -webkit-box;
@@ -864,8 +895,8 @@ a {
     display: -ms-flexbox;
     display: flex; }
 
-body {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+.site-content {
+  font-family: "Montserrat";
   font-size: 16px;
   line-height: 2.5rem; }
 
@@ -917,6 +948,20 @@ body {
           justify-content: center;
   margin-top: 30px;
   position: relative; }
+  .tutorial-h2 h2 {
+    position: relative;
+    display: inline-block; }
+    .tutorial-h2 h2::before {
+      content: '';
+      height: 22px;
+      width: 161px;
+      background-color: #41ffbe;
+      border: 1px solid #41ffbe;
+      border-radius: 6px;
+      position: absolute;
+      right: 111px;
+      bottom: 23px;
+      z-index: 0; }
 
 .profile-h2 {
   display: -webkit-box;
@@ -924,12 +969,7 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-<<<<<<< HEAD
           justify-content: center; }
-=======
-          justify-content: center;
-  z-index: 99; }
->>>>>>> 026f9adc9a7f63b186eba5b204c3f3c29dd340c1
 
 .tutorial-accent {
   height: 22px;
@@ -941,7 +981,6 @@ body {
   right: 111px;
   bottom: 23px;
   z-index: 0; }
-<<<<<<< HEAD
 
 .profile-accent {
   height: 24px;
@@ -967,8 +1006,6 @@ body {
 
 .profile-container h2 {
   z-index: 99; }
-=======
->>>>>>> 026f9adc9a7f63b186eba5b204c3f3c29dd340c1
 
 .contact-title {
   height: 34px;
