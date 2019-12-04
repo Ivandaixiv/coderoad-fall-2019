@@ -951,7 +951,7 @@ a {
     .profile-h2 h2::before {
       content: '';
       height: 28px;
-      width: 93px;
+      width: 101px;
       background-color: #8bbbe5;
       border: 1px solid #8bbbe5;
       border-radius: 6px;
