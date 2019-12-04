@@ -20,14 +20,7 @@ get_header();?>
     <div class="search-container">
         <form action=""></form>
     </div>
-    </php get_search_form (
-        get_search_form( $echo );
-    );?>
     
-    
-
-    
-
     <section class="tutorial-container">
         <div class="tutorial-h2">
             <h2>Tutorials/ Creating</h2>
@@ -45,7 +38,7 @@ get_header();?>
         </div>
         <div class="link-container">
             <a href="">How do I change my profile picture?</a>
-            <a href="">How do I chanje my password?</a>
+            <a href="">How do I change my password?</a>
         </div>
 
     </section>
