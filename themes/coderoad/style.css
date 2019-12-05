@@ -960,6 +960,10 @@ a {
       bottom: -1px;
       z-index: -1; }
 
+.illustration-container {
+  background-image: url("../../assets/desktop-assets/illustrations/Illustration.png");
+  background-repeat: no-repeat; }
+
 .contact-title {
   height: 34px;
   width: 135px;
