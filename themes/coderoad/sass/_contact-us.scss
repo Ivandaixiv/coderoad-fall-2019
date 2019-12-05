@@ -12,6 +12,8 @@
 .contact-title-container{
     position: relative;
     text-align: center;
+    width: 425px;
+    margin: 0 auto;
 }
 
 .contact-rectangle{
@@ -23,7 +25,7 @@
     background-color: $color__secondary-light;  
     position: absolute;
     bottom: 0px;
-    right: 73px;
+    right: 24%;
     z-index: -1;
 }
 
@@ -36,11 +38,12 @@
     font-family: $font__header;
 }
 
-.contact-form-email{
+.contact-form-email {
     border: 1px solid $color__secondary-light;
     border-radius: 8px;
     height: 47px;
     width: 312px;
+    
 }
 
 .contact-form-question{
