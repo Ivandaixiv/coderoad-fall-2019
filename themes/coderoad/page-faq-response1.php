@@ -17,10 +17,9 @@ get_header();?>
         <h2 class="faqh2">FAQ</h2>
     </section>
 
-    <section class="illustration-container"></section>
-    
-    
     <section class="tutorial-response-container">
+
+        <section class="illustration-container"></section>
     
         <div class="tutorial-h2">
             <h2>Tutorials/ Creating</h2>
