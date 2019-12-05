@@ -1,95 +1,74 @@
-.site-content{
-    
-    font-size: 16px;
-    line-height: 2.5rem;
-    h2{
-        font-family: $font__header;
-    }
-    a{
-        font-family: $font__paragraph;
-    }
+.site-content {
+  font-size: 16px;
+  line-height: 2.5rem;
+  h2 {
+    font-family: $font__header;
+  }
+  a {
+    font-family: $font__paragraph;
+  }
 }
 
-.entry-title{
-    display: none;
+.entry-title {
+  display: none;
 }
 
-.faqh2{
- 
-    display: flex;
-    border-bottom: 1px solid green;
-    justify-content: center;
-    margin: 0px 30px 0px 30px;
-   
+.faqh2 {
+  display: flex;
+  border-bottom: 1px solid green;
+  justify-content: center;
+  margin: 0px 30px 0px 30px;
 }
-.tutorial-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+.tutorial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    h2{
-       z-index: 99;
-    }    
+  h2 {
+    z-index: 99;
+  }
 }
 .link-container {
-    margin-bottom: 13px;
-    
-a{
+  margin-bottom: 13px;
+
+  a {
     color: black;
     display: flex;
     justify-content: center;
     text-decoration: none;
-}
+  }
 }
 
 .tutorial-h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    position: relative; 
-    
-    h2 {
-        position: relative;
-        display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
 
-        &::before {
-            content: '';
-            height: 22px;
-            width: 165px;
-            background-color: #41ffbe;
-            border: 1px solid #41ffbe;
-            border-radius: 6px;
-            position:absolute;
-            left:139px;
-            bottom: 4px;
-            z-index: -1;
-        }
+  h2 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: '';
+      @include faqAccent1Green;
     }
+  }
 }
 
 .profile-h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    position: relative; 
-    
-    h2 {
-        position: relative;
-        display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
 
-        &::before {
-            content: '';
-            height: 28px;
-            width: 101px;
-            background-color: #8bbbe5;
-            border: 1px solid #8bbbe5;
-            border-radius: 6px;
-            position:absolute;
-            left:32px;
-            bottom: -1px;
-            z-index: -1;
-        }
+  h2 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: '';
+      @include faqAccent1Green;
     }
+  }
 }
-
-
