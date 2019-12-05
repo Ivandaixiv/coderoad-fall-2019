@@ -1,12 +1,13 @@
 .contact-title {
     height: 34px;	
     width: 135px;	
-    color: #292929;
+    color: $color__text-main; 
     font-family: $font__header;
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 28px;
     text-align: center;
     width: 100%;
+    //border-bottom: 1px solid $color__secondary-dark;
 }
 
 .contact-title-container{
@@ -25,7 +26,7 @@
     background-color: $color__secondary-light;  
     position: absolute;
     bottom: 0px;
-    right: 24%;
+    right: 25.5%;
     z-index: -1;
 }
 
@@ -33,7 +34,7 @@
     height: 53px;
     width: 238px;
     border-radius: 8px;    
-    background-color: #29CFFF;
+    background-color: $color__primary-light;
     font-size: 1.2rem;
     font-family: $font__header;
 }
@@ -49,7 +50,7 @@
 .contact-form-question{
     height: 114px;
     width: 312px;
-    border: 1px solid #9389FF;
+    border: 1px solid $color__secondary-light;
     border-radius: 8px;
     position: relative;
 

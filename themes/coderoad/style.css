@@ -490,11 +490,10 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: black;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -521,8 +520,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 8px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -797,21 +795,21 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.min-height {
+  min-height: 1000px; }
+
 .site-info {
   background-color: #40389e;
   height: 300px; }
 
 .footer-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 3em;
+  padding-top: 1em; }
 
 .resources {
-  color: white; }
+  color: #ffffff; }
   .resources h5 {
     font-family: "Space Mono";
     font-weight: bold;
@@ -819,51 +817,92 @@ object {
     font-size: 16px; }
 
 ul {
-  text-align: left;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-family: "Montserrat"; }
 
 a {
+  text-align: left;
   text-decoration: none;
-  color: white; }
+  color: #ffffff; }
 
 .about-us {
-  color: white; }
+  color: #ffffff; }
   .about-us h5 {
     font-family: "Space Mono";
     font-weight: bold;
     font-style: normal;
     font-size: 16px; }
   .about-us ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     list-style: none; }
   .about-us a {
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
 
 .support {
-  color: white; }
+  color: #ffffff; }
   .support h5 {
     font-family: "Space Mono";
     font-weight: bold;
     font-style: normal;
     font-size: 16px; }
   .support ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     list-style: none; }
   .support a {
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 3em;
+  margin-top: 3em; }
+  .language svg {
+    margin-top: 6px; }
+  .language p {
+    font-size: 10px;
+    margin-left: 5px;
+    font-family: "Montserrat";
+    color: #ffffff; }
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Montserrat"; }
 
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .main-navigation .search-form {
+  .main-navigation .search-fieldset {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .main-navigation .search-field {
+    width: 0px;
+    z-index: -1;
+    -webkit-transition: 2s;
+    transition: 2s; }
+  .main-navigation .icon-search img {
+    max-width: 25px; }
 
 .site-content {
   font-size: 16px;
@@ -968,9 +1007,17 @@ a {
   height: 34px;
   width: 135px;
   color: #292929;
-  font-family: ".SF NS Display";
-  font-size: 24px;
-  line-height: 28px; }
+  font-family: "Space Mono";
+  font-size: 2rem;
+  line-height: 28px;
+  text-align: center;
+  width: 100%; }
+
+.contact-title-container {
+  position: relative;
+  text-align: center;
+  width: 425px;
+  margin: 0 auto; }
 
 .contact-rectangle {
   height: 22.16px;
@@ -979,14 +1026,18 @@ a {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   border-radius: 4px;
-  background-color: #9389ff; }
+  background-color: #9389ff;
+  position: absolute;
+  bottom: 0px;
+  right: 25.5%;
+  z-index: -1; }
 
 .contact-form-submit {
   height: 53px;
   width: 238px;
   border-radius: 8px;
-  background-color: #29CFFF;
-  font-size: 20px;
+  background-color: #29cfff;
+  font-size: 1.2rem;
   font-family: "Space Mono"; }
 
 .contact-form-email {
@@ -998,5 +1049,22 @@ a {
 .contact-form-question {
   height: 114px;
   width: 312px;
-  border: 1px solid #9389FF;
-  border-radius: 8px; }
+  border: 1px solid #9389ff;
+  border-radius: 8px;
+  position: relative; }
+
+.container-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+.contact-question {
+  font-family: "Space Mono"; }
+
+.error-404 {
+  padding-top: 9em;
+  font-family: "Montserrat"; }
