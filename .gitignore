@@ -36,6 +36,7 @@ plugins/*
 # ====================================================== #
 themes/*
 !themes/coderoad/
+themes/coderoad/style.css
 
 # Ignore npm packages #
 # =================== #

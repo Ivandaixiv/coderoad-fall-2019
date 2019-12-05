@@ -1,7 +1,16 @@
 .main-navigation {
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     .search-form {
         display: flex;
+    }
+    .search-fieldset {
+        display: flex;
+    }
+    .search-field {
+        // display: none;
+        width: 0px;
+        transition: 2s;
     }
 }
