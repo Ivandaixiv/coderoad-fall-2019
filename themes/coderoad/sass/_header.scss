@@ -2,15 +2,19 @@
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    .search-form {
-        display: flex;
-    }
     .search-fieldset {
         display: flex;
     }
     .search-field {
         // display: none;
         width: 0px;
+        // border: 0;
+        z-index: -1 ;
         transition: 2s;
+    }
+    .icon-search {
+        img {
+            max-width: 25px;
+        }
     }
 }
