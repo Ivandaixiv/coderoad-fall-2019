@@ -1,24 +1,31 @@
-
-.illustration-container{
-    background-image:url("../../assets/desktop-assets/illustrations/Illustration.png");
-    background-repeat: no-repeat;
-    height: 64vh;
-    display: flex;
-    justify-content: flex-end;
-
+.tutorial-response1-container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  margin-left: 56px;
+  margin-top: 45px;
 }
 
-.tutorial-response-container{
-    // height: 60vh;
-
-    // background-image:url("../../assets/desktop-assets/illustrations/Illustration.png");
-    // background-repeat: no-repeat;
-
-    // margin-left: 105px;
-
+.image-container {
+  background-image: url('../../assets/desktop-assets/illustrations/Illustration.png');
+  background-repeat: no-repeat;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 65px;
 }
 
-.tutorial-h2{
-//   margin-right: 211px;
-  
+.tutorial-res1-h2 {
+  position: relative;
+
+  .h2-element {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: '';
+      @include faqAccent1Green;
+    }
+  }
 }
