@@ -1,0 +1,38 @@
+.tutorial-response2-container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  margin-left: 56px;
+  margin-top: 45px;
+}
+
+.image-container {
+  background-image: url('../../assets/desktop-assets/illustrations/Illustration 2.png');
+  background-repeat: no-repeat;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 65px;
+}
+
+.tutorial-res2-h2 {
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+
+  .tutorial-element {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      @include faqAccent1Green;
+    }
+  }
+}
+
+.h4-header {
+  font-weight: normal;
+}
