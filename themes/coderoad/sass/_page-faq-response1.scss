@@ -17,15 +17,22 @@
 }
 
 .tutorial-res1-h2 {
+  justify-content: center;
+  margin-top: 30px;
   position: relative;
 
   .h2-element {
     position: relative;
     display: inline-block;
+    z-index: 0;
 
     &::before {
       content: '';
       @include faqAccent1Green;
     }
   }
+}
+
+.h4-heading {
+  font-weight: normal;
 }

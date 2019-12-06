@@ -61,6 +61,7 @@
   justify-content: center;
   margin-top: 30px;
   position: relative;
+  z-index: 0;
 
   h2 {
     position: relative;
@@ -68,7 +69,7 @@
 
     &::before {
       content: '';
-      @include faqAccent1Green;
+      @include faqAccent2Purple;
     }
   }
 }

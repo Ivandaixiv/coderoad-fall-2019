@@ -29,7 +29,7 @@ get_header(); ?>
         </div>
         <div class="question-answer">
             <h4 class="h4-heading">Where an I see my progress?</h4>
-            <p>You can view the progress of your Tutorials
+            <p>You can view the progress of your Tutorials <br>
                 in the My Tutorials page under the section
                 My Progess.
             </p>
