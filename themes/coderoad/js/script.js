@@ -8,11 +8,11 @@
 
         function openField(){
             isOpened = true;
-            searchField.css({'position':'absolute', 'width': '50vw','right': '25vw', });
-            searchBtn.css({'transform': 'translate(-70vw,0)'});
+            searchField.css({'position':'absolute', 'width': '70vw','right': '15%',});
+            searchBtn.css({'transform': 'translate(-73vw,0)'});
             cancelBtn.css({'display':'flex'})
             setTimeout(function(){
-                cancelBtn.css({'transform': 'translate(-30vw,0)'});
+                cancelBtn.css({'transform': 'translate(-15vw,0)'});
             }, 200);
             setTimeout(function(){
                 searchField.css({'border':'1px solid black'});
@@ -24,7 +24,7 @@
             searchField.css({'position':'absolute', 'width': '0','right': '0', 'border':'0'});
             searchField.val('');
             searchBtn.css({'transform': 'translate(0,0)'});
-            cancelBtn.css({'transform': 'translate(0,0)'});
+            cancelBtn.css({'transform': 'translate(10vw,0)'});
             setTimeout(function(){
                 cancelBtn.css({'display':'none'})
             }, 1500);

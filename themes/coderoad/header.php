@@ -26,7 +26,9 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation toggled" role="navigation">
-					<a href="#"></a>
+					<span class="hamburger-menu" aria-hidden="true">
+						<a href="#" id="hamburger-icon"><img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/hamburger.png" alt="Search Button"></a>
+					</span>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>		
 					<?php echo get_search_form();?>				
 				</nav><!-- #site-navigation -->

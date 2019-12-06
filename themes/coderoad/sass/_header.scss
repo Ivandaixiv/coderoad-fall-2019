@@ -1,6 +1,5 @@
 .main-navigation {
     display: flex;
-    overflow: hidden;
     justify-content: space-between;
     height: 50px;
     background: $color__theme-gray;
@@ -14,7 +13,7 @@
         border: 0;
         border-radius: 5px;
         transition: 2s;
-        text-indent: 35px;
+        text-indent: 12vw;
     }
     .icon-search {
         z-index: 2;
@@ -29,7 +28,6 @@
     }
     .cancel-search {
         position: absolute;
-        right: -50px;
         a {
             transition: transform 2s ease;
             display: none;
@@ -42,11 +40,17 @@
     }
     .menu-main-menu-container {
         ul {
-            display: flex;
+            display: none;
             flex-direction: column;
+            background: $color__theme-white;
         }
         a {
             color: $color_theme-black;
         }
+    }
+    .hamburger-menu {
+        margin: 10px 20px;
+        width: 25px;
+        position: absolute;
     }
 }
