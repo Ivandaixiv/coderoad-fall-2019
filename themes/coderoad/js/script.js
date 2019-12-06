@@ -1,54 +1,51 @@
 (function($){
     $(function(){
-        const searchBtn = $("#search-icon");
-        const searchField = $("#search-field");
-        const page = $("#content");
-        const cancelBtn = $('#cancel-icon');
-        const dropMenuBtn = $('#hamburger-icon');
-        const burgerMenu = $("#site-navigation ul");
-        const footerSection = $('#colophon')
+        const   searchBtn = $("#search-icon"),
+                searchField = $("#search-field"),
+                page = $("#content"),
+                cancelBtn = $('#cancel-icon img'),
+                cancelWrapper = $("#cancelWrapper"),
+                dropMenuBtn = $('#hamburger-icon'),
+                burgerMenuWrapper = $('.drop-menu');
+        
+        // const footerSection = $('#colophon')
 
-        let isOpened = false;
-        let isDropped = false;
+        let isOpened = false,
+            isDropped = false;
 
         function dropMenu(){
             isDropped = true;
-            burgerMenu.css({'display': 'flex'});
+            burgerMenuWrapper.css({'left':'0'});
         }
         function undropMenu() {
             isDropped = false;
-            burgerMenu.css({'display': 'none'});
+            burgerMenuWrapper.animate({left:'-100%'});
         }
-        function darkenBack(){
-            page.css({'opacity':'50%','filter': 'brightness(20%)'});
-            footerSection.css({'opacity':'50%','filter': 'brightness(20%)'});
-        }
-        function brightenBack() {
-            page.css({'opacity':'1','filter': 'brightness(1)'});
-            footerSection.css({'opacity':'1','filter': 'brightness(1)'});
-        }
+        // function darkenBack(){
+        //     page.css({'opacity':'50%','filter': 'brightness(20%)'});
+        //     footerSection.css({'opacity':'50%','filter': 'brightness(20%)'});
+        // }
+        // function brightenBack() {
+        //     page.css({'opacity':'1','filter': 'brightness(1)'});
+        //     footerSection.css({'opacity':'1','filter': 'brightness(1)'});
+        // }
         function openField(){
             isOpened = true;
             searchField.css({'position':'absolute', 'width': '70vw','right': '15%',});
-            searchBtn.css({'transform': 'translate(-73vw,0)'});
-            cancelBtn.css({'display':'flex'})
-            setTimeout(function(){
-                cancelBtn.css({'transform': 'translate(-20vw,0)'});
-            }, 200);
+            searchBtn.css({'transform': 'translate(-72vw,0)'});
+            cancelWrapper.css({'width':'100vw'});
+            cancelBtn.css({'right': '20vw'});
             setTimeout(function(){
                 searchField.css({'border':'1px solid black'});
                 searchField.focus();
-            },1900);
+            },1600);
         }
         function closeField(){
             isOpened = false;
-            searchField.css({'position':'absolute', 'width': '0','right': '0', 'border':'0'});
+            searchField.css({'width': '0','right': '0', 'border':'0'});
             searchField.val('');
             searchBtn.css({'transform': 'translate(0,0)'});
-            cancelBtn.css({'transform': 'translate(10vw,0)'});
-            setTimeout(function(){
-                cancelBtn.css({'display':'none'});
-            }, 1500);
+            cancelBtn.css({'right': '-20%'});
         }
 
         dropMenuBtn.on('click',function(){
