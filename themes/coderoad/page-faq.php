@@ -1,29 +1,30 @@
 <?php
+
 /**
  * Template part for displaying page content in page.php.
  *
  * @package RED_Starter_Theme
  */
 
-get_header();?>
+get_header(); ?>
 
 <div class="site-content">
-    
-    <header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-    </header><!-- .entry-header -->
-    
+
+    <!-- <header class="entry-header">
+        <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+    </header><!--.entry-header -->
+
     <section class="faq-h2-container">
         <h2 class="faqh2">FAQ</h2>
     </section>
 
-    <div class="search-container">
+    <!-- <div class="search-container">
         <form action=""></form>
-    </div>
-    
+    </div> -->
+
     <section class="tutorial-container">
         <div class="tutorial-h2">
-            <h2 >Tutorials/ Creating</h2>
+            <h2>Tutorials/ Creating</h2>
             <!-- <div class="tutorial-accent"></div> -->
         </div>
 

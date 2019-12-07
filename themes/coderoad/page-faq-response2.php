@@ -17,27 +17,20 @@ get_header(); ?>
     <section class="faq-h2-container">
         <h2 class="faqh2">FAQ</h2>
     </section>
-
-    <section class="tutorial-response1-container">
-        <div class="image-container1"></div>
-       
+    <div class="image-container2"></div>
+    <section class="tutorial-response2-container">
 
         <!-- <section class="illustration-container"></section> -->
 
-        <div class="tutorial-res1-h2">
-        
+        <div class="tutorial-res2-h2">
 
-            <h2 class="h2-element">Tutorials/ Creating</h2>
+            <h2 class="tutorial-element">Tutorials/ Creating</h2>
             <!-- <div class="tutorial-accent"></div> -->
         </div>
-        
         <div class="question-answer">
-            <h4 class="h4-heading">Where an I see my progress?</h4>
-            <p>You can view the progress of your Tutorials <br>
-                in the My Tutorials page under the section
-                My Progess.
+            <h4 class="h4-header">How do I create a tutorial?</h4>
+            <p>Please see the Create a Tutorial screen for more information on creating tutorials.
             </p>
-            
         </div>
     </section>
 </div>

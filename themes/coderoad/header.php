@@ -29,7 +29,15 @@
 					<span class="hamburger-menu" aria-hidden="true">
 						<a href="#" id="hamburger-icon"><img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/hamburger.png" alt="Search Button"></a>
 					</span>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>		
+					<div class=drop-menu>
+						<h2>
+							<?php $menu = wp_get_nav_menu_object('menu');
+								echo $menu->name;
+							?>
+							<div class='menu-blue-bar'></div>
+						</h2>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>		
+					</div>
 					<?php echo get_search_form();?>				
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

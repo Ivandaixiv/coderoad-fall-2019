@@ -1,34 +1,27 @@
-.site-content {
-  // display: flex;
-}
-
-.tutorial-response1-container {
+.tutorial-response2-container {
   display: flex;
-  
   height: 80vh;
   flex-direction: column;
   margin-left: 56px;
   margin-top: 45px;
 }
 
-.image-container1 {
-  background-image: url('../../assets/desktop-assets/illustrations/Illustration.png');
-  // height: 200px;
+.image-container2 {
+  background-image: url('../../assets/desktop-assets/illustrations/Illustration 2.png');
   background-repeat: no-repeat;
-
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  
   // margin-left: 300px;
   margin-top: 65px;
 }
 
-.tutorial-res1-h2 {
+.tutorial-res2-h2 {
   justify-content: center;
   margin-top: 30px;
   position: relative;
 
-  .h2-element {
+  .tutorial-element {
     position: relative;
     display: inline-block;
     z-index: 0;
@@ -40,6 +33,6 @@
   }
 }
 
-.h4-heading {
+.h4-header {
   font-weight: normal;
 }

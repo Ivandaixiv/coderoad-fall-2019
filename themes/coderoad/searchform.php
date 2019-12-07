@@ -5,9 +5,10 @@
 		</span>
 		<label>
 			<input id="search-field" type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-		</label>
-		<span class="cancel-search" aria-hidden="true">
+			<span id="cancelWrapper" class="cancel-search" aria-hidden="true">
 			<a href="#" id="cancel-icon"><img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/close.png" alt="Cancel Button"></a>
 		</span>
+		</label>
+		
 	</fieldset>
 </form>
