@@ -12,10 +12,10 @@ get_header(); ?>
 
 
 <?php while ( have_posts() ) : the_post(); ?>
-
+<?php the_title(''); ?> 
 <?php the_content(); ?>
  <?php the_post_thumbnail(   'feature-post image'    ); ?>
-<?php the_title(''); ?> 
+
 
 <?php endwhile; // End of the loop. ?>
 
@@ -41,8 +41,10 @@ get_header(); ?>
  <?php endif; ?>
 	
 
- 
-			
+ <img class="social-media" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/twitter@3x.png">
+ <img class="social-media" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/github-icon-github-png-image.png">
+ <img class="social-media" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/screen_shot_2019-12-06_at_3.08.27_pm.png">
+ <img class="social-media" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
 
 
 
