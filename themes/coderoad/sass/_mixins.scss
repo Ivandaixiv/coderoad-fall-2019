@@ -1,4 +1,13 @@
+//Media Query
+
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
 // Rem output with px fallback
+
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) * 1px;
   font-size: $sizeValue * 1rem;
@@ -37,5 +46,3 @@
   bottom: -1px;
   z-index: -1;
 }
-
-//FAQ Response 1 page

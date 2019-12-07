@@ -12,11 +12,11 @@ get_header(); ?>
 
     <!-- <header class="entry-header">
         <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-    </header><!-- .entry-header -->
+    </header><!--.entry-header -->
 
     <section class="faq-h2-container">
         <h2 class="faqh2">FAQ</h2>
-    </section> -->
+    </section>
 
     <!-- <div class="search-container">
         <form action=""></form>
