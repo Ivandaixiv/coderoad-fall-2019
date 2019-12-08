@@ -1,4 +1,21 @@
-.site-image {
-  filter: blur(1px);
-  opacity: 0.8;
+.code-image {
+  position: relative;
+  img {
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+  h2 {
+  }
+  p {
+    position: absolute;
+  }
+}
+
+.why-title {
+  text-align: center;
+  padding-top: 4em;
+}
+.why-code {
+  width: 31em;
+  display: flex;
 }
