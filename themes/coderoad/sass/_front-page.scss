@@ -4,8 +4,7 @@
     filter: blur(1px);
     opacity: 0.8;
   }
-  h2 {
-  }
+
   p {
     position: absolute;
   }
@@ -16,6 +15,21 @@
   padding-top: 4em;
 }
 .why-code {
-  width: 31em;
+  text-align: center;
   display: flex;
+}
+
+.tutorial-video {
+  iframe {
+    padding: 1em 2.5em;
+    border-radius: 3em;
+  }
+  h2 {
+    font-family: $font__paragraph;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 18px;
+    padding-left: 2.6em;
+  }
 }

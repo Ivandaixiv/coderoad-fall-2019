@@ -43,6 +43,7 @@ get_header(); ?>
 		
  <?php if(get_field('tutorial')): ?>
     <?php while(the_repeater_field('tutorial')): ?>
+        <h2><?php the_sub_field('video_text'); ?></h2>
         <h3><?php the_sub_field('author'); ?></h3>
         <p><?php the_sub_field('paragraph'); ?></p>
     <?php endwhile; ?>
