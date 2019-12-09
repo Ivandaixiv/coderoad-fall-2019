@@ -27,7 +27,7 @@
 
 				<nav id="site-navigation" class="main-navigation toggled" role="navigation">
 					<span class="hamburger-menu" aria-hidden="true">
-						<a href="#" id="hamburger-icon"><img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/hamburger.png" alt="Search Button"></a>
+						<a href="#" id="hamburger-icon" class="hamburger-icon"><img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/hamburger.png" alt="Search Button"></a>
 					</span>
 					<div class=drop-menu>
 						<h2>

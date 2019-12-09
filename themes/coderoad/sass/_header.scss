@@ -3,42 +3,54 @@
     justify-content: space-between;
     height: 50px;
     background: $color__theme-gray;
-    .search-form {
-        overflow: hidden;
+    .hamburger-icon {
+        position: relative;
     }
-    .search-field {
-        background: $color__theme-gray;
-        width: 0px;
-        height: 30px;
-        border: 0;
-        border-radius: 5px;
-        transition: 2s;
-        text-indent: 12vw;
+    .search-form {
+        display: flex;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
     }
     .icon-search {
-        z-index: 1;
-        position: absolute;
-        right: 25px;
-        a {
-            transition: transform 2s ease;
-        }
-        img {
-            margin-top: 5px;
-            max-width: 25px;
-        }
-    }
-    .cancel-search {
-        transition: 2s;
         a {
             position: relative;
-            transition: 2s;
+            left: -10vw;
         }
         img {
-            right: -20%;
+            z-index: 1;
+            left: 90vw;
+            margin-top: 13px;
+            width: 22px;
+            position: relative;
+        }
+    }
+    .search-fieldset {
+        float: right;
+    }
+    .fieldset-wrapper{
+        margin-top: 3px;
+        display: flex;
+        position: relative;
+        left: 10vw;
+        width: 0;
+        label {
+            position: relative;
+            margin-left: 10vw;
+        }
+        // right: -100vw;
+        .search-field {
+            background: $color__theme-gray;
+            text-indent: 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 3px;
+        }
+        img {
             position: absolute;
-            margin: 10px 10px 0 0;
-            max-height: 30px;
-            max-width: 15px;
+            margin-top: 7px;
+            width: 16px;
+            right: 5vw;
         }
     }
     .drop-menu {

@@ -1,12 +1,14 @@
 (function($){
     $(function(){
         const   searchBtn = $("#search-icon"),
+                searchBtnImg = $("#search-icon img"),
                 searchField = $("#search-field"),
                 page = $("#content"),
                 cancelBtn = $('#cancel-icon img'),
-                cancelWrapper = $("#cancelWrapper"),
                 dropMenuBtn = $('#hamburger-icon'),
-                burgerMenuWrapper = $('.drop-menu');
+                burgerMenuWrapper = $('.drop-menu'),
+                fieldSet = $('#fieldset-wrapper'),
+                fieldSetLabel = $('#fieldset-wrapper label');
         
         // const footerSection = $('#colophon')
 
@@ -15,10 +17,12 @@
 
         function dropMenu(){
             isDropped = true;
-            burgerMenuWrapper.css({'left':'0'});
+            closeField();
+            burgerMenuWrapper.animate({'left':'0'});
         }
         function undropMenu() {
             isDropped = false;
+            closeField();
             burgerMenuWrapper.animate({left:'-100%'});
         }
         // function darkenBack(){
@@ -31,21 +35,23 @@
         // }
         function openField(){
             isOpened = true;
-            searchField.css({'position':'absolute', 'width': '70vw','right': '15%',});
-            searchBtn.css({'transform': 'translate(-72vw,0)'});
-            cancelWrapper.css({'width':'100vw'});
-            cancelBtn.css({'right': '20vw'});
+            searchBtnImg.animate({'left':'30vw'},1000);
+            fieldSet.animate({'width':'70vw'},900);
+            fieldSetLabel.animate({'width':'70%'},900);
+            dropMenuBtn.animate({'left':'-100vw'},1000);
             setTimeout(function(){
-                searchField.css({'border':'1px solid black'});
+                fieldSet.css({'border':'1px solid black','border-radius':'5px'});
                 searchField.focus();
-            },1600);
+            },2000);
         }
+
         function closeField(){
             isOpened = false;
-            searchField.css({'width': '0','right': '0', 'border':'0'});
-            searchField.val('');
-            searchBtn.css({'transform': 'translate(0,0)'});
-            cancelBtn.css({'right': '-20%'});
+            dropMenuBtn.animate({'left':'0vw'});
+            fieldSet.animate({'width':'0','border':'0'},1000);
+            searchBtnImg.css({'left':'90vw','transition':'1s'});
+            // searchBtnImg.animate({'left':'90vw'},2000);
+            // fieldSet.animate({'right':'-100vw'},2000);
         }
 
         dropMenuBtn.on('click',function(){
@@ -76,9 +82,7 @@
             }
             else {
                 closeField();
-                setTimeout(function(){
-                    undropMenu();
-                })
+                undropMenu();
             }
         });
   });
