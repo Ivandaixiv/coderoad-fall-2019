@@ -29,8 +29,9 @@ get_header(); ?>
 <?php if(get_field('why_sections')): ?>
     <?php while(the_repeater_field('why_sections')): ?>
         <div class="why-section">
+        <div class=image-why>
         <img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('title'); ?>" />
-
+    </div>
         <h3><?php the_sub_field('title'); ?></h3>
         <p><?php the_sub_field('description'); ?></p>
     </div>
@@ -51,10 +52,10 @@ get_header(); ?>
 </div>
 
 <div class="social-media">
- <img class="twitter" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/twitter@3x.png">
- <img class="github" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/github-icon-github-png-image.png">
- <img class="linkedin" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/screen_shot_2019-12-06_at_3.08.27_pm.png">
- <img class="email" src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
+ <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/twitter@3x.png">
+ <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/github-icon-github-png-image.png">
+ <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/screen_shot_2019-12-06_at_3.08.27_pm.png">
+ <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
 </div>
 
 
