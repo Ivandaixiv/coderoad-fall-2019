@@ -49,7 +49,9 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden;
+  position: relative; }
 
 article,
 aside,
@@ -700,9 +702,6 @@ a {
 .sticky {
   display: block; }
 
-.hentry {
-  margin: 0 0 1.5rem; }
-
 .updated:not(.published) {
   display: none; }
 
@@ -888,59 +887,101 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 50px;
-  background: #fdfdfd; }
-  .main-navigation .search-fieldset {
+  background: #f7f7f7; }
+  .main-navigation .hamburger-icon {
+    position: relative; }
+  .main-navigation .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .main-navigation .search-field {
-    width: 0px;
-    height: 30px;
-    border: 0;
-    border-radius: 5px;
-    -webkit-transition: 2s;
-    transition: 2s;
-    text-indent: 35px; }
-  .main-navigation .icon-search {
-    z-index: 2;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
-    .main-navigation .icon-search a {
-      -webkit-transition: -webkit-transform 2s ease;
-      transition: -webkit-transform 2s ease;
-      transition: transform 2s ease;
-      transition: transform 2s ease, -webkit-transform 2s ease; }
-    .main-navigation .icon-search img {
-      margin-top: 5px;
-      max-width: 25px; }
-  .main-navigation .cancel-search {
+    display: flex;
+    overflow: hidden;
     position: absolute;
-    right: -50px; }
-    .main-navigation .cancel-search a {
-      -webkit-transition: -webkit-transform 2s ease;
-      transition: -webkit-transform 2s ease;
-      transition: transform 2s ease;
-      transition: transform 2s ease, -webkit-transform 2s ease;
-      display: none; }
-    .main-navigation .cancel-search img {
-      margin: 10px 10px 0 0;
-      max-height: 30px;
-      max-width: 15px; }
-  .main-navigation .menu-main-menu-container ul {
+    width: 100%; }
+  .main-navigation .icon-search a {
+    position: relative;
+    left: -10vw; }
+  .main-navigation .icon-search img {
+    z-index: 1;
+    left: 90vw;
+    margin-top: 13px;
+    width: 22px;
+    position: relative; }
+  .main-navigation .search-fieldset {
+    z-index: 1; }
+  .main-navigation .fieldset-wrapper {
+    margin-top: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: 10vw;
+    width: 0; }
+    .main-navigation .fieldset-wrapper label {
+      position: relative;
+      margin-left: 10vw; }
+    .main-navigation .fieldset-wrapper .search-field {
+      background: #f7f7f7;
+      text-indent: 10px;
+      width: 100%;
+      border: 0;
+      border-radius: 3px; }
+    .main-navigation .fieldset-wrapper img {
+      position: absolute;
+      margin-top: 7px;
+      width: 16px;
+      right: 5vw; }
+  .main-navigation .drop-menu {
+    z-index: 1;
+    position: absolute;
+    left: -100%; }
+    .main-navigation .drop-menu h2 {
+      padding: 25px 0 0 30px;
+      margin: 0;
+      margin-top: 50px;
+      background: #ffffff;
+      width: 70vw; }
+    .main-navigation .drop-menu .menu-blue-bar {
+      background: #29cfff;
+      width: 150px;
+      height: 15px;
+      border-radius: 5px; }
+  .main-navigation .menu-menu-container .menu {
+    z-index: 4;
+    width: 70vw;
+    height: 70vh; }
+  .main-navigation .menu-menu-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .main-navigation .menu-main-menu-container a {
+            flex-direction: column;
+    background: #ffffff;
+    padding: 50px 20px; }
+  .main-navigation .menu-menu-container li {
+    margin: 15px 0; }
+    .main-navigation .menu-menu-container li:hover a {
+      border-bottom: 5px solid #6054e1; }
+  .main-navigation .menu-menu-container a {
+    font-size: 1.25rem;
+    height: 25px;
+    max-width: 150px;
     color: #000000; }
+  .main-navigation .hamburger-menu {
+    z-index: 2;
+    margin: 10px 20px;
+    width: 25px; }
+    .main-navigation .hamburger-menu .logo-button {
+      display: none; }
+
+.site-content {
+  background: #ffffff;
+  padding-top: 5em; }
 
 .site-content {
   font-size: 16px;
@@ -957,7 +998,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #6054e1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -970,10 +1011,7 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+          flex-direction: column; }
   .tutorial-container h2 {
     z-index: 99; }
 
@@ -1012,6 +1050,12 @@ a {
       left: 139px;
       bottom: 4px;
       z-index: -1; }
+      @media (min-width: 700px) {
+        .tutorial-h2 h2::before {
+          background-color: #6487a5;
+          border: 1px solid #6487a5;
+          left: 275px;
+          bottom: -8px; } }
 
 .profile-h2 {
   display: -webkit-box;
@@ -1021,21 +1065,30 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
-  position: relative; }
+  position: relative;
+  z-index: 0; }
   .profile-h2 h2 {
     position: relative;
     display: inline-block; }
     .profile-h2 h2::before {
       content: '';
-      height: 22px;
-      width: 165px;
-      background-color: #41ffbe;
-      border: 1px solid #41ffbe;
+      height: 28px;
+      width: 101px;
+      background-color: #8bbbe5;
+      border: 1px solid #8bbbe5;
       border-radius: 6px;
       position: absolute;
-      left: 139px;
-      bottom: 4px;
+      left: 32px;
+      bottom: -1px;
       z-index: -1; }
+      @media (min-width: 700px) {
+        .profile-h2 h2::before {
+          height: 22px;
+          width: 182px;
+          background-color: #22b4de;
+          border: 1px solid #22b4de;
+          left: 86px;
+          bottom: -7px; } }
 
 .tutorial-response1-container {
   display: -webkit-box;
@@ -1049,10 +1102,9 @@ a {
   margin-left: 56px;
   margin-top: 45px; }
 
-.image-container {
+.image-container1 {
   background-image: url("../../assets/desktop-assets/illustrations/Illustration.png");
   background-repeat: no-repeat;
-  height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,14 +1112,18 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 300px;
   margin-top: 65px; }
 
 .tutorial-res1-h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
   position: relative; }
   .tutorial-res1-h2 .h2-element {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    z-index: 0; }
     .tutorial-res1-h2 .h2-element::before {
       content: '';
       height: 22px;
@@ -1079,6 +1135,59 @@ a {
       left: 139px;
       bottom: 4px;
       z-index: -1; }
+
+.h4-heading {
+  font-weight: normal; }
+
+.tutorial-response2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 56px;
+  margin-top: 45px; }
+
+.image-container2 {
+  background-image: url("../../assets/desktop-assets/illustrations/Illustration 2.png");
+  background-repeat: no-repeat;
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 65px; }
+
+.tutorial-res2-h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  position: relative; }
+  .tutorial-res2-h2 .tutorial-element {
+    position: relative;
+    display: inline-block;
+    z-index: 0; }
+    .tutorial-res2-h2 .tutorial-element::before {
+      content: '';
+      height: 22px;
+      width: 165px;
+      background-color: #41ffbe;
+      border: 1px solid #41ffbe;
+      border-radius: 6px;
+      position: absolute;
+      left: 139px;
+      bottom: 4px;
+      z-index: -1; }
+
+.h4-header {
+  font-weight: normal; }
 
 .contact-title {
   height: 34px;
@@ -1151,10 +1260,82 @@ a {
   font-family: "Montserrat";
   background-color: #29cfff; }
 
-.site-image {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  opacity: 0.8; }
+.code-image {
+  position: relative; }
+  .code-image img {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.8; }
+  .code-image p {
+    position: absolute; }
+
+.why-title {
+  text-align: center;
+  padding-top: 4em; }
+
+.why-code {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tutorial-video iframe {
+  padding: 1em 2.5em;
+  border-radius: 3em; }
+
+.tutorial-video h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  padding-left: 2.6em; }
 
 .sign-up-content {
   height: 475px; }
+
+.sign-up-text {
+  height: 34px;
+  color: #404040;
+  font-family: "Space Mono";
+  font-size: 2rem;
+  line-height: 28px;
+  text-align: center;
+  width: 100%; }
+
+.sign-up-name {
+  border: 1px solid #9389ff;
+  border-radius: 8px;
+  height: 47px;
+  width: 312px;
+  text-align: center;
+  font-family: "Montserrat"; }
+
+.sign-up-email {
+  border: 1px solid #9389ff;
+  border-radius: 8px;
+  height: 47px;
+  width: 312px;
+  text-align: center;
+  font-family: "Montserrat"; }
+
+.sign-up-password {
+  border: 1px solid #9389ff;
+  border-radius: 8px;
+  height: 47px;
+  width: 312px;
+  text-align: center;
+  font-family: "Montserrat"; }
+
+.sign-up-submit {
+  height: 53px;
+  width: 130px;
+  border-radius: 8px;
+  background-color: #29cfff;
+  font-size: 1rem;
+  font-family: "Space Mono"; }
+
+.sign-up-container {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto; }
