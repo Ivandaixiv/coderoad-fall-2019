@@ -49,7 +49,7 @@
             isOpened = false;
             dropMenuBtn.animate({'left':'0vw'});
             fieldSet.animate({'width':'0','border':'0'},1000);
-            searchBtnImg.css({'left':'90vw','transition':'1s'});
+            searchBtnImg.animate({'left':'90vw'});
             // searchBtnImg.animate({'left':'90vw'},2000);
             // fieldSet.animate({'right':'-100vw'},2000);
         }
