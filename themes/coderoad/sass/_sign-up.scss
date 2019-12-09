@@ -2,3 +2,57 @@
     height: 475px;
 }
 
+
+.sign-up-text{
+    height: 34px;	
+    color: $color__text-main; 
+    font-family: $font__header;
+    font-size: 2rem;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+.sign-up-name{
+    border: 1px solid $color__secondary-light;
+    border-radius: 8px;
+    height: 47px;
+    width: 312px;
+    text-align: center;
+    font-family: $font__paragraph;
+}
+
+.sign-up-email{
+    border: 1px solid $color__secondary-light;
+    border-radius: 8px;
+    height: 47px;
+    width: 312px;
+    text-align: center;
+    font-family: $font__paragraph;
+}
+
+.sign-up-password{
+    border: 1px solid $color__secondary-light;
+    border-radius: 8px;
+    height: 47px;
+    width: 312px;
+    text-align: center;
+    font-family: $font__paragraph;
+}
+
+.sign-up-submit{
+    height: 53px;
+    width: 130px;
+    border-radius: 8px;    
+    background-color: $color__primary-light;
+    font-size: 1rem;
+    font-family: $font__header;
+}
+
+.sign-up-container{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
