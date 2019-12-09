@@ -46,7 +46,7 @@
             setTimeout(function(){
                 fieldSet.css({'border':'1px solid black','border-radius':'5px'});
                 searchField.focus();
-            },1000);
+            },500);
         }
 
         function closeField(){
