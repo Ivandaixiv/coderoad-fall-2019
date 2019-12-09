@@ -1,7 +1,7 @@
 //Media Query
 
-@mixin mobile {
-  @media (min-width: $mobile-width) {
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
     @content;
   }
 }
