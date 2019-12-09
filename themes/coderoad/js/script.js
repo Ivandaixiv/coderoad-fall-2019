@@ -8,7 +8,9 @@
                 dropMenuBtn = $('#hamburger-icon'),
                 burgerMenuWrapper = $('.drop-menu'),
                 fieldSet = $('#fieldset-wrapper'),
-                fieldSetLabel = $('#fieldset-wrapper label');
+                fieldSetLabel = $('#fieldset-wrapper label'),
+                footerSection = $('#colophon'),
+                mainContent = $('#main');
         
         // const footerSection = $('#colophon')
 
@@ -18,40 +20,40 @@
         function dropMenu(){
             isDropped = true;
             closeField();
-            burgerMenuWrapper.animate({'left':'0'});
+            darkenBack();
+            burgerMenuWrapper.animate({'left':'0'},1000);
         }
         function undropMenu() {
             isDropped = false;
             closeField();
+            brightenBack();
             burgerMenuWrapper.animate({left:'-100%'});
         }
-        // function darkenBack(){
-        //     page.css({'opacity':'50%','filter': 'brightness(20%)'});
-        //     footerSection.css({'opacity':'50%','filter': 'brightness(20%)'});
-        // }
-        // function brightenBack() {
-        //     page.css({'opacity':'1','filter': 'brightness(1)'});
-        //     footerSection.css({'opacity':'1','filter': 'brightness(1)'});
-        // }
+        function darkenBack(){
+            mainContent.css({'opacity':'25%'});
+            footerSection.css({'opacity':'25%'});
+        }
+        function brightenBack() {
+            mainContent.css({'opacity':'1',});
+            footerSection.css({'opacity':'1'});
+        }
         function openField(){
             isOpened = true;
-            searchBtnImg.animate({'left':'30vw'},1000);
-            fieldSet.animate({'width':'70vw'},900);
-            fieldSetLabel.animate({'width':'70%'},900);
-            dropMenuBtn.animate({'left':'-100vw'},1000);
+            searchBtnImg.animate({'left':'30vw'},500);
+            fieldSet.animate({'width':'70vw'},400);
+            fieldSetLabel.animate({'width':'70%'},400);
+            dropMenuBtn.animate({'left':'-100vw'},500);
             setTimeout(function(){
                 fieldSet.css({'border':'1px solid black','border-radius':'5px'});
                 searchField.focus();
-            },2000);
+            },1000);
         }
 
         function closeField(){
             isOpened = false;
             dropMenuBtn.animate({'left':'0vw'});
             fieldSet.animate({'width':'0','border':'0'},1000);
-            searchBtnImg.css({'left':'90vw','transition':'1s'});
-            // searchBtnImg.animate({'left':'90vw'},2000);
-            // fieldSet.animate({'right':'-100vw'},2000);
+            searchBtnImg.animate({'left':'90vw'});
         }
 
         dropMenuBtn.on('click',function(){
