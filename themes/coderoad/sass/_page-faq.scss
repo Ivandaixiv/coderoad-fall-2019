@@ -8,7 +8,7 @@
     font-family: $font__paragraph;
   }
   //**** TEST ELEMENT - REMOVE WHEN DONE ****
-  @include mobile {
+  @include desktop {
     // background-color: gray;
   }
 }
@@ -58,7 +58,7 @@
       content: '';
       @include faqAccent1Green;
 
-      @include mobile {
+      desktop {
         background-color: #6487a5;
         border: 1px solid #6487a5;
         left: 275px;
@@ -84,7 +84,7 @@
       content: '';
       @include faqAccent2Purple;
 
-      @include mobile {
+      @include desktop {
         height: 22px;
         width: 182px;
         background-color: #22b4de;
