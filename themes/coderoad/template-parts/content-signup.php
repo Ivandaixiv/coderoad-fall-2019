@@ -8,10 +8,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="register-container">
+		<div class="register-content">
     <?php the_title( '<h1 class="sign-up-text">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
+	<div class="register-rectangle"></div>
+	<div class="register-rectangle-two"></div>
+	</div>
 	<div class="entry-content">
 	<div class="sign-up-container">
 		<?php the_content(); ?>
@@ -22,5 +24,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+			</div>
 </article><!-- #post-## -->
 

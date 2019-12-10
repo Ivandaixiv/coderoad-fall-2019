@@ -1248,7 +1248,8 @@ a {
   position: relative;
   text-align: center;
   width: 400px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 1; }
 
 .contact-rectangle {
   height: 22.16px;
@@ -1261,7 +1262,8 @@ a {
   position: absolute;
   bottom: 0px;
   right: 25.5%;
-  z-index: -1; }
+  z-index: -1;
+  border-radius: 10px; }
 
 .contact-form-submit {
   height: 53px;
@@ -1292,9 +1294,21 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
+  @media screen and (min-width: 700px) {
+    .container-contact {
+      margin-bottom: 5rem; } }
 
 .contact-question {
   font-family: "Space Mono"; }
+
+@media screen and (min-width: 700px) {
+  .contact-main-container {
+    background: #8BBBE5;
+    width: 600px;
+    margin: 0 auto; } }
+
+.entry-header-contact {
+  padding-top: 1.5rem; }
 
 .error-404 {
   padding-top: 9em;
@@ -1338,6 +1352,35 @@ a {
     line-height: 2; }
   .why-code .image-why {
     height: 15vh; }
+<<<<<<< HEAD
+
+.tutorial-video {
+  padding: 0 3em;
+  font-family: "Montserrat"; }
+  .tutorial-video iframe {
+    padding: 1em 0; }
+  .tutorial-video h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px; }
+  .tutorial-video h3 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px; }
+  .tutorial-video p {
+    line-height: 1.2; }
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 3em; }
+  .social-media img {
+    width: 26px;
+    height: 20px;
+    padding: 0 3px; }
+=======
 
 .tutorial-video {
   padding: 0 3em;
@@ -1366,6 +1409,38 @@ a {
     height: 20px;
     padding: 0 3px; }
 
+.subject {
+  padding: 6em 3em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'all-sub' 'all-sub' 'all-sub';
+  grid-gap: 4em; }
+
+.all-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 3; }
+  .all-sub img {
+    width: 13em;
+    height: 8em; }
+
+.sub-subject {
+  font-family: "Montserrat";
+  line-height: 0.5;
+  padding-left: 2em; }
+  .sub-subject h3 {
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-size: 13px; }
+  .sub-subject p {
+    font-size: 10px;
+    padding-top: 5px; }
+  .sub-subject img {
+    width: 100px;
+    height: 20px; }
+>>>>>>> bbacc1c3628ad8b2b45b78a5fbf054a27e8b1722
+
 .sign-up-content {
   height: 475px; }
 
@@ -1376,7 +1451,10 @@ a {
   font-size: 2rem;
   line-height: 28px;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding-top: 3rem;
+  position: relative;
+  z-index: 1; }
 
 .sign-up-name {
   border: 1px solid #9389ff;
@@ -1408,10 +1486,53 @@ a {
   border-radius: 8px;
   background-color: #29cfff;
   font-size: 1rem;
-  font-family: "Space Mono"; }
+  font-family: "Space Mono";
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 700px) {
+    .sign-up-submit {
+      margin-bottom: 3.5rem;
+      margin-left: 1rem; } }
 
 .sign-up-container {
   position: relative;
   text-align: center;
   width: 400px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 3rem; }
+  .sign-up-container p {
+    margin: 0px; }
+  @media screen and (min-width: 700px) {
+    .sign-up-container {
+      margin-bottom: 4rem; } }
+
+.register-rectangle {
+  position: absolute;
+  height: 22.16px;
+  width: 119.1px;
+  background: #41ffbe;
+  right: 116px;
+  top: 62px;
+  opacity: 0.75;
+  border-radius: 1rem; }
+
+.register-rectangle-two {
+  position: absolute;
+  height: 22.16px;
+  width: 119.1px;
+  background: #9389ff;
+  right: 96px;
+  top: 76px;
+  opacity: .9;
+  border-radius: 1rem; }
+
+.register-content {
+  position: relative;
+  width: 400px;
   margin: 0 auto; }
+
+@media screen and (min-width: 700px) {
+  .register-container {
+    background: #8BBBE5;
+    width: 600px;
+    margin: 0 auto; } }
