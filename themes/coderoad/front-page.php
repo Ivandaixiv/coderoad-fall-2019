@@ -58,6 +58,26 @@ get_header(); ?>
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
 </div>
 
+<div class="subject">
+<?php if(get_field('subject')): ?>
+    <?php while(the_repeater_field('subject')): ?>
+        <div class="all-sub">
+        <img src="<?php echo the_sub_field('image'); ?>" >
+        <div class="sub-subject">
+        <h3><?php the_sub_field('title'); ?></h3>
+        <p><?php the_sub_field('date'); ?></p>
+        <p><?php the_sub_field('instructor'); ?></p>
+       <img src="<?php echo the_sub_field('rating'); ?>" >
+    </div>
+    </div>
+    <?php endwhile; ?>
+ <?php endif; ?>
+
+
+
+
+    </div>
+
 
 
 
