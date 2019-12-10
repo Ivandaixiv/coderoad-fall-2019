@@ -74,3 +74,38 @@
     padding: 0 3px;
   }
 }
+.subject {
+  padding: 6em 3em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'all-sub' 'all-sub' 'all-sub';
+  grid-gap: 4em;
+}
+
+.all-sub {
+  display: flex;
+  line-height: 3;
+
+  img {
+    width: 13em;
+    height: 8em;
+  }
+}
+.sub-subject {
+  font-family: $font__paragraph;
+  line-height: 0.5;
+  padding-left: 2em;
+  h3 {
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  p {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  img {
+    width: 100px;
+    height: 20px;
+  }
+}

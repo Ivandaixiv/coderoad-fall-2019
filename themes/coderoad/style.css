@@ -552,8 +552,6 @@ a {
     color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
@@ -892,6 +890,8 @@ a {
           justify-content: space-between;
   height: 50px;
   background: #f7f7f7; }
+  .main-navigation .desktop-navigation {
+    display: none; }
   .main-navigation .hamburger-icon {
     position: relative; }
   .main-navigation .search-form {
@@ -910,6 +910,8 @@ a {
     margin-top: 13px;
     width: 22px;
     position: relative; }
+  .main-navigation .icon-search .search-icon-unlink {
+    display: none; }
   .main-navigation .search-fieldset {
     z-index: 1; }
   .main-navigation .fieldset-wrapper {
@@ -982,6 +984,41 @@ a {
 .site-content {
   background: #ffffff;
   padding-top: 5em; }
+
+@media screen and (min-width: 700px) {
+  .main-navigation .hamburger-menu .burger-button {
+    display: none; }
+  .main-navigation .hamburger-menu .logo-button {
+    display: block;
+    -webkit-transform: scale(4);
+            transform: scale(4); }
+  .main-navigation .icon-search img {
+    display: none; }
+  .main-navigation .icon-search .search-icon-unlink {
+    display: block;
+    position: relative;
+    left: 35vw; }
+  .main-navigation .search-fieldset {
+    position: relative;
+    left: 20vw; }
+  .main-navigation .fieldset-wrapper {
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 5px; }
+    .main-navigation .fieldset-wrapper .cancel-button {
+      display: none; }
+    .main-navigation .fieldset-wrapper label {
+      margin-left: 5vw; }
+    .main-navigation .fieldset-wrapper .search-field {
+      width: 20vw; }
+  .main-navigation .menu-menu-container .menu {
+    width: 50vw; }
+  .main-navigation .drop-menu h2 {
+    width: 50vw; }
+  .main-navigation .desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .site-content {
   font-size: 16px;
@@ -1342,6 +1379,37 @@ a {
     width: 26px;
     height: 20px;
     padding: 0 3px; }
+
+.subject {
+  padding: 6em 3em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'all-sub' 'all-sub' 'all-sub';
+  grid-gap: 4em; }
+
+.all-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 3; }
+  .all-sub img {
+    width: 13em;
+    height: 8em; }
+
+.sub-subject {
+  font-family: "Montserrat";
+  line-height: 0.5;
+  padding-left: 2em; }
+  .sub-subject h3 {
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-size: 13px; }
+  .sub-subject p {
+    font-size: 10px;
+    padding-top: 5px; }
+  .sub-subject img {
+    width: 100px;
+    height: 20px; }
 
 .sign-up-content {
   height: 475px; }
