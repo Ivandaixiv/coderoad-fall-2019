@@ -12,8 +12,10 @@ get_header(); ?>
 <div class="code-image">
 
 <?php while ( have_posts() ) : the_post(); ?>
+<div class="title-content">
 <h2><?php the_title(); ?></h2>
 <p><?php the_content(); ?></p>
+</div>
 <?php the_post_thumbnail(   'feature-post image'    ); ?>
 
 
@@ -77,16 +79,50 @@ get_header(); ?>
 <div class="testimonial ">
 
 
-<?php if(get_field('testimonial_ ')): ?>
-    <?php while(the_repeater_field('testimonial_ ')): ?>
+<?php if(get_field('testimonial')): ?>
+    <?php while(the_repeater_field('testimonial')): ?>
         <h2><?php the_sub_field('title'); ?></h2>
         <p><?php the_sub_field('paragraph'); ?></p>
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
+        <h5><?php the_sub_field('profile-name'); ?></h5>
       
     <?php endwhile; ?>
  <?php endif; ?>
     </div>
 
+<div class="create-instructions">
+    <?php if(get_field('create_instructions')): ?>
+    <?php while(the_repeater_field('create_instructions')): ?>
+        <h2><?php the_sub_field('title'); ?></h2>
+        <p><?php the_sub_field('paragraph'); ?></p>
+
+        <?php endwhile; ?>
+ <?php endif; ?>
+ </div>
+
+ <div class="steps">
+
+ <?php if(get_field('steps')): ?>
+    <?php while(the_repeater_field('steps')): ?>
+        <h2><?php the_sub_field('step'); ?></h2>
+        <p><?php the_sub_field('paragraph'); ?></p>
+        
+       <?php endwhile; ?>
+ <?php endif; ?>
+ </div>
+
+<div class="notification-email">
+ <?php if(get_field('notification-email')): ?>
+    <?php while(the_repeater_field('notification-email')): ?>
+        <h2><?php the_sub_field('title'); ?></h2>
+        <p><?php the_sub_field('paragraph'); ?></p>
+        
+       <?php endwhile; ?>
+ <?php endif; ?>
+ </div>
+
+ 
+   
    
 
 

@@ -1,12 +1,19 @@
 .code-image {
+  text-align: center;
   position: relative;
   img {
     filter: blur(1px);
     opacity: 0.8;
   }
+  h2 {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
 
   p {
     position: absolute;
+    z-index: 1;
   }
 }
 
@@ -107,5 +114,25 @@
   img {
     width: 100px;
     height: 20px;
+  }
+}
+
+.testimonial {
+  text-align: center;
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-family: $font__paragraph;
+    font-size: 13px;
+    padding: 1em 6em;
+    line-height: 1.3;
+  }
+  img {
+    width: 6em;
+  }
+  h5 {
+    font-family: $font__paragraph;
+    font-weight: 400;
   }
 }
