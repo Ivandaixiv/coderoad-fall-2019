@@ -72,13 +72,22 @@ get_header(); ?>
     </div>
     <?php endwhile; ?>
  <?php endif; ?>
+</div>
+
+<div class="testimonial ">
 
 
-
-
+<?php if(get_field('testimonial_ ')): ?>
+    <?php while(the_repeater_field('testimonial_ ')): ?>
+        <h2><?php the_sub_field('title'); ?></h2>
+        <p><?php the_sub_field('paragraph'); ?></p>
+        <img src="<?php echo the_sub_field('profile_image'); ?>" >
+      
+    <?php endwhile; ?>
+ <?php endif; ?>
     </div>
 
-
+   
 
 
 <?php get_footer(); ?>
