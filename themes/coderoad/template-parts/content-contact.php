@@ -8,15 +8,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-        
+    <div class="contact-main-container">
+	<header class="entry-header-contact">
         <?php the_title( '<h1 class="contact-title">', '</h1>' ); ?>
         <div class="contact-title-container">
         <h2 class="contact-question"><?php echo 'Question?'; ?></h2>
         <div class="contact-rectangle"></div>
         </div>
 	</header><!-- .entry-header -->
-
 	<div class="container-contact">
 		<?php the_content(); ?>
 		<?php
@@ -24,6 +23,8 @@
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
 			) );
-		?>
-	</div><!-- .entry-content -->
+        ?>
+        </div>
+    </div><!-- .entry-content -->
 </article><!-- #post-## -->
+            
