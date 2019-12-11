@@ -85,7 +85,9 @@ get_header(); ?>
 
 <?php if(get_field('testimonial')): ?>
     <?php while(the_repeater_field('testimonial')): ?>
+        <div class="title">
         <h2><?php the_sub_field('title'); ?></h2>
+    </div>
         <p><?php the_sub_field('paragraph'); ?></p>
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
         <h5><?php the_sub_field('profile-name'); ?></h5>
@@ -108,9 +110,10 @@ get_header(); ?>
 
  <?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
+        <div class="step">
         <h2><?php the_sub_field('step'); ?></h2>
         <p><?php the_sub_field('paragraph'); ?></p>
-        
+    </div>
        <?php endwhile; ?>
  <?php endif; ?>
  </div>
