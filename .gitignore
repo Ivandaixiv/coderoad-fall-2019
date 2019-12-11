@@ -31,6 +31,7 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/coderoad/
+!plugins/coderoad-functionality-master/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
