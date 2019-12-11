@@ -117,6 +117,7 @@
 
 @include desktop {
     .main-navigation{
+        justify-content: space-around;
         .hamburger-menu {
             .burger-button {
                 display: none;
@@ -166,6 +167,25 @@
         }
         .desktop-navigation {
             display: flex;
+            z-index: 1;
+            a {
+                color: $color__green-medium;
+                font-weight: 600;
+                font-size: 1rem;
+                &:hover {
+                    color: $color__green-dark;
+                }
+            }
+            p{
+                padding: 0 10px;
+            }
+            li:first-child p{
+                color: $color__secondary-medium;
+                border-right: 1px solid gray;
+                &:hover {
+                    color: $color__secondary-dark;
+                }
+            }
         }
     }
 }
