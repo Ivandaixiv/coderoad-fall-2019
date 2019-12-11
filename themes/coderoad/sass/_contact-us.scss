@@ -8,6 +8,9 @@
     text-align: center;
     width: 100%;
     //border-bottom: 1px solid $color__secondary-dark;
+    @include desktop{
+        font-size: 2.3rem;
+    }
 }
 
 .contact-title-container{
@@ -16,6 +19,10 @@
     width: 400px;
     margin: 0 auto;
     z-index: 1;
+    @include desktop{
+        width: 310px;
+        font-size: 1.2rem;
+    }
 }
 
 .contact-rectangle{
@@ -30,6 +37,10 @@
     right: 25.5%;
     z-index: -1;
     border-radius: 10px;
+    @include desktop{
+        right: 41.5%;
+    }
+
 }
 
 .contact-form-submit{
@@ -71,11 +82,14 @@
 
 .contact-question{
     font-family: $font__header;
+    @include desktop{
+        text-align: left;
+    }
+
 }
 
 .contact-main-container{
     @include desktop {
-        background: #8BBBE5;
         width: 600px;
         margin: 0 auto;
         } 
@@ -83,4 +97,10 @@
 
 .entry-header-contact{
     padding-top: 1.5rem;
+}
+
+.wpcf7-form{
+    p label br{
+        display: none;
+    }
 }
