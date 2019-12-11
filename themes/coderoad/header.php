@@ -41,10 +41,10 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>		
 					</div>
 					<?php echo get_search_form();?>	
-					<div class="desktop-navigation">
-						<a href="<?php echo site_url();?>/contact"><p>Contact</p></a>
-						<a href="<?php echo site_url();?>/contact"><p>FAQ</p></a>
-					</div>
+					<ul class="desktop-navigation">
+						<li><a href="<?php echo site_url();?>/contact"><p>Contact</p></a></li>
+						<li><a href="<?php echo site_url();?>/faq"><p>FAQ</p></a></li>
+					</ul>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

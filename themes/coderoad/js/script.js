@@ -80,13 +80,11 @@
             undropMenu();
         });
         window.onresize = function(){
-            console.log('change');
             if($(window).width() > 700) {
                 fieldSet.css({'border':'1px solid black','border-radius':'5px'});
                 fieldSet.css({'width':'30vw'});
                 searchField.animate({'width':'20vw'});
                 dropMenuBtn.animate({'left':'0vw'});
-                console.log("removed");
             }
             else {
                 fieldSet.css({'width':'0','border':'0'});
