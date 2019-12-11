@@ -9,18 +9,22 @@ get_header(); ?>
 
 
 
-<div class="code-image">
+<section class="code-image">
 
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="title-content">
-<h2><?php the_title(); ?></h2>
-<p><?php the_content(); ?></p>
-</div>
 <?php the_post_thumbnail(   'feature-post image'    ); ?>
+<div class="title-content-wrapper">
+<div class="title-content">
+<h2 class="code-title"><?php the_title(); ?></h2>
+<p class="sub-text"><?php the_content(); ?></p>
+<a href="#">Sign Up</a>
+</div>
+</div>
+
 
 
 <?php endwhile; // End of the loop. ?>
-</div>
+</section>
 
 
 
