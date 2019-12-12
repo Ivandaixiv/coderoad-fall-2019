@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<div class="site-content">
+<div class="site-container">
 
     <!-- <header class="entry-header">
         <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
