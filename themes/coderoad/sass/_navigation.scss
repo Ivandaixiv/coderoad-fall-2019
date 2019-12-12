@@ -15,9 +15,6 @@ a {
 	&:active {
 		color: $color__link-hover;
 	}
-	&:focus {
-		outline: thin dotted;
-	}
 	&:hover,
 	&:active {
 		outline: 0;
@@ -96,10 +93,10 @@ a {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
+// .menu-toggle,
+// .main-navigation.toggled ul {
+// 	display: block;
+// }
 
 @media screen and (min-width: 768px) {
 	.menu-toggle {

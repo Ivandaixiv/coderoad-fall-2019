@@ -11,6 +11,9 @@
     line-height: 28px;
     text-align: center;
     width: 100%;
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .sign-up-name{
@@ -20,6 +23,8 @@
     width: 312px;
     text-align: center;
     font-family: $font__paragraph;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .sign-up-email{
@@ -47,6 +52,12 @@
     background-color: $color__primary-light;
     font-size: 1rem;
     font-family: $font__header;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    @include desktop{
+        margin-bottom: 3.5rem;
+        margin-left: 1rem;
+    }
 }
 
 .sign-up-container{
@@ -54,5 +65,50 @@
     text-align: center;
     width: 400px;
     margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    p{
+        margin: 0px;
+    }
+
+    @include desktop{
+        margin-bottom: 4rem;
+    }
+
 }
 
+.register-rectangle{
+    position: absolute;
+    height: 22.16px;
+    width: 119.1px;
+    background: $color__green-light;
+    right: 116px;
+    top: 62px;
+    opacity: 0.75;
+    border-radius: 1rem;
+}
+
+.register-rectangle-two{
+    position: absolute;
+    height: 22.16px;
+    width: 119.1px;
+    background: $color__secondary-light;
+    right: 96px;
+    top: 76px;
+    opacity: .9;
+    border-radius: 1rem;
+}
+
+.register-content{
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.register-container{
+    @include desktop {
+    background: #8BBBE5;
+    width: 600px;
+    margin: 0 auto;
+    }
+}

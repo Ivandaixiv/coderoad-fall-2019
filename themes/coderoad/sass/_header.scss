@@ -3,6 +3,9 @@
     justify-content: space-between;
     height: 50px;
     background: $color__theme-gray;
+    .desktop-navigation {
+        display: none;
+    }
     .hamburger-icon {
         position: relative;
     }
@@ -24,6 +27,9 @@
             width: 22px;
             position: relative;
         }
+        .search-icon-unlink {
+            display: none;
+        }
     }
     .search-fieldset {
         z-index: 1;
@@ -38,7 +44,6 @@
             position: relative;
             margin-left: 10vw;
         }
-        // right: -100vw;
         .search-field {
             background: $color__theme-gray;
             text-indent: 10px;
@@ -108,4 +113,79 @@
 .site-content {
     background: $color__theme-white;
     padding-top: 5em;
+}
+
+@include desktop {
+    .main-navigation{
+        justify-content: space-around;
+        .hamburger-menu {
+            .burger-button {
+                display: none;
+            }
+            .logo-button {
+                display: block;
+                transform: scale(4);;
+            }
+        }
+        .icon-search {
+            img {
+                display: none;
+            }
+            .search-icon-unlink {
+                display: block;
+                position: relative;
+                left: 35vw;
+            }
+        }
+        .search-fieldset {
+            position: relative;
+            left: 20vw;
+        }
+        .fieldset-wrapper {
+            width: 30vw;
+            border: 1px solid black;
+            border-radius: 5px;
+            .cancel-button {
+                display: none;
+            }
+            label {
+                margin-left: 5vw;
+            }
+            .search-field {
+                width: 20vw;
+            }
+        }
+        .menu-menu-container {
+            .menu {
+                width: 50vw;
+            }
+        }
+        .drop-menu {
+            h2 {
+                width: 50vw;
+            }
+        }
+        .desktop-navigation {
+            display: flex;
+            z-index: 1;
+            a {
+                color: $color__green-medium;
+                font-weight: 600;
+                font-size: 1rem;
+                &:hover {
+                    color: $color__green-dark;
+                }
+            }
+            p{
+                padding: 0 10px;
+            }
+            li:first-child p{
+                color: $color__secondary-medium;
+                border-right: 1px solid gray;
+                &:hover {
+                    color: $color__secondary-dark;
+                }
+            }
+        }
+    }
 }

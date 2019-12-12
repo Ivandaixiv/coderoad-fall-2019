@@ -8,11 +8,8 @@
                 dropMenuBtn = $('#hamburger-icon'),
                 burgerMenuWrapper = $('.drop-menu'),
                 fieldSet = $('#fieldset-wrapper'),
-                fieldSetLabel = $('#fieldset-wrapper label'),
                 footerSection = $('#colophon'),
                 mainContent = $('#main');
-        
-        // const footerSection = $('#colophon')
 
         let isOpened = false,
             isDropped = false;
@@ -39,10 +36,10 @@
         }
         function openField(){
             isOpened = true;
-            searchBtnImg.animate({'left':'30vw'},500);
-            fieldSet.animate({'width':'70vw'},400);
-            fieldSetLabel.animate({'width':'70%'},400);
-            dropMenuBtn.animate({'left':'-100vw'},500);
+            searchBtnImg.animate({'left':'30vw'});
+            fieldSet.animate({'width':'70vw'});
+            dropMenuBtn.animate({'left':'-100vw'});
+            searchField.animate({'width':'40vw'});
             setTimeout(function(){
                 fieldSet.css({'border':'1px solid black','border-radius':'5px'});
                 searchField.focus();
@@ -52,8 +49,11 @@
         function closeField(){
             isOpened = false;
             dropMenuBtn.animate({'left':'0vw'});
-            fieldSet.animate({'width':'0','border':'0'},1000);
-            searchBtnImg.animate({'left':'90vw'});
+            if($(window).width() < 700) {  
+                fieldSet.animate({'width':'0','border':'0'});
+                searchField.animate({'width':'0'});
+                searchBtnImg.animate({'left':'90vw'});
+            }
         }
 
         dropMenuBtn.on('click',function(){
@@ -61,7 +61,6 @@
                 undropMenu();
             }
             else{
-                closeField();
                 dropMenu();
             }
         });
@@ -78,14 +77,21 @@
             closeField();
         });
         page.on('click',function(){
-            closeField();
-            if(isDropped && isOpened == false){
-                undropMenu();
+            undropMenu();
+        });
+        window.onresize = function(){
+            if($(window).width() > 700) {
+                fieldSet.css({'border':'1px solid black','border-radius':'5px'});
+                fieldSet.css({'width':'30vw'});
+                searchField.animate({'width':'20vw'});
+                dropMenuBtn.animate({'left':'0vw'});
             }
             else {
-                closeField();
-                undropMenu();
+                fieldSet.css({'width':'0','border':'0'});
+                fieldSet.css({'width':'0vw'});
+                searchField.animate({'width':'0vw'});
+                searchBtnImg.animate({'left':'90vw'});
             }
-        });
+        }
   });
 })(jQuery);
