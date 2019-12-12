@@ -7,19 +7,23 @@
 }
 
 .image-container2 {
-  background-image: url('../../assets/desktop-assets/illustrations/Illustration 2.png');
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../../assets/desktop-assets/illustrations/Illustration 2.png');
+  }
   background-repeat: no-repeat;
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
-  // margin-left: 300px;
-  margin-top: 65px;
+  width: 385px;
+  margin-left: 80px;
+  margin-top: 165px;
 }
 
 .tutorial-res2-h2 {
   justify-content: center;
   margin-top: 30px;
   position: relative;
+
+  margin-top: 115px;
 
   .tutorial-element {
     position: relative;
@@ -33,6 +37,13 @@
   }
 }
 
-.h4-header {
-  font-weight: normal;
+.faq-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 60px 0px 60px;
+}
+
+.question-answer {
+  max-width: 420px;
 }
