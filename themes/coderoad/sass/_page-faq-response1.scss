@@ -8,21 +8,24 @@
 .tutorial-response1-container {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  margin-left: 111px;
   position: absolute;
-  top: 25px;
+  top: 123px;
 }
 
 .image-container1 {
-  background-image: url('../../assets/desktop-assets/illustrations/Illustration.png');
+  @include desktop {
+    background-image: url('../../assets/desktop-assets/illustrations/Illustration.png');
+  }
+
   background-size: contain;
   height: 200px;
   width: 200px;
   background-repeat: no-repeat;
   position: relative;
-  left: 555px;
+  left: 595px;
   bottom: 135px;
-  top: 65px;
+  top: 110px;
 }
 
 .tutorial-res1-h2 {
