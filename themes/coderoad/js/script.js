@@ -1,5 +1,7 @@
 (function($){
+
     $(function(){
+        
         const   searchBtn = $("#search-icon"),
                 searchBtnImg = $("#search-icon img"),
                 searchField = $("#search-field"),

@@ -8,6 +8,9 @@
     }
     .hamburger-icon {
         position: relative;
+        img:hover {
+            cursor: pointer;
+        }
     }
     .search-form {
         display: flex;
@@ -59,7 +62,7 @@
         }
     }
     .drop-menu {
-        z-index: 1;
+        z-index: 99;
         position: absolute;
         left: -100%;
         h2 {
@@ -126,7 +129,7 @@
             }
             .logo-button {
                 display: block;
-                transform: scale(6);;
+                transform: scale(6);
             }
         }
         .icon-search {
