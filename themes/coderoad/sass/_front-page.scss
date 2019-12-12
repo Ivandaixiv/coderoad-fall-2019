@@ -2,7 +2,7 @@
   @include desktop {
     overflow: hidden;
     position: relative;
-    height: 1000px;
+    height: 880px;
   }
   img {
     background-size: cover;
@@ -33,14 +33,14 @@
       z-index: 1;
       border-radius: 4px;
       @include desktop {
-        width: 600px;
-        height: 150px;
+        width: 750px;
+        height: 140px;
         background: $color__blue-dark;
         position: absolute;
-        left: 80px;
-        top: 600px;
+        left: 250px;
+        top: 500px;
         z-index: 1;
-        border-radius: 4px;
+        border-radius: 23px;
       }
     }
     &::after {
@@ -53,6 +53,16 @@
       top: 82px;
       z-index: 1;
       border-radius: 4px;
+      @include desktop {
+        width: 66px;
+        height: 371px;
+        background: #22b4de;
+        position: absolute;
+        right: 71px;
+        top: 237px;
+        z-index: 1;
+        border-radius: 14px;
+      }
     }
   }
 
@@ -70,6 +80,7 @@
       height: 300px;
       border-radius: 60px;
       margin: 12em 0 0 12em;
+      line-height: 0;
     }
 
     h2 {
@@ -85,6 +96,7 @@
       font-size: 12px;
       @include desktop {
         font-size: 37px;
+        padding-bottom: 3px;
       }
     }
   }
@@ -96,7 +108,8 @@
     font-family: $font__header;
     font-weight: 550;
     @include desktop {
-      padding: 15px 70px;
+      padding: 19px 90px;
+      font-size: 25px;
     }
   }
 }
@@ -105,6 +118,10 @@
   text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
+  @include desktop {
+    font-size: 45px;
+    padding-top: 0;
+  }
 }
 .why-code {
   text-align: center;
@@ -121,22 +138,55 @@
   h3 {
     font-size: 14px;
     font-family: $font__paragraph;
+    @include desktop {
+      font-size: 39px;
+      font-weight: 600;
+    }
   }
   p {
     font-size: 10px;
     font-family: $font__paragraph;
     line-height: 2;
+    @include desktop {
+      font-size: 18px;
+      padding: 0 4em;
+      line-height: 1.4;
+    }
   }
   .image-why {
-    height: 15vh;
+    height: 100px;
+    @include desktop {
+      height: 250px;
+    }
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+.tutorial {
+  @include desktop {
+    display: flex;
+    margin-top: 200px;
+  }
+  // margin-top: 200px;
+  .video {
+    max-width: 80%;
+    margin-left: 3em;
 
-.tutorial-video {
-  padding: 0 3em;
-  font-family: $font__paragraph;
-  iframe {
-    padding: 1em 0;
+    .video {
+      @include desktop {
+        width: 80px;
+      }
+    }
+  }
+  .tutorial-info {
+    padding: 0 3em;
+    font-family: $font__paragraph;
+    @include desktop {
+      // margin-top: 200px;
+    }
   }
   h2 {
     font-family: $font__paragraph;
@@ -157,7 +207,6 @@
 
 .social-media {
   display: flex;
-  padding: 0 3em;
 
   img {
     width: 26px;
@@ -165,23 +214,39 @@
     padding: 0 3px;
   }
 }
+
 .subject {
   padding: 6em 3em;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 'all-sub' 'all-sub' 'all-sub';
   grid-gap: 4em;
+  @include desktop {
+    display: flex;
+    margin-left: 6em;
+  }
 }
 
 .all-sub {
   display: flex;
   line-height: 3;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3em;
+  }
 
   img {
     width: 13em;
     height: 8em;
+    border-radius: 9px;
+    @include desktop {
+      width: 22em;
+      height: 16em;
+    }
   }
 }
+
 .sub-subject {
   font-family: $font__paragraph;
   line-height: 0.5;
@@ -190,18 +255,23 @@
     padding-bottom: 3px;
     font-weight: 600;
     font-size: 13px;
+    @include desktop {
+      font-size: 23px;
+    }
   }
   p {
     font-size: 10px;
     padding-top: 5px;
+    @include desktop {
+      font-size: 15px;
+    }
   }
   img {
     width: 100px;
     height: 20px;
   }
 }
-.title h2 {
-}
+
 .testimonial {
   text-align: center;
 
@@ -213,6 +283,7 @@
     h2 {
       position: relative;
       z-index: 3;
+      font-family: $font__header;
     }
     &::before {
       content: '';

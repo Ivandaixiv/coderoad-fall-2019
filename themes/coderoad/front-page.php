@@ -43,11 +43,17 @@ get_header(); ?>
     </div>
     <?php endwhile; ?>
  <?php endif; ?>
- </div>
- <div class="tutorial-video">
+ </div> 
 
+
+
+
+ <section class="tutorial">
+
+<div class="video">
  <iframe width="560" height="315" src="<?php the_field('video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+    </div>
+ <div class="tutorial-info">
  <?php if(get_field('tutorial')): ?>
     <?php while(the_repeater_field('tutorial')): ?>
         <h2><?php the_sub_field('video_text'); ?></h2>
@@ -55,14 +61,16 @@ get_header(); ?>
         <p><?php the_sub_field('paragraph'); ?></p>
     <?php endwhile; ?>
  <?php endif; ?>
-</div>
 
+ 
 <div class="social-media">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/twitter@3x.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/github-icon-github-png-image.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/screen_shot_2019-12-06_at_3.08.27_pm.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
 </div>
+</div>	    
+    </section>
 
 <div class="subject">
 <?php if(get_field('subject')): ?>
