@@ -1,4 +1,9 @@
 .code-image {
+  @include desktop {
+    overflow: hidden;
+    position: relative;
+    height: 1000px;
+  }
   img {
     background-size: cover;
     position: absolute;
@@ -7,6 +12,7 @@
     align-items: center;
     opacity: 0.8;
     filter: blur(1px);
+    width: 100%;
   }
 
   .title-content-wrapper {
@@ -26,6 +32,16 @@
       top: 87px;
       z-index: 1;
       border-radius: 4px;
+      @include desktop {
+        width: 600px;
+        height: 150px;
+        background: $color__blue-dark;
+        position: absolute;
+        left: 80px;
+        top: 600px;
+        z-index: 1;
+        border-radius: 4px;
+      }
     }
     &::after {
       content: '';
@@ -49,15 +65,27 @@
     width: 18em;
     height: 6em;
     line-height: 0.3;
+    @include desktop {
+      width: 900px;
+      height: 300px;
+      border-radius: 60px;
+      margin: 12em 0 0 12em;
+    }
 
     h2 {
       color: black;
+      @include desktop {
+        font-size: 110px;
+      }
     }
 
     p {
       font-family: $font__paragraph;
       line-height: 1.5;
       font-size: 12px;
+      @include desktop {
+        font-size: 37px;
+      }
     }
   }
   a {
@@ -67,6 +95,9 @@
     color: black;
     font-family: $font__header;
     font-weight: 550;
+    @include desktop {
+      padding: 15px 70px;
+    }
   }
 }
 

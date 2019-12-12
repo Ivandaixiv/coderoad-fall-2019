@@ -1,17 +1,10 @@
 .site-container {
+  height: 70vh;
   border: 1px solid black;
-  // margin-top: 100px;
   margin-left: 75px;
   margin-right: 75px;
   margin-bottom: 10px;
 }
-
-.content-container {
-  margin-top: 250px;
-  margin-left: 70px;
-  // margin-bottom: 150px;
-}
-
 .tutorial-response1-container {
   display: flex;
   flex-direction: column;
@@ -29,10 +22,10 @@
   position: relative;
   left: 555px;
   bottom: 135px;
+  top: 65px;
 }
 
 .tutorial-res1-h2 {
-  justify-content: center;
   margin-top: 30px;
   position: relative;
 

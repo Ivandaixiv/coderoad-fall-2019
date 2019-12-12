@@ -7,14 +7,25 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 3em;
   padding-top: 1em;
+  @include desktop {
+    display: flex;
+    float: right;
+  }
 }
 .resources {
   color: $color__theme-white;
+  @include desktop {
+    padding-right: 8em;
+  }
   h5 {
     font-family: $font__header;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
+    margin-bottom: 5px;
+    @include desktop {
+      font-size: 20px;
+    }
   }
 }
 ul {
@@ -23,6 +34,11 @@ ul {
   padding: 0;
   list-style: none;
   font-family: $font__paragraph;
+  @include desktop {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+  }
 }
 a {
   text-align: left;
@@ -32,17 +48,29 @@ a {
 
 .about-us {
   color: $color__theme-white;
+  @include desktop {
+    padding-right: 8em;
+  }
   h5 {
     font-family: $font__header;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
+    margin-bottom: 5px;
+    @include desktop {
+      font-size: 20px;
+    }
   }
   ul {
     font-size: 14px;
     margin: 0;
     padding: 0;
     list-style: none;
+    @include desktop {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 500;
+    }
   }
   a {
     text-decoration: none;
@@ -51,17 +79,29 @@ a {
 }
 .support {
   color: $color__theme-white;
+  @include desktop {
+    padding-right: 8em;
+  }
   h5 {
     font-family: $font__header;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
+    margin-bottom: 5px;
+    @include desktop {
+      font-size: 20px;
+    }
   }
   ul {
     font-size: 14px;
     margin: 0;
     padding: 0;
     list-style: none;
+    @include desktop {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 500;
+    }
   }
   a {
     text-decoration: none;
@@ -73,14 +113,27 @@ a {
   flex-direction: row;
   margin-left: 3em;
   margin-top: 3em;
+  @include desktop {
+    padding: 3em 0 0 3em;
+  }
+
   svg {
     margin-top: 6px;
+    @include desktop {
+      margin-top: 15px;
+      width: 30px;
+      height: 30px;
+    }
   }
   p {
     font-size: 10px;
     margin-left: 5px;
     font-family: $font__paragraph;
     color: $color__theme-white;
+    @include desktop {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 }
 .copyright {
@@ -88,4 +141,10 @@ a {
   text-align: center;
   font-size: 10px;
   font-family: $font__paragraph;
+  @include desktop {
+    display: flex;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7em 0 0 7em;
+  }
 }
