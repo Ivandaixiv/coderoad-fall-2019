@@ -3,15 +3,15 @@
 /**
  *
  * @package   Code Road Theme Functionality
- * @author    Your Name <your_email@email.com>
+ * @author    Code Road Site Dev Team (Ivan,Maja,Percy,Lance)
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright 2015 Code Road Site Dev Team (Ivan,Maja,Percy,Lance)
  *
  * @wordpress-plugin
  * Plugin Name: Code Road
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Your Name
+ * Author:      Ivan, Maja, Percy, Lance
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
