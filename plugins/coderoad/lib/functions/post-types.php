@@ -41,8 +41,13 @@ function tutorials_post_type() {
 		'label'                 => __( 'Tutorial', 'text_domain' ),
 		'description'           => __( 'Tutorial Information page', 'text_domain' ),
 		'labels'                => $labels,
+<<<<<<< HEAD
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields', 'author' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
+=======
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+		'taxonomies'            => array( 'tutorial','category', 'post_tag' ),
+>>>>>>> d4e031f4705393c424e588c1076f9288fe174f7c
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

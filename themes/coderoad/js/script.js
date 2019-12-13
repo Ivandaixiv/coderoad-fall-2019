@@ -11,7 +11,7 @@
                 burgerMenuWrapper = $('.drop-menu'),
                 fieldSet = $('#fieldset-wrapper'),
                 footerSection = $('#colophon'),
-                mainContent = $('#main');
+                mainContent = $('#content');
 
         let isOpened = false,
             isDropped = false;
