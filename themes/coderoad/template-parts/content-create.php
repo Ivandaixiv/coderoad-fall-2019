@@ -58,16 +58,17 @@ get_header(); ?>
 <?php if( have_rows('created_index') ): ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
-
-	<h3><?php the_sub_field('title'); ?></h3>
-
+<div class="created-index-container">
+	<div class="created-title-container">
+	<h2><?php the_sub_field('title'); ?></h2>
+	</div>
 	  <?php if( have_rows('name_and_videos') ): ?>
 
 			<?php while( have_rows('name_and_videos') ): the_row(); ?>
-
+				<div class="title-index-container">
 			   <?php the_sub_field('title'); ?> 
 			   <?php the_sub_field('videos_available'); ?>
-			   
+				</div>
 			<?php endwhile; ?>
 
 		  <?php endif; ?>
