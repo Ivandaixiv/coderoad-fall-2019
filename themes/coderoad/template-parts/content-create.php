@@ -65,10 +65,14 @@ get_header(); ?>
 	  <?php if( have_rows('name_and_videos') ): ?>
 
 			<?php while( have_rows('name_and_videos') ): the_row(); ?>
-				<div class="title-index-container">
-			   <?php the_sub_field('title'); ?> 
+				<section class="title-index-container">
+			  <div class="create-lang-title">
+				<?php the_sub_field('title'); ?> 
+			</div>
+				<div class="create-lang-amount">
 			   <?php the_sub_field('videos_available'); ?>
 				</div>
+				</section>
 			<?php endwhile; ?>
 
 		  <?php endif; ?>

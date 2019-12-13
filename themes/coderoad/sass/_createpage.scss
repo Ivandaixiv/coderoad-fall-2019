@@ -1,19 +1,30 @@
 .rectangle-create{
-    height: 183px;	
-    width: 34px;	
-    opacity: 0.75;	
-    transform: rotate(-90deg);	
-    border-radius: 4px;	
-    background-color: $color__secondary-light;
+    height: 26.16px;
+    width: 150.1px;
+    opacity: .75;
+    transform: rotate(1turn);
+    background-color: #9389ff;
+    position: absolute;
+    bottom: -11px;
+    left: 29.5%;
+    border-radius: 6px;
+}
+
+.create-container{
+    position: relative;
 }
 
 .create-title {
 	height: 32px;
-	width: 262px;
+	width: 100%;
 	color: #000000;
 	font-size: 24px;
 	letter-spacing: 0.69px;
-	line-height: 28px;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-family: $font__header;
 }
 
 .text-below-container{
@@ -24,6 +35,7 @@
     height: 81px;	
     width: 500px;	
     background-color: $color__blue-light;
+    font-family: $font__header;
 }
 
 .steps-content{
@@ -42,6 +54,14 @@
     justify-content: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    font-family: $font__header;
+}
+
+.steps-content{
+    overflow: hidden;
+    p{
+        font-family: $font__paragraph;
+    }
 }
 
 .tutorial-share-title{
@@ -50,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: $font__header;
 }
 
 .tutorial-share-container{
@@ -62,6 +83,10 @@
 .share-container{
     width: 400px;
     margin: 0 auto;
+    font-family: $font__header;
+    p{
+        font-family: $font__paragraph;
+    }
 }
 
 .created-index-container {
@@ -69,5 +94,30 @@
 	height: 434px;
 	width: 334px;
 	border: 14px solid #3F576B;
-	border-radius: 14px;
+    border-radius: 14px;
+    margin: 0 auto;
+    h2{
+        font-family: $font__header;
+    }
+
+    font-family: $font__paragraph; 
+    
+}
+
+.title-index-container{
+    display: flex;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.create-lang-title{
+    width:40%;
+    text-decoration: underline;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.create-lang-amount{
+    width:50%;
+    margin-right: .5rem;
 }
