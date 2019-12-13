@@ -134,9 +134,13 @@ get_header(); ?>
         
        <?php endwhile; ?>
  <?php endif; ?>
+ <form class="sign-up-form" id="sign-up-form">
+            <input class="email" name="your_email" id="your-email" value=""placeholder="E-mail">
+            <button type="submit" class="submit" name="subscribe" id="subscribe"></button>
+          </form>
  </div>
 
- 
+
    
    
 
