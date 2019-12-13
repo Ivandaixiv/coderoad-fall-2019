@@ -88,6 +88,31 @@ get_header(); ?>
  <?php endif; ?>
 </div>
 
+
+<section class="tutorials-section">
+        <?php 
+        $tutorials = get_posts( array(
+            'post_type' => 'tutorial'
+        ) );
+
+        // var_dump($tutorials);
+
+        foreach($tutorials as $post):  setup_postdata( $post );
+         
+            echo '<a href="' . get_the_permalink(). '">';
+            if(has_post_thumbnail()){
+                echo '<img src="' . get_the_post_thumbnail_url() . '"/>';
+            }
+           
+           echo '<h2>' . get_the_title() . '</h2>';
+           echo '</a>';
+        endforeach;
+        wp_reset_postdata();
+        ?>
+</section>
+
+
+
 <div class="testimonial ">
 
 
