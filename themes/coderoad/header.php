@@ -29,7 +29,7 @@
 					<span class="hamburger-menu" aria-hidden="true">
 						<a id="hamburger-icon" class="hamburger-icon">
 							<img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Icons/hamburger.png" alt="Menu Button" class="burger-button">
-							<img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/logo/svg/Logo.svg" alt="Menu Button" class="logo-button"></a>
+							<img src="<?php echo get_template_directory_uri();?>/assets/desktop-assets/Logo/SVG/Logo.svg" alt="Menu Button" class="logo-button"></a>
 					</span>
 					<div class=drop-menu>
 						<h2>
