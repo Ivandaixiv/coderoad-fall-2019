@@ -9,11 +9,77 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<div class="create-container">
+		<?php the_title( '<h1 class="create-title">', '</h1>' ); ?>
+		<div class="rectangle-create"></div>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+
+		<div class="text-below-container">
+		<h2><?php the_field('text-below-title'); ?><h2>
+		</div>
+
+		<?php if(get_field('steps')): ?>
+    <?php while(the_repeater_field('steps')): ?>
+		<section class="steps-container">
+		<div class="steps-content">
+		<h2><?php the_sub_field('title'); ?></h2>
+		<h2><?php the_sub_field('sub_title'); ?></h2>
+		<p><?php the_sub_field('paragraph'); ?></p>
+		<div>
+		</section>
+    <?php endwhile; ?>
+ <?php endif; ?>
+
+ 	<div class="tutorial-share-container">
+ 		<h2 class="tutorial-share-title"><?php the_field('share_title'); ?></h2>
+	<div>
+
+ <?php if(get_field('share-content')): ?>
+    <?php while(the_repeater_field('share-content')): ?>
+	<div class="share-container">
+		
+	<?php $image = get_sub_field('image'); ?>
+	<img src="<?php echo $image['url']; ?>" />
+        <h2><?php the_sub_field('title'); ?></h2>
+		<p><?php the_sub_field('paragraph'); ?></p>
+	</div>
+		
+    <?php endwhile; ?>
+ <?php endif; ?>
+ 
+
+
+
+
+<?php if( have_rows('created_index') ): ?>
+
+<?php while ( have_rows('created_index') ) : the_row(); ?>
+
+	<h3><?php the_sub_field('title'); ?></h3>
+
+	  <?php if( have_rows('name_and_videos') ): ?>
+
+			<?php while( have_rows('name_and_videos') ): the_row(); ?>
+
+			   <?php the_sub_field('title'); ?> 
+			   <?php the_sub_field('videos_available'); ?>
+			   
+			<?php endwhile; ?>
+
+		  <?php endif; ?>
+
+<?php endwhile; ?>
+
+<?php else : ?>
+
+<?php endif; ?>
+
+
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -22,4 +88,4 @@ get_header(); ?>
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<?php get_footer(); ?>
+
