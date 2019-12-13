@@ -43,11 +43,17 @@ get_header(); ?>
     </div>
     <?php endwhile; ?>
  <?php endif; ?>
- </div>
- <div class="tutorial-video">
+ </div> 
 
+
+
+
+ <section class="tutorial">
+
+<div class="video">
  <iframe width="560" height="315" src="<?php the_field('video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+    </div>
+ <div class="tutorial-info">
  <?php if(get_field('tutorial')): ?>
     <?php while(the_repeater_field('tutorial')): ?>
         <h2><?php the_sub_field('video_text'); ?></h2>
@@ -55,14 +61,16 @@ get_header(); ?>
         <p><?php the_sub_field('paragraph'); ?></p>
     <?php endwhile; ?>
  <?php endif; ?>
-</div>
 
+ 
 <div class="social-media">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/twitter@3x.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/github-icon-github-png-image.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/screen_shot_2019-12-06_at_3.08.27_pm.png">
  <img  src="<?php echo home_url(); ?>/wp-content/uploads/2019/12/Mail@3x.png">
 </div>
+</div>	    
+    </section>
 
 <div class="subject">
 <?php if(get_field('subject')): ?>
@@ -79,6 +87,31 @@ get_header(); ?>
     <?php endwhile; ?>
  <?php endif; ?>
 </div>
+
+
+<section class="tutorials-section">
+        <?php 
+        $tutorials = get_posts( array(
+            'post_type' => 'tutorial'
+        ) );
+
+        // var_dump($tutorials);
+
+        foreach($tutorials as $post):  setup_postdata( $post );
+         
+            echo '<a href="' . get_the_permalink(). '">';
+            if(has_post_thumbnail()){
+                echo '<img src="' . get_the_post_thumbnail_url() . '"/>';
+            }
+           
+           echo '<h2>' . get_the_title() . '</h2>';
+           echo '</a>';
+        endforeach;
+        wp_reset_postdata();
+        ?>
+</section>
+
+
 
 <div class="testimonial ">
 
@@ -126,9 +159,13 @@ get_header(); ?>
         
        <?php endwhile; ?>
  <?php endif; ?>
+ <form class="sign-up-form" id="sign-up-form">
+            <input class="email" name="your_email" id="your-email" value=""placeholder="E-mail">
+            <button type="submit" class="submit" name="subscribe" id="subscribe"></button>
+          </form>
  </div>
 
- 
+
    
    
 
