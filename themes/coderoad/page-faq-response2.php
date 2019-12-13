@@ -9,7 +9,7 @@
 get_header(); ?>
 
 <div class="site-content">
-    <div class="faq-container">
+    <div class="faq-container2">
         <section class="faq-h2-container">
             <h2 class="faqh2">FAQ</h2>
         </section>
