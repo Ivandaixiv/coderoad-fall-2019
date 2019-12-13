@@ -76,18 +76,20 @@ get_header(); ?>
 
 
 <section class="tutorials-section">
+
         <?php 
         $tutorials = get_posts( array(
             'post_type' => 'tutorial'
         ) );
-
+       
         foreach($tutorials as $post):  setup_postdata( $post );
          
 
             echo '<a href="' . get_the_permalink(). '">';
             if(has_post_thumbnail()){
-                echo '<img src="' . get_the_post_thumbnail_url() . '"/>';
+            echo '<img  src="' . get_the_post_thumbnail_url() . '"/>';
             }
+       
            
            ?> 
            <div class="tutorial-info">
@@ -97,9 +99,11 @@ get_header(); ?>
 
         </div>
            <?php echo '</a>';
+          
         endforeach;
         wp_reset_postdata();
         ?>
+       
 </section>
 
 

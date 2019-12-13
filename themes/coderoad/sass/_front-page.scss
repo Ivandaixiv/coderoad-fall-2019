@@ -216,14 +216,42 @@
 }
 
 .tutorials-section {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10em;
   @include desktop {
     display: flex;
+    margin-left: 6em;
   }
-  h5 {
-    color: black;
+
+  img {
+    width: 13em;
+    height: 8em;
+    border-radius: 9px;
+    @include desktop {
+      width: 22em;
+      height: 16em;
+    }
+  }
+
+  .tutorial-info {
+    font-family: $font__paragraph;
+    line-height: 0.5;
+    padding-left: 2em;
+
+    h5 {
+      color: black;
+      padding-bottom: 3px;
+      font-weight: 600;
+      font-size: 13px;
+      @include desktop {
+        font-size: 23px;
+      }
+    }
+    p {
+      font-size: 10px;
+      padding-top: 5px;
+      @include desktop {
+        font-size: 15px;
+      }
+    }
   }
 }
 
