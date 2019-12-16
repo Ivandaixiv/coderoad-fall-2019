@@ -1,12 +1,12 @@
 .rectangle-create{
-    height: 26.16px;
-    width: 150.1px;
+    height: 27px;
+    width: 182.1px;
     opacity: .75;
     transform: rotate(1turn);
-    background-color: #9389ff;
+    background-color: $color__secondary-light;
     position: absolute;
     bottom: -11px;
-    left: 29.5%;
+    left: 23.5%;
     border-radius: 6px;
 }
 
@@ -35,7 +35,11 @@
     height: 81px;	
     width: 500px;	
     background-color: $color__blue-light;
-    font-family: $font__header;
+    font-family: $font__paragraph;
+    margin-bottom: 2.5rem;  
+    h2{
+        font-weight: 600;
+    }
 }
 
 .steps-content{
@@ -44,7 +48,19 @@
     width: 260px;	
     border: 14px solid $color__blue-dark;	
     border-radius: 14px;
-    
+    overflow: hidden;
+    p{
+        font-family: $font__paragraph;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-weight: 400;
+        font-family: $font__paragraph;
+    }
 }
 
 .steps-container{
@@ -52,17 +68,12 @@
     text-align: center;
     width: 100%;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
     font-family: $font__header;
 }
 
-.steps-content{
-    overflow: hidden;
-    p{
-        font-family: $font__paragraph;
-    }
-}
+
 
 .tutorial-share-title{
     text-align: center;
@@ -70,7 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: $font__header;
+    font-family: $font__paragraph;
+    font-weight: 600;
 }
 
 .tutorial-share-container{
@@ -81,12 +93,11 @@
 }
 
 .share-container{
-    width: 400px;
+    width: 350px;
     margin: 0 auto;
-    font-family: $font__header;
-    p{
-        font-family: $font__paragraph;
-    }
+    font-family: $font__paragraph;
+    margin-bottom: 3rem;
+
 }
 
 .created-index-container {
@@ -96,6 +107,7 @@
 	border: 14px solid #3F576B;
     border-radius: 14px;
     margin: 0 auto;
+    overflow: hidden;
     h2{
         font-family: $font__header;
     }
@@ -115,9 +127,14 @@
     text-decoration: underline;
     text-align: left;
     margin-left: 1rem;
+    line-height: 2;
 }
 
 .create-lang-amount{
-    width:50%;
+    width:55%;
     margin-right: .5rem;
+}
+
+.footer-fix{
+    height: 1800px;
 }

@@ -35,7 +35,6 @@
     position: absolute;
     bottom: 0px;
     right: 25.5%;
-    z-index: -1;
     border-radius: 10px;
     @include desktop{
         right: 41.5%;
@@ -82,6 +81,8 @@
 
 .contact-question{
     font-family: $font__header;
+    z-index: 1;
+    position: relative;
     @include desktop{
         text-align: left;
     }

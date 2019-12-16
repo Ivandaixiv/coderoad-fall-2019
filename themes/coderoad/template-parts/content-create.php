@@ -27,7 +27,7 @@ get_header(); ?>
 		<section class="steps-container">
 		<div class="steps-content">
 		<h2><?php the_sub_field('title'); ?></h2>
-		<h2><?php the_sub_field('sub_title'); ?></h2>
+		<h3><?php the_sub_field('sub_title'); ?></h3>
 		<p><?php the_sub_field('paragraph'); ?></p>
 		<div>
 		</section>
@@ -93,4 +93,6 @@ get_header(); ?>
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-
+<div class="footer-fix"> <!-- temp fix -->
+	<?php get_footer(); ?>
+	</div>
