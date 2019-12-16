@@ -115,9 +115,11 @@
 }
 
 .why-title {
+  color: black;
+  font-family: $font__header;
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   @include desktop {
     font-size: 45px;
     padding-top: 0;
@@ -168,14 +170,18 @@
 .tutorial {
   @include desktop {
     display: flex;
+    margin-left: 3em;
     margin-top: 200px;
     height: 41em;
   }
   iframe {
-    min-height: 26em;
-
+    min-height: 20em;
     width: 51em;
     border-radius: 3%;
+    @include desktop {
+      min-height: 28em;
+      width: 49em;
+    }
   }
   .video {
     max-width: 80%;
@@ -189,18 +195,21 @@
   }
 
   .tutorial-info {
-    padding: 0 3em;
     font-family: $font__paragraph;
+    padding: 0 3em;
     @include desktop {
-      // margin-top: 200px;
+      padding: 5em 7em 0 2em;
     }
   }
   h2 {
     font-family: $font__paragraph;
     font-weight: 600;
     font-style: normal;
-
-    font-size: 18px;
+    color: black;
+    font-size: 17px;
+    @include desktop {
+      font-size: 32px;
+    }
   }
   h3 {
     font-weight: 500;
@@ -223,6 +232,7 @@
 }
 
 .tutorials-section {
+  margin-top: 5em;
   a {
     display: flex;
   }
@@ -244,9 +254,8 @@
   .tutorial-info {
     font-family: $font__paragraph;
     line-height: 0.5;
-    padding-left: 2em;
 
-    h5 {
+    h2 {
       color: black;
       padding-bottom: 3px;
       font-weight: 600;
@@ -273,9 +282,11 @@
     font-size: 32px;
   }
   h2 {
+    text-align: center;
     position: relative;
     z-index: 3;
     font-family: $font__header;
+    margin-top: 5em;
   }
   &::before {
     content: '';
