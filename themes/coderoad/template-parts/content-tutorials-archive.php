@@ -22,8 +22,13 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-        <p><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
-	</div><!-- .entry-content -->
+	<div class="entry-content tutorial-content">
+        <?php the_title();?>
+        <?php the_excerpt(); ?>
+        <div class="tutorial-info">
+            <p><img class="tutorial-icon" src="<?php echo get_template_directory_uri()?>/assets/desktop-assets/component/Stars/Group 3@3x.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
+            <p><img class="tutorial-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/User@3x.png"><?php echo get_post_meta($post->ID, 'enrolled_students', true); ?></p>    
+            <?php the_date( 'm / Y', '<p class="tutorial-date"> Uploaded ', '</p>')?>   
+        </div> 
+    </div><!-- .entry-content -->
 </article><!-- #post-## -->
