@@ -90,6 +90,27 @@
     
 }
 
+.created-index-wrapper{
+    position: relative;
+    width: 400px;
+    &::before {
+        content: "";
+        height: 34px;
+        width: 118px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color: #6054e1;
+        position: absolute;
+        top: -11px;
+        left: 75%;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+}
+
+
+
 .steps-content{
     box-sizing: border-box;	
     height: 335px;
@@ -192,15 +213,19 @@
 }
 
 
-.rectangle-steps{
-
-    // height: 27px;
-    // width: 130px;
-    // opacity: .75;
-    // transform: rotate(1turn);
-    // background-color:#2ED199;
-    // position: absolute;
-    // top: -20px;
-    // left: -9%;
-    // border-radius: 4px;
+.created-index-rectangle{
+    position: relative;
+    &::before {
+        content: "";
+        height: 34px;
+        width: 193px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color: #157c99;
+        position: absolute;
+        bottom: -27.7rem;
+        left: 17%;
+        border-radius: 4px;
+        z-index: 1;
+    }
 }

@@ -63,8 +63,13 @@ get_header(); ?>
 <?php if( have_rows('created_index') ): ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
+
+
 <div class="created-index-container">
-<div class="rectangle-create"></div>
+	<div class="wrapper">
+<div class="created-index-wrapper "></div>	
+<div class="created-index-rectangle"></div>
+</div>
 	<div class="created-title-container">
 	<h2><?php the_sub_field('title'); ?></h2>
 	</div>
