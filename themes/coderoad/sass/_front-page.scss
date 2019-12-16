@@ -169,8 +169,14 @@
   @include desktop {
     display: flex;
     margin-top: 200px;
+    height: 41em;
   }
-  // margin-top: 200px;
+  iframe {
+    min-height: 26em;
+
+    width: 51em;
+    border-radius: 3%;
+  }
   .video {
     max-width: 80%;
     margin-left: 3em;
@@ -181,6 +187,7 @@
       }
     }
   }
+
   .tutorial-info {
     padding: 0 3em;
     font-family: $font__paragraph;
@@ -216,6 +223,9 @@
 }
 
 .tutorials-section {
+  a {
+    display: flex;
+  }
   @include desktop {
     display: flex;
     margin-left: 6em;
@@ -255,60 +265,61 @@
   }
 }
 
+.testimonial-title {
+  font-size: 14px;
+  position: relative;
+  color: black;
+  @include desktop {
+    font-size: 32px;
+  }
+  h2 {
+    position: relative;
+    z-index: 3;
+    font-family: $font__header;
+  }
+  &::before {
+    content: '';
+    width: 70px;
+    height: 30px;
+    background: $color__green-light;
+    position: absolute;
+    left: 33px;
+    top: 10px;
+    z-index: 1;
+    border-radius: 4px;
+    @include desktop {
+      width: 180px;
+      height: 75px;
+      left: 194px;
+      top: -10px;
+      border-radius: 10px;
+    }
+  }
+  &::after {
+    content: '';
+    width: 30px;
+    height: 100px;
+    background: $color__blue-light;
+    position: absolute;
+    right: 34px;
+    top: 0px;
+    z-index: 1;
+    border-radius: 4px;
+    @include desktop {
+      width: 75px;
+      height: 180px;
+      right: 200px;
+      top: -20px;
+      border-radius: 10px;
+    }
+  }
+}
+
 .testimonial {
   text-align: center;
 
   z-index: 10;
 
-  .title {
-    font-size: 14px;
-    position: relative;
-    color: black;
-    @include desktop {
-      font-size: 32px;
-    }
-    h2 {
-      position: relative;
-      z-index: 3;
-      font-family: $font__header;
-    }
-    &::before {
-      content: '';
-      width: 70px;
-      height: 30px;
-      background: $color__green-light;
-      position: absolute;
-      left: 33px;
-      top: 10px;
-      z-index: 1;
-      border-radius: 4px;
-      @include desktop {
-        width: 180px;
-        height: 75px;
-        left: 194px;
-        top: -10px;
-        border-radius: 10px;
-      }
-    }
-    &::after {
-      content: '';
-      width: 30px;
-      height: 100px;
-      background: $color__blue-light;
-      position: absolute;
-      right: 34px;
-      top: 0px;
-      z-index: 1;
-      border-radius: 4px;
-      @include desktop {
-        width: 75px;
-        height: 180px;
-        right: 200px;
-        top: -20px;
-        border-radius: 10px;
-      }
-    }
-  }
   p {
     font-family: $font__paragraph;
     font-size: 13px;
@@ -329,6 +340,22 @@
     font-weight: 400;
   }
 }
+.testimonial-single {
+  width: 100%;
+}
+.flickity-button {
+  display: none;
+}
+.flickity-page-dots {
+  display: flex;
+  list-style: inside;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 5em;
+}
+
 .create-instructions {
   padding-bottom: 0;
   text-align: center;
