@@ -1,0 +1,18 @@
+.archive-tutorial {
+    font-family: $font__paragraph;
+    max-width: 1000px;
+    margin: 0 auto;
+    .tutorial-archive-title {
+        font-size: 2rem;
+        max-width: 50%;
+        font-family: $font__header;
+    }
+    .archive-rectangle {
+        z-index: 1;
+        left: 0;
+        position: relative;
+        background-color: $color__green-light;
+        transform: translateY(-75%);
+        width: 100%;
+    }
+}
