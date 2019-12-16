@@ -110,6 +110,7 @@ get_header(); ?>
 <div class="testimonial-title">
         <h2>Happy learning, happy creating</h2>
         </div>
+       
 
 <div class="testimonial main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
@@ -118,9 +119,10 @@ get_header(); ?>
     <?php while(the_repeater_field('testimonial')): ?>
       
     <div class="testimonial-single">
-
-
+    
+ 
         <p><?php the_sub_field('paragraph'); ?></p>
+       
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
         <h5><?php the_sub_field('profile-name'); ?></h5>
     </div>
