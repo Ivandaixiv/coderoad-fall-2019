@@ -44,15 +44,63 @@
     }
 }
 
+.steps-container {
+    &:nth-of-type(2){
+        .steps-wrapper {
+            &::before {
+                background-color: #9389FF;
+                transform: rotate(90deg);
+                left: unset;
+                right: -72px;
+                bottom: 47%;
+                top: unset;
+                width: 160px;
+                height: 29px;
+            }   
+        }
+    }
+    &:nth-of-type(3){
+        .steps-wrapper {
+            &::before {
+                background-color: #29CFFF;
+                top: unset;
+                right: 3px;
+                bottom: -7px;
+                left: unset;
+            }   
+        }
+    }
+}
+
+.steps-wrapper {
+    position: relative;
+    &::before {
+        content: '';
+        height: 27px;
+        width: 130px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color:#2ED199;
+        position: absolute;
+        top: -1.5%;
+        left: -1%;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    
+}
+
 .steps-content{
     box-sizing: border-box;	
     height: 335px;
     width: 260px;	
     border: 14px solid $color__blue-dark;	
     border-radius: 14px;
-    overflow: hidden;
+    position: relative;
+    z-index: 99;
+    font-family: $font__paragraph;
+
     p{
-        font-family: $font__paragraph;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -61,7 +109,6 @@
     }
     h3{
         font-weight: 400;
-        font-family: $font__paragraph;
     }
 }
 
@@ -109,13 +156,13 @@
 	border: 14px solid #3F576B;
     border-radius: 14px;
     margin: 0 auto;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
     h2{
         font-family: $font__header;
     }
 
     font-family: $font__paragraph; 
-    
 }
 
 .title-index-container{
@@ -135,8 +182,25 @@
 .create-lang-amount{
     width:55%;
     margin-right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .footer-fix{
     height: 1800px;
+}
+
+
+.rectangle-steps{
+
+    // height: 27px;
+    // width: 130px;
+    // opacity: .75;
+    // transform: rotate(1turn);
+    // background-color:#2ED199;
+    // position: absolute;
+    // top: -20px;
+    // left: -9%;
+    // border-radius: 4px;
 }

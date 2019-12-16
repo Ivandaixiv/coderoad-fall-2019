@@ -25,11 +25,16 @@ get_header(); ?>
 		<?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
 		<section class="steps-container">
-		<div class="steps-content">
-		<h2><?php the_sub_field('title'); ?></h2>
-		<h3><?php the_sub_field('sub_title'); ?></h3>
-		<p><?php the_sub_field('paragraph'); ?></p>
-		<div>
+			<div class="steps-wrapper">
+				<div class="steps-content">
+			
+					<h2><?php the_sub_field('title'); ?></h2>
+					<h3><?php the_sub_field('sub_title'); ?></h3>
+					<p><?php the_sub_field('paragraph'); ?></p>
+					
+					<!-- <div class="rectangle-steps"></div> -->
+				</div>
+			</div>	
 		</section>
     <?php endwhile; ?>
  <?php endif; ?>
@@ -59,6 +64,7 @@ get_header(); ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
 <div class="created-index-container">
+<div class="rectangle-create"></div>
 	<div class="created-title-container">
 	<h2><?php the_sub_field('title'); ?></h2>
 	</div>
