@@ -76,18 +76,20 @@ get_header(); ?>
 
 
 <section class="tutorials-section">
+
         <?php 
         $tutorials = get_posts( array(
             'post_type' => 'tutorial'
         ) );
-
+       
         foreach($tutorials as $post):  setup_postdata( $post );
          
 
-            echo '<a href="' . get_the_permalink(). '">';
+            echo '<a class="tutorial-section" href="' . get_the_permalink(). '">';
             if(has_post_thumbnail()){
-                echo '<img src="' . get_the_post_thumbnail_url() . '"/>';
+            echo '<img  src="' . get_the_post_thumbnail_url() . '"/>';
             }
+       
            
            ?> 
            <div class="tutorial-info">
@@ -97,29 +99,37 @@ get_header(); ?>
 
         </div>
            <?php echo '</a>';
+          
         endforeach;
         wp_reset_postdata();
         ?>
+       
 </section>
 
 
+<div class="testimonial-title">
+        <h2>Happy learning, happy creating</h2>
+        </div>
 
-<div class="testimonial ">
+<div class="testimonial main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
 
 <?php if(get_field('testimonial')): ?>
     <?php while(the_repeater_field('testimonial')): ?>
-        <div class="title">
-        <h2><?php the_sub_field('title'); ?></h2>
-    </div>
+      
+    <div class="testimonial-single">
+
+
         <p><?php the_sub_field('paragraph'); ?></p>
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
         <h5><?php the_sub_field('profile-name'); ?></h5>
+    </div>
+   
       
     <?php endwhile; ?>
  <?php endif; ?>
     </div>
-
+   
 <div class="create-instructions">
     <?php if(get_field('create_instructions')): ?>
     <?php while(the_repeater_field('create_instructions')): ?>

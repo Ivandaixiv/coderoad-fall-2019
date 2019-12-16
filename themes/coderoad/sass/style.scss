@@ -63,6 +63,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'content';
 @import 'media';
 @import 'page-templates';
+@import 'page';
 @import 'footer';
 @import 'header';
 @import 'page-faq';
@@ -72,4 +73,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import '404';
 @import 'front-page';
 @import 'sign-up';
+<<<<<<< HEAD
+@import 'index';
+=======
 @import 'createpage';
+@import 'archive'
+>>>>>>> 7475ae6305beb6485350866588ec5be71baddbf4
