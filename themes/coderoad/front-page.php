@@ -72,63 +72,64 @@ get_header(); ?>
 </div>	    
     </section>
 
-<div class="subject">
-<?php if(get_field('subject')): ?>
-    <?php while(the_repeater_field('subject')): ?>
-        <div class="all-sub">
-        <img src="<?php echo the_sub_field('image'); ?>" >
-        <div class="sub-subject">
-        <h3><?php the_sub_field('title'); ?></h3>
-        <p><?php the_sub_field('date'); ?></p>
-        <p><?php the_sub_field('instructor'); ?></p>
-       <img src="<?php echo the_sub_field('rating'); ?>" >
-    </div>
-    </div>
-    <?php endwhile; ?>
- <?php endif; ?>
-</div>
+
 
 
 <section class="tutorials-section">
+
         <?php 
         $tutorials = get_posts( array(
             'post_type' => 'tutorial'
         ) );
-
-        // var_dump($tutorials);
-
+       
         foreach($tutorials as $post):  setup_postdata( $post );
          
-            echo '<a href="' . get_the_permalink(). '">';
+
+            echo '<a class="tutorial-section" href="' . get_the_permalink(). '">';
             if(has_post_thumbnail()){
-                echo '<img src="' . get_the_post_thumbnail_url() . '"/>';
+            echo '<img  src="' . get_the_post_thumbnail_url() . '"/>';
             }
+       
            
-           echo '<h2>' . get_the_title() . '</h2>';
-           echo '</a>';
+           ?> 
+           <div class="tutorial-info">
+           <h2><?php the_title();?></h2>
+           <h5><?php echo get_the_date();?></h5>
+           <h4><?php the_author();?></h4>
+
+        </div>
+           <?php echo '</a>';
+          
         endforeach;
         wp_reset_postdata();
         ?>
+       
 </section>
 
 
+<div class="testimonial-title">
+        <h2>Happy learning, happy creating</h2>
+        </div>
 
-<div class="testimonial ">
+<div class="testimonial main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
 
 <?php if(get_field('testimonial')): ?>
     <?php while(the_repeater_field('testimonial')): ?>
-        <div class="title">
-        <h2><?php the_sub_field('title'); ?></h2>
-    </div>
+      
+    <div class="testimonial-single">
+
+
         <p><?php the_sub_field('paragraph'); ?></p>
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
         <h5><?php the_sub_field('profile-name'); ?></h5>
+    </div>
+   
       
     <?php endwhile; ?>
  <?php endif; ?>
     </div>
-
+   
 <div class="create-instructions">
     <?php if(get_field('create_instructions')): ?>
     <?php while(the_repeater_field('create_instructions')): ?>
