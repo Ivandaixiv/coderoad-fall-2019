@@ -1,0 +1,28 @@
+.archive-single {
+    width: 90%;
+    margin: 0 auto;
+    font-family: $font__paragraph;
+    .single-header-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tutorial-single-title {
+        font-family: $font__header;
+    }
+    .wp-post-image {
+        border-radius: 15px;
+    }
+    .tutorial-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: .8rem;
+        .tutorial-date, .tutorial-text{
+            margin-top: 30px;
+        }
+    }
+    .tutorial-icon {
+        width: 30px;
+        margin: 0 5px;
+        transform: translateY(25%);
+    }
+}
