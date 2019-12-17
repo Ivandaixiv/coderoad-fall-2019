@@ -43,7 +43,7 @@ get_header(); ?>
 </div>
  	<div class="tutorial-share-container">
  		<h2 class="tutorial-share-title"><?php the_field('share_title'); ?></h2>
-	<div>
+	</div>
 
  <?php if(get_field('share-content')): ?>
     <?php while(the_repeater_field('share-content')): ?>
