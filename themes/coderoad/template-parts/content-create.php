@@ -66,11 +66,13 @@ get_header(); ?>
 
 
 <div class="created-index-container">
-	<div class="wrapper">
-<div class="created-index-wrapper "></div>	
-<div class="created-index-rectangle"></div>
-</div>
+
 	<div class="created-title-container">
+	<div class="wrapper">
+	<div class="created-index-wrapper"></div>	
+	<div class="created-index-rectangle"></div>
+	</div>
+	
 	<h2><?php the_sub_field('title'); ?></h2>
 	</div>
 	  <?php if( have_rows('name_and_videos') ): ?>

@@ -8,12 +8,21 @@
     bottom: -11px;
     left: 16.5%;
     border-radius: 4px;
+    @include desktop{
+        left: -1.5%;
+        height: 41px;
+        bottom: -21px;
+        width: 290px;
+    }
 }
 
 .create-container{
     position: relative;
     width: 400px;
     margin: 0 auto;
+    @include desktop{
+        width: 500px;
+    }
 }
 
 .create-title {
@@ -27,6 +36,11 @@
     position: relative;
     z-index: 1;
     font-family: $font__header;
+    @include desktop{
+        width: 100%;
+        font-size: 2.6em;
+        margin-bottom: 3rem;
+    }
 }
 
 .text-below-container{
@@ -96,15 +110,16 @@
     &::before {
         content: "";
         height: 34px;
-        width: 118px;
+        width: 126px;
         opacity: .75;
         transform: rotate(1turn);
         background-color: #6054e1;
         position: absolute;
-        top: -11px;
-        left: 75%;
+        top: -42px;
+        left: 49%;
         border-radius: 4px;
         z-index: 1;
+    
     }
 
 }
@@ -223,8 +238,8 @@
         transform: rotate(1turn);
         background-color: #157c99;
         position: absolute;
-        bottom: -27.7rem;
-        left: 17%;
+        bottom: -25.4rem;
+        left: -4%;
         border-radius: 4px;
         z-index: 1;
     }
