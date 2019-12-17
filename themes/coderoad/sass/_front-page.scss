@@ -201,6 +201,7 @@
       padding: 5em 7em 0 2em;
     }
   }
+
   h2 {
     font-family: $font__paragraph;
     font-weight: 600;
@@ -233,8 +234,43 @@
 
 .tutorials-section {
   margin-top: 5em;
+  margin-left: 3em;
   a {
     display: flex;
+    padding-bottom: 2em;
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      padding-right: 5em;
+    }
+    .tutorial-info {
+      @include desktop {
+        margin-left: 0;
+      }
+      h2 {
+        font-size: 18px;
+        font-family: $font__paragraph;
+        @include desktop {
+          font-size: 23px;
+        }
+      }
+      h5 {
+        color: $color__text-main;
+        font-family: $font__paragraph;
+        font-weight: 400;
+        @include desktop {
+          font-size: 18px;
+        }
+      }
+      h4 {
+        color: $color__text-main;
+        font-family: $font__paragraph;
+        font-weight: 500;
+        @include desktop {
+          font-size: 18px;
+        }
+      }
+    }
   }
   @include desktop {
     display: flex;
@@ -254,6 +290,7 @@
   .tutorial-info {
     font-family: $font__paragraph;
     line-height: 0.5;
+    margin-left: 2em;
 
     h2 {
       color: black;
@@ -267,6 +304,7 @@
     p {
       font-size: 10px;
       padding-top: 5px;
+
       @include desktop {
         font-size: 15px;
       }
@@ -350,20 +388,19 @@
     @include desktop {
       width: 11em;
       padding-top: 3em;
-      margin-left: 40em;
     }
   }
   h5 {
     font-family: $font__paragraph;
     font-weight: 400;
     @include desktop {
-      margin-left: 49em;
+      font-size: 23px;
     }
   }
 }
 .testimonial-single {
   width: 100%;
-  max-width: 800px;
+
   position: relative;
   margin: 0 auto;
   @include desktop {
@@ -393,7 +430,7 @@
     top: 50px;
     color: $color__primary-dark;
     @include desktop {
-      left: -200px;
+      left: 730px;
       top: 30px;
     }
   }
@@ -407,7 +444,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-
+  padding-bottom: 5em;
   padding-left: 3em;
   li {
     color: $color__primary-dark;
@@ -436,6 +473,7 @@
     }
   }
 }
+
 .steps {
   line-height: 0.1;
   padding: 0 3em;
@@ -445,6 +483,20 @@
   }
 
   .step {
+    position: relative;
+    &::before {
+      content: '';
+      height: 27px;
+      width: 130px;
+      opacity: 0.75;
+      transform: rotate(1turn);
+      background-color: #2ed199;
+      position: absolute;
+      top: -1.5%;
+      left: -1%;
+      border-radius: 4px;
+      z-index: 1;
+    }
     border: $color__blue-dark;
     border-radius: 30px;
     border-style: solid;
@@ -509,5 +561,13 @@
   }
   .email {
     color: black;
+    width: 500px;
+    input {
+      position: relative;
+    }
+    button {
+      position: absolute;
+      left: 54%;
+    }
   }
 }
