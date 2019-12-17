@@ -241,15 +241,26 @@
     margin-bottom: 2rem;
     h2{
         font-family: $font__header;
+        @include desktop{
+            font-size: 2rem;
+        }
     }
 
     font-family: $font__paragraph; 
+    @include desktop{
+        height: 472px;	
+        width: 794px;
+        text-align: center;
+    }
 }
 
 .title-index-container{
     display: flex;
     text-align: center;
     margin-bottom: 1rem;
+    @include desktop{
+        font-size: 1.4rem;
+    }
 }
 
 .create-lang-title{
@@ -258,6 +269,9 @@
     text-align: left;
     margin-left: 1rem;
     line-height: 2;
+    @include desktop{
+        text-align: unset;
+    }
 }
 
 .create-lang-amount{
@@ -284,6 +298,13 @@
         left: -4%;
         border-radius: 4px;
         z-index: 1;
+        @include desktop{
+            bottom: -22rem;
+            left: -16.5%;
+            transform: rotate(90deg);
+            width: 15rem;
+            height: 4rem;
+        }
     }
 }
 
