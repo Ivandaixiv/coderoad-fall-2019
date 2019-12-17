@@ -9,12 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area archive-tutorial">
 		<main id="main" class="site-main" role="main">
-
+            <h2>Tutorials</h2>
+            <p class="tutorial-archive-title">
+                Find what to learn next<span class="contact-rectangle archive-rectangle"></span>
+            </p>
 		<?php if ( have_posts() ) : ?>
-
-			<h2 class="tutorial-archive-title">Find what to learn next<div class="contact-rectangle archive-rectangle"></div></h2>
-
-			<?php /* Start the Loop */ ?>
+            
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
