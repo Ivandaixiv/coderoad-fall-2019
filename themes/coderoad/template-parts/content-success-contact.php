@@ -8,11 +8,23 @@
 get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="success-main-container">
+    <div class="success-title-container">    
+        <h1>Contact Us</h1>
+    </div>
+        
 		<div class="success-text-container">
         <h2>Thank you for your question!</h2>
-        <h2>Keep an eye on your inbox for our reply.</h2>
+        <h3>Keep an eye on your inbox for our reply.</h3>
 
+        <div class="success-img-container">
+        <?php if(get_field('contact_success')): ?>
+    <?php while(the_repeater_field('contact_success')): ?>	
+	<?php $image = get_sub_field('image'); ?>
+	<img class="success-images" src="<?php echo $image['url']; ?>" />
+	<?php endwhile; ?>
+    <?php endif; ?>
+</div>
         </div>
 	</header><!-- .entry-header -->
 
@@ -27,12 +39,7 @@ get_header(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
- <?php if(get_field('contact_success')): ?>
-    <?php while(the_repeater_field('contact_success')): ?>	
-	<?php $image = get_sub_field('image'); ?>
-	<img class="success-images" src="<?php echo $image['url']; ?>" />
-	<?php endwhile; ?>
- <?php endif; ?>
 
+        
 
 <?php get_footer(); ?>

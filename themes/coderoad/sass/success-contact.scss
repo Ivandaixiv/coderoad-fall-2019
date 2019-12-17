@@ -1,4 +1,45 @@
+.success-title-container{
+    text-align: center;
+    color: $color__text-main; 
+    font-family: $font__header;
+    font-size: 1rem;
+    line-height: 28px;
+    width: 80%;
+    border-bottom: 1px solid #40389E;
+    margin: 0 auto;
+}
+
 .success-text-container{
-    background-image: url("../themes/coderoad/assets/desktop-assets/Logo/SVG/Logo.svg");
+    text-align: center;
+    font-family: $font__paragraph;
+    font-size: 1.4rem;
+    position: relative;
+    h2{
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+}
+
+.success-images{
+    opacity: 0.3;
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    right: 25%;
+
+}
+
+
+.success-main-container{
+    height: 400px;
     
+}
+
+.success-img-container{
+    display: flex;
+    justify-content: center;
+    width: 400px;
 }
