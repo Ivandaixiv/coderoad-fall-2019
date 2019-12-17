@@ -6,4 +6,13 @@
 .home-button {
   font-family: $font__paragraph;
   background-color: $color__primary-light;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  a {
+    color: black;
+    font-size: 18px;
+  }
 }

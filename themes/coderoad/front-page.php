@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="title-content">
 <h2 class="code-title"><?php the_title(); ?></h2>
 <p class="sub-text"><?php the_content(); ?></p>
-<a href="#">Sign Up</a>
+<a href="<?php echo get_permalink(get_page_by_path('sign-up'));?>">Sign Up</a>
 </div>
 </div>
 
@@ -79,6 +79,7 @@ get_header(); ?>
 
         <?php 
         $tutorials = get_posts( array(
+            'posts_per_page' => '3',
             'post_type' => 'tutorial'
         ) );
        
@@ -96,7 +97,7 @@ get_header(); ?>
            <h2><?php the_title();?></h2>
            <h5><?php echo get_the_date();?></h5>
            <h4><?php the_author();?></h4>
-
+           
         </div>
            <?php echo '</a>';
           
@@ -112,7 +113,7 @@ get_header(); ?>
         </div>
        
 
-<div class="testimonial main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+<div class="testimonial main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true }'>
 
 
 <?php if(get_field('testimonial')): ?>
@@ -162,10 +163,7 @@ get_header(); ?>
         
        <?php endwhile; ?>
  <?php endif; ?>
- <form class="sign-up-form" id="sign-up-form">
-            <input class="email" name="your_email" id="your-email" value=""placeholder="E-mail">
-            <button type="submit" class="submit" name="subscribe" id="subscribe"></button>
-          </form>
+ 
  </div>
 
 

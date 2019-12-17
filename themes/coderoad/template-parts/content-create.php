@@ -21,23 +21,30 @@ get_header(); ?>
 		<div class="text-below-container">
 		<h2><?php the_field('text-below-title'); ?><h2>
 		</div>
-
+<div class="steps-main-container">
 		<?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
+
 		<section class="steps-container">
-		<div class="steps-content">
-		<h2><?php the_sub_field('title'); ?></h2>
-		<h3><?php the_sub_field('sub_title'); ?></h3>
-		<p><?php the_sub_field('paragraph'); ?></p>
-		<div>
+			<div class="steps-wrapper">
+				<div class="steps-content">
+			
+					<h2><?php the_sub_field('title'); ?></h2>
+					<h3><?php the_sub_field('sub_title'); ?></h3>
+					<p><?php the_sub_field('paragraph'); ?></p>
+					
+					<!-- <div class="rectangle-steps"></div> -->
+				</div>
+			</div>	
 		</section>
+
     <?php endwhile; ?>
  <?php endif; ?>
-
+</div>
  	<div class="tutorial-share-container">
  		<h2 class="tutorial-share-title"><?php the_field('share_title'); ?></h2>
-	<div>
-
+	</div>
+<div class="main-container-share-content">
  <?php if(get_field('share-content')): ?>
     <?php while(the_repeater_field('share-content')): ?>
 	<div class="share-container">
@@ -47,8 +54,9 @@ get_header(); ?>
         <h2><?php the_sub_field('title'); ?></h2>
 		<p><?php the_sub_field('paragraph'); ?></p>
 	</div>
-		
-    <?php endwhile; ?>
+
+	<?php endwhile; ?>
+	</div>
  <?php endif; ?>
  
 
@@ -58,8 +66,16 @@ get_header(); ?>
 <?php if( have_rows('created_index') ): ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
+
+
 <div class="created-index-container">
+
 	<div class="created-title-container">
+	<div class="wrapper">
+	<div class="created-index-wrapper"></div>	
+	<div class="created-index-rectangle"></div>
+	</div>
+	
 	<h2><?php the_sub_field('title'); ?></h2>
 	</div>
 	  <?php if( have_rows('name_and_videos') ): ?>

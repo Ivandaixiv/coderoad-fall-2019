@@ -46,8 +46,6 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-		<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 	</body>
 
 </html>

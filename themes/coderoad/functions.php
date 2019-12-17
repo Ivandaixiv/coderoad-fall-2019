@@ -94,6 +94,9 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
     wp_enqueue_style( 'font-awesome', 'https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css' );
 
+	wp_enqueue_script( 'coderoad-flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'coderoad-iconify', 'https://code.iconify.design/1/1.0.3/iconify.min.js', array('jquery'), '', true );
+	
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'coderoad-scripts', get_template_directory_uri().'/build/js/script.min.js' );

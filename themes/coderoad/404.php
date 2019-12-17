@@ -17,10 +17,10 @@ get_header(); ?>
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( '404_ That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
-				<button class="home-button" type="button">Home Page</button>
-
+				<div class="home-button">
+				<a href="<?php  echo home_url('/'); ?>">Home Page</a>
 							
-		
+</div>
 
 				
 
