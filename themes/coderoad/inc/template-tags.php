@@ -129,7 +129,7 @@
  		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 
  			<div class="comment-author-avatar">
- 				<?php echo get_avatar( $comment, 64 ); ?>
+				<img class="tutorial-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/User@3x.png">
  			</div>
 
  			<div class="comment-content">
@@ -140,7 +140,7 @@
 
  					<div class="comment-metadata">
  						<time datetime="<?php comment_time( 'c' ); ?>">
- 								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
+ 								<?php printf( '%1$s', get_comment_date('d/m/Y') ); ?>
  						</time>
  						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
  					</div><!-- .comment-metadata -->
