@@ -548,8 +548,6 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:hover, a:active {
@@ -1454,7 +1452,15 @@ span.wpcf7-not-valid-tip {
 
 .home-button {
   font-family: "Montserrat";
-  background-color: #29cfff; }
+  background-color: #29cfff;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px; }
+  .home-button a {
+    color: black;
+    font-size: 18px; }
 
 @media screen and (min-width: 700px) {
   .code-image {
@@ -1675,11 +1681,46 @@ span.wpcf7-not-valid-tip {
     padding: 0 3px; }
 
 .tutorials-section {
-  margin-top: 5em; }
+  margin-top: 5em;
+  margin-left: 3em; }
   .tutorials-section a {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-bottom: 2em; }
+    @media screen and (min-width: 700px) {
+      .tutorials-section a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-right: 5em; } }
+    @media screen and (min-width: 700px) {
+      .tutorials-section a .tutorial-info {
+        margin-left: 0; } }
+    .tutorials-section a .tutorial-info h2 {
+      font-size: 18px;
+      font-family: "Montserrat"; }
+      @media screen and (min-width: 700px) {
+        .tutorials-section a .tutorial-info h2 {
+          font-size: 23px; } }
+    .tutorials-section a .tutorial-info h5 {
+      color: #404040;
+      font-family: "Montserrat";
+      font-weight: 400; }
+      @media screen and (min-width: 700px) {
+        .tutorials-section a .tutorial-info h5 {
+          font-size: 18px; } }
+    .tutorials-section a .tutorial-info h4 {
+      color: #404040;
+      font-family: "Montserrat";
+      font-weight: 500; }
+      @media screen and (min-width: 700px) {
+        .tutorials-section a .tutorial-info h4 {
+          font-size: 18px; } }
   @media screen and (min-width: 700px) {
     .tutorials-section {
       display: -webkit-box;
@@ -1696,7 +1737,8 @@ span.wpcf7-not-valid-tip {
         height: 16em; } }
   .tutorials-section .tutorial-info {
     font-family: "Montserrat";
-    line-height: 0.5; }
+    line-height: 0.5;
+    margin-left: 2em; }
     .tutorials-section .tutorial-info h2 {
       color: black;
       padding-bottom: 3px;
@@ -1756,7 +1798,7 @@ span.wpcf7-not-valid-tip {
       .testimonial-title::after {
         width: 75px;
         height: 180px;
-        right: 200px;
+        right: 230px;
         top: -20px;
         border-radius: 10px; } }
 
@@ -1771,17 +1813,55 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 700px) {
       .testimonial p {
         text-align: left;
-        width: 36em;
+        width: 40em;
         font-size: 18px;
-        margin-left: 24em; } }
+        margin-left: 20em;
+        padding: 0 3em; } }
   .testimonial img {
-    width: 6em; }
+    width: 6em;
+    margin: 0;
+    padding: 0; }
+    @media screen and (min-width: 700px) {
+      .testimonial img {
+        width: 11em;
+        padding-top: 3em; } }
   .testimonial h5 {
     font-family: "Montserrat";
     font-weight: 400; }
+    @media screen and (min-width: 700px) {
+      .testimonial h5 {
+        font-size: 23px; } }
 
 .testimonial-single {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+  .testimonial-single::before {
+    content: '\f10d';
+    font-family: 'FontAwesome';
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    left: 34px;
+    top: 50px;
+    color: #157c99; }
+    @media screen and (min-width: 700px) {
+      .testimonial-single::before {
+        left: 340px;
+        top: 30px; } }
+  .testimonial-single::after {
+    content: '\f10e';
+    font-family: 'FontAwesome';
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    right: 34px;
+    top: 50px;
+    color: #157c99; }
+    @media screen and (min-width: 700px) {
+      .testimonial-single::after {
+        left: 730px;
+        top: 30px; } }
 
 .flickity-button {
   display: none; }
@@ -1796,7 +1876,11 @@ span.wpcf7-not-valid-tip {
           justify-content: center;
   margin: 0;
   padding: 0;
-  margin-top: 5em; }
+  padding-bottom: 5em;
+  padding-left: 3em; }
+  .flickity-page-dots li {
+    color: #157c99;
+    font-size: 30px; }
 
 .create-instructions {
   padding-bottom: 0;
@@ -1828,6 +1912,7 @@ span.wpcf7-not-valid-tip {
       display: flex;
       margin-left: 4em; } }
   .steps .step {
+    position: relative;
     border: #3f576b;
     border-radius: 30px;
     border-style: solid;
@@ -1836,6 +1921,19 @@ span.wpcf7-not-valid-tip {
     margin: 5em 3em;
     height: 20em;
     width: 19em; }
+    .steps .step::before {
+      content: '';
+      height: 27px;
+      width: 130px;
+      opacity: 0.75;
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      background-color: #2ed199;
+      position: absolute;
+      top: -1.5%;
+      left: -1%;
+      border-radius: 4px;
+      z-index: 1; }
     @media screen and (min-width: 700px) {
       .steps .step {
         height: 23em;
@@ -1885,7 +1983,13 @@ span.wpcf7-not-valid-tip {
         width: 700px;
         margin-left: 23em; } }
   .notification-email .email {
-    color: black; }
+    color: black;
+    width: 500px; }
+    .notification-email .email input {
+      position: relative; }
+    .notification-email .email button {
+      position: absolute;
+      left: 54%; }
 
 .sign-up-content {
   height: 475px; }
@@ -1979,286 +2083,19 @@ span.wpcf7-not-valid-tip {
   position: relative;
   width: 400px;
   margin: 0 auto; }
+  @media screen and (min-width: 700px) {
+    .register-content {
+      margin-top: 3rem; } }
 
 @media screen and (min-width: 700px) {
   .register-container {
-    background: #8BBBE5;
+    background: #d4e5f3;
     width: 600px;
     margin: 0 auto; } }
 
 .wpcf7-not-valid {
   border-color: red; }
 
-.rectangle-create {
-  height: 27px;
-  width: 182.1px;
-  opacity: .75;
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  background-color: #9389ff;
-  position: absolute;
-  bottom: -11px;
-  left: 16.5%;
-  border-radius: 4px; }
-  @media screen and (min-width: 700px) {
-    .rectangle-create {
-      left: -1.5%;
-      height: 41px;
-      bottom: -21px;
-      width: 290px; } }
-
-.create-container {
-  position: relative;
-  width: 400px;
-  margin: 0 auto; }
-  @media screen and (min-width: 700px) {
-    .create-container {
-      width: 500px; } }
-
-.create-title {
-  height: 32px;
-  width: 100%;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0.69px;
-  line-height: 28px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  font-family: "Space Mono"; }
-  @media screen and (min-width: 700px) {
-    .create-title {
-      width: 100%;
-      font-size: 2.6em;
-      margin-bottom: 3rem; } }
-
-.text-below-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  height: 81px;
-  width: 100%;
-  background-color: #8bbbe5;
-  font-family: "Montserrat";
-  margin-bottom: 2.5rem; }
-  .text-below-container h2 {
-    font-weight: 500;
-    margin-left: 3rem; }
-    @media screen and (min-width: 700px) {
-      .text-below-container h2 {
-        width: 100%;
-        font-size: 2rem;
-        text-align: left; } }
-
-.steps-container:nth-of-type(2) .steps-wrapper::before {
-  background-color: #9389FF;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  left: unset;
-  right: -72px;
-  bottom: 47%;
-  top: unset;
-  width: 160px;
-  height: 29px; }
-
-.steps-container:nth-of-type(3) .steps-wrapper::before {
-  background-color: #29CFFF;
-  top: unset;
-  right: 3px;
-  bottom: -7px;
-  left: unset; }
-
-.steps-wrapper {
-  position: relative; }
-  .steps-wrapper::before {
-    content: '';
-    height: 27px;
-    width: 130px;
-    opacity: .75;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-color: #2ED199;
-    position: absolute;
-    top: -1.5%;
-    left: -1%;
-    border-radius: 4px;
-    z-index: 1; }
-
-.created-index-wrapper {
-  position: relative;
-  width: 400px; }
-  .created-index-wrapper::before {
-    content: "";
-    height: 34px;
-    width: 126px;
-    opacity: .75;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-color: #6054e1;
-    position: absolute;
-    top: -42px;
-    left: 49%;
-    border-radius: 4px;
-    z-index: 1; }
-
-.steps-content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 335px;
-  width: 260px;
-  border: 14px solid #3f576b;
-  border-radius: 14px;
-  position: relative;
-  z-index: 99;
-  font-family: "Montserrat"; }
-  @media screen and (min-width: 700px) {
-    .steps-content {
-      height: 369px;
-      width: 367px; }
-      .steps-content h3 {
-        display: none; } }
-  .steps-content p {
-    margin-left: 5%;
-    margin-right: 5%; }
-    @media screen and (min-width: 700px) {
-      .steps-content p {
-        font-size: 1.2rem;
-        margin-left: 8%;
-        margin-right: 8%; } }
-  .steps-content h2 {
-    font-size: 1.5rem; }
-    @media screen and (min-width: 700px) {
-      .steps-content h2 {
-        font-size: 2.5rem; } }
-  .steps-content h3 {
-    font-weight: 400; }
-
-.steps-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  font-family: "Space Mono"; }
-
-.tutorial-share-title {
-  text-align: center;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Montserrat";
-  font-weight: 600; }
-
-.tutorial-share-container {
-  height: 81px;
-  width: 100%;
-  background-color: #41ffbe;
-  text-align: center; }
-
-.share-container {
-  width: 350px;
-  margin: 0 auto;
-  font-family: "Montserrat";
-  margin-bottom: 3rem;
-  text-align: center; }
-
-.created-index-container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 434px;
-  width: 334px;
-  border: 14px solid #3F576B;
-  border-radius: 14px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  font-family: "Montserrat"; }
-  .created-index-container h2 {
-    font-family: "Space Mono"; }
-
-.title-index-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin-bottom: 1rem; }
-
-.create-lang-title {
-  width: 40%;
-  text-decoration: underline;
-  text-align: left;
-  margin-left: 1rem;
-  line-height: 2; }
-
-.create-lang-amount {
-  width: 55%;
-  margin-right: .5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center; }
-
-.footer-fix {
-  height: 1800px; }
-
-.created-index-rectangle {
-  position: relative; }
-  .created-index-rectangle::before {
-    content: "";
-    height: 34px;
-    width: 193px;
-    opacity: .75;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-color: #157c99;
-    position: absolute;
-    bottom: -25.4rem;
-    left: -4%;
-    border-radius: 4px;
-    z-index: 1; }
-
 @media screen and (min-width: 700px) {
-  .steps-main-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
-
-.archive-tutorial {
-  font-family: "Montserrat";
-  max-width: 1000px;
-  margin: 0 auto; }
-  .archive-tutorial .tutorial-archive-title {
-    font-size: 2rem;
-    max-width: 50%;
-    font-family: "Space Mono"; }
-  .archive-tutorial .archive-rectangle {
-    z-index: 1;
-    left: 0;
-    position: relative;
-    background-color: #41ffbe;
-    -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
-    width: 100%; }
+  .sign-up-main-container {
+    margin-top: 7rem; } }
