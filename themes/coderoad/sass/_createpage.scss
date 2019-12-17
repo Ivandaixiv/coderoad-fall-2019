@@ -40,6 +40,7 @@
         width: 100%;
         font-size: 2.6em;
         margin-bottom: 3rem;
+        margin-top: 3rem;
     }
 }
 
@@ -53,12 +54,17 @@
     background-color: $color__blue-light;
     font-family: $font__paragraph;
     margin-bottom: 2.5rem;  
+    @include desktop{
+        height: 142px;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
     h2{
         font-weight: 500;
         margin-left: 3rem;
         @include desktop{
             width: 100%;
-            font-size: 2rem;
+            font-size: 2.5rem;
             text-align: left;
         }
 
@@ -195,6 +201,7 @@
     align-items: center;
     font-family: $font__paragraph;
     font-weight: 600;
+
 }
 
 .tutorial-share-container{
@@ -202,6 +209,16 @@
     width: 100%;	
     background-color: $color__green-light;
     text-align: center;
+    @include desktop{
+        height: 169px;
+        h2{
+
+            width: 45%;
+            font-size: 2.5rem;
+        }
+    }
+
+
 }
 
 .share-container{
@@ -221,6 +238,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    margin-bottom: 2rem;
     h2{
         font-family: $font__header;
     }
@@ -250,9 +268,6 @@
     align-self: center;
 }
 
-.footer-fix{
-    height: 1800px;
-}
 
 
 .created-index-rectangle{
@@ -276,3 +291,13 @@
     @include desktop {
         display: flex; }
     } 
+
+    .main-container-share-content{
+        @include desktop{
+            display: flex;
+            margin-top: 5rem;
+            img{
+                height: 200px;
+            }
+        }
+    }

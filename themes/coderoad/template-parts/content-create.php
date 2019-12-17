@@ -44,7 +44,7 @@ get_header(); ?>
  	<div class="tutorial-share-container">
  		<h2 class="tutorial-share-title"><?php the_field('share_title'); ?></h2>
 	</div>
-
+<div class="main-container-share-content">
  <?php if(get_field('share-content')): ?>
     <?php while(the_repeater_field('share-content')): ?>
 	<div class="share-container">
@@ -54,8 +54,9 @@ get_header(); ?>
         <h2><?php the_sub_field('title'); ?></h2>
 		<p><?php the_sub_field('paragraph'); ?></p>
 	</div>
-		
-    <?php endwhile; ?>
+
+	<?php endwhile; ?>
+	</div>
  <?php endif; ?>
  
 
