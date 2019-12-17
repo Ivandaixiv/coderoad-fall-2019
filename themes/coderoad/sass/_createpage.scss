@@ -54,7 +54,12 @@
     font-family: $font__paragraph;
     margin-bottom: 2.5rem;  
     h2{
-        font-weight: 600;
+        font-weight: 500;
+        text-align: left;
+        width: 100%;
+        margin-left: 3rem;
+        font-size: 2.3rem;
+
     }
 }
 
@@ -136,12 +141,30 @@
     z-index: 99;
     font-family: $font__paragraph;
 
+    @include desktop{
+        height: 369px;	
+        width: 367px;
+       
+       
+        h3{
+            display: none;
+        }
+    }
+
     p{
         margin-left: 5%;
         margin-right: 5%;
+        @include desktop{
+            font-size:1.2rem;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
     }
     h2{
         font-size: 1.5rem;
+        @include desktop {
+            font-size: 2.5rem;
+        }
     }
     h3{
         font-weight: 400;
@@ -243,4 +266,8 @@
         border-radius: 4px;
         z-index: 1;
     }
+}
+
+.steps-main-container{
+    display: flex;  
 }

@@ -21,9 +21,10 @@ get_header(); ?>
 		<div class="text-below-container">
 		<h2><?php the_field('text-below-title'); ?><h2>
 		</div>
-
+<div class="steps-main-container">
 		<?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
+
 		<section class="steps-container">
 			<div class="steps-wrapper">
 				<div class="steps-content">
@@ -36,9 +37,10 @@ get_header(); ?>
 				</div>
 			</div>	
 		</section>
+
     <?php endwhile; ?>
  <?php endif; ?>
-
+</div>
  	<div class="tutorial-share-container">
  		<h2 class="tutorial-share-title"><?php the_field('share_title'); ?></h2>
 	<div>
