@@ -103,11 +103,14 @@
     position: relative;
     width: 400px;
     margin: 0 auto;
+    @include desktop{
+        margin-top: 3rem;
+    }
 }
 
 .register-container{
     @include desktop {
-    background: #8BBBE5;
+    background: #d4e5f3;
     width: 600px;
     margin: 0 auto;
     }
@@ -115,4 +118,10 @@
 
 .wpcf7-not-valid{
 border-color: red;
+}
+
+.sign-up-main-container{
+    @include desktop{
+        margin-top: 7rem;
+}
 }

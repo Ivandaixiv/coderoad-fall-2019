@@ -14,7 +14,7 @@
 	<div class="register-rectangle"></div>
 	<div class="register-rectangle-two"></div>
 	</div>
-	<div class="entry-content">
+	<div class="sign-up-main-container">
 	<div class="sign-up-container">
 		<?php the_content(); ?>
 		<?php
