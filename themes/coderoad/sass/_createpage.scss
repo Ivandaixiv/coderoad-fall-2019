@@ -6,12 +6,23 @@
     background-color: $color__secondary-light;
     position: absolute;
     bottom: -11px;
-    left: 23.5%;
-    border-radius: 6px;
+    left: 16.5%;
+    border-radius: 4px;
+    @include desktop{
+        left: -1.5%;
+        height: 41px;
+        bottom: -21px;
+        width: 290px;
+    }
 }
 
 .create-container{
     position: relative;
+    width: 400px;
+    margin: 0 auto;
+    @include desktop{
+        width: 500px;
+    }
 }
 
 .create-title {
@@ -25,6 +36,12 @@
     position: relative;
     z-index: 1;
     font-family: $font__header;
+    @include desktop{
+        width: 100%;
+        font-size: 2.6em;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
 }
 
 .text-below-container{
@@ -33,14 +50,94 @@
     align-items: center;
     text-align: center;
     height: 81px;	
-    width: 500px;	
+    width: 100%;	
     background-color: $color__blue-light;
     font-family: $font__paragraph;
     margin-bottom: 2.5rem;  
+    @include desktop{
+        height: 142px;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
     h2{
-        font-weight: 600;
+        font-weight: 500;
+        margin-left: 3rem;
+        @include desktop{
+            width: 100%;
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
     }
 }
+
+.steps-container {
+    &:nth-of-type(2){
+        .steps-wrapper {
+            &::before {
+                background-color: #9389FF;
+                transform: rotate(90deg);
+                left: unset;
+                right: -72px;
+                bottom: 47%;
+                top: unset;
+                width: 160px;
+                height: 29px;
+            }   
+        }
+    }
+    &:nth-of-type(3){
+        .steps-wrapper {
+            &::before {
+                background-color: #29CFFF;
+                top: unset;
+                right: 3px;
+                bottom: -7px;
+                left: unset;
+            }   
+        }
+    }
+}
+
+.steps-wrapper {
+    position: relative;
+    &::before {
+        content: '';
+        height: 27px;
+        width: 130px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color:#2ED199;
+        position: absolute;
+        top: -1.5%;
+        left: -1%;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    
+}
+
+.created-index-wrapper{
+    position: relative;
+    width: 400px;
+    &::before {
+        content: "";
+        height: 34px;
+        width: 126px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color: #6054e1;
+        position: absolute;
+        top: -42px;
+        left: 49%;
+        border-radius: 4px;
+        z-index: 1;
+    
+    }
+
+}
+
+
 
 .steps-content{
     box-sizing: border-box;	
@@ -48,18 +145,37 @@
     width: 260px;	
     border: 14px solid $color__blue-dark;	
     border-radius: 14px;
-    overflow: hidden;
+    position: relative;
+    z-index: 99;
+    font-family: $font__paragraph;
+
+    @include desktop{
+        height: 369px;	
+        width: 367px;
+       
+       
+        h3{
+            display: none;
+        }
+    }
+
     p{
-        font-family: $font__paragraph;
         margin-left: 5%;
         margin-right: 5%;
+        @include desktop{
+            font-size:1.2rem;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
     }
     h2{
         font-size: 1.5rem;
+        @include desktop {
+            font-size: 2.5rem;
+        }
     }
     h3{
         font-weight: 400;
-        font-family: $font__paragraph;
     }
 }
 
@@ -71,6 +187,8 @@
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-family: $font__header;
+    
+    
 }
 
 
@@ -83,6 +201,7 @@
     align-items: center;
     font-family: $font__paragraph;
     font-weight: 600;
+
 }
 
 .tutorial-share-container{
@@ -90,6 +209,16 @@
     width: 100%;	
     background-color: $color__green-light;
     text-align: center;
+    @include desktop{
+        height: 169px;
+        h2{
+
+            width: 45%;
+            font-size: 2.5rem;
+        }
+    }
+
+
 }
 
 .share-container{
@@ -97,7 +226,7 @@
     margin: 0 auto;
     font-family: $font__paragraph;
     margin-bottom: 3rem;
-
+    text-align: center;
 }
 
 .created-index-container {
@@ -107,19 +236,31 @@
 	border: 14px solid #3F576B;
     border-radius: 14px;
     margin: 0 auto;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
     h2{
         font-family: $font__header;
+        @include desktop{
+            font-size: 2rem;
+        }
     }
 
     font-family: $font__paragraph; 
-    
+    @include desktop{
+        height: 472px;	
+        width: 794px;
+        text-align: center;
+    }
 }
 
 .title-index-container{
     display: flex;
     text-align: center;
     margin-bottom: 1rem;
+    @include desktop{
+        font-size: 1.4rem;
+    }
 }
 
 .create-lang-title{
@@ -128,13 +269,56 @@
     text-align: left;
     margin-left: 1rem;
     line-height: 2;
+    @include desktop{
+        text-align: unset;
+    }
 }
 
 .create-lang-amount{
     width:55%;
     margin-right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
-.footer-fix{
-    height: 1800px;
+
+
+.created-index-rectangle{
+    position: relative;
+    &::before {
+        content: "";
+        height: 34px;
+        width: 193px;
+        opacity: .75;
+        transform: rotate(1turn);
+        background-color: #157c99;
+        position: absolute;
+        bottom: -25.4rem;
+        left: -4%;
+        border-radius: 4px;
+        z-index: 1;
+        @include desktop{
+            bottom: -22rem;
+            left: -16.5%;
+            transform: rotate(90deg);
+            width: 15rem;
+            height: 4rem;
+        }
+    }
 }
+
+.steps-main-container{
+    @include desktop {
+        display: flex; }
+    } 
+
+    .main-container-share-content{
+        @include desktop{
+            display: flex;
+            margin-top: 5rem;
+            img{
+                height: 200px;
+            }
+        }
+    }
