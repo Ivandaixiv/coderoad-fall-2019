@@ -19,9 +19,11 @@
 
 	<div class="entry-content tutorial-index">
 		<div class="thumbandpost">
-			<?php if (has_post_thumbnail()) : ?>
-				<?php the_post_thumbnail('large'); ?>
-			<?php endif; ?>
+			<div class="thumbnail">
+				<?php if (has_post_thumbnail()) : ?>
+					<?php the_post_thumbnail('large'); ?>
+				<?php endif; ?>
+			</div>
 
 
 			<?php if ('post' === get_post_type()) : ?>
