@@ -33,7 +33,6 @@
     margin-bottom: 30px;
     p {
       width: 154px;
-    //   align-self: flex-end;
     }
     .tutorial-date p {
       margin-top: 30px;
@@ -52,14 +51,6 @@
     margin-top: 30px;
   }
 }
-// @include desktop {
-//   .archive-tutorial {
-//     .tutorial-archive-title {
-//       font-size: 2rem;
-//       max-width: 50%;
-//     }
-//   }
-// }
 
 .entry-content {
   font-weight: bold;
@@ -72,47 +63,62 @@
 }
 
 @include desktop {
-
-
-    .archive-tutorial {
-        .tutorial-archive-title {
-          font-size: 2rem;
-          max-width: 50%;
-        }
-      }
+  .archive-tutorial {
+    .tutorial-archive-title {
+      font-size: 2rem;
+      max-width: 50%;
+    }
+  }
+  .thumbnail {
+    margin-right: 60px;
+  }
 
   .list-headings {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-left: 126px;
   }
-  .tutorial-index {
+
+  .list-group {
     display: flex;
-    height: 80px;
+    margin-left: 0px;
   }
-  .paragraph-container p {
-    position: relative;
+  .rating {
+    margin-right: 30px;
   }
-  .tutorial-date {
-    position: absolute;
-    left: 388px;
-    padding-top: 33px;
-    font-size: 0.8em;
+  .wishlist {
+    margin-right: 30px;
   }
 
-  .vsc-button {
-    background-color: green;
-    color: black;
-    height: 20px;
-    width: 65px;
-  }
 
-  .share-button {
-    background-color: green;
-    color: black;
-    height: 20px;
-    width: 65px;
-  }
-  .tutorial-date{
-      margin-top: 30px;
-  }
+.tutorial-index {
+  display: flex;
+  height: 80px;
+}
+.paragraph-container p {
+  position: relative;
+}
+.tutorial-date {
+  position: absolute;
+  left: 388px;
+  padding-top: 33px;
+  font-size: 0.8em;
+}
+
+.vsc-button {
+  background-color: green;
+  color: black;
+  height: 20px;
+  width: 65px;
+}
+
+.share-button {
+  background-color: green;
+  color: black;
+  height: 20px;
+  width: 65px;
+}
+.tutorial-date {
+  margin-top: 30px;
+}
 }
