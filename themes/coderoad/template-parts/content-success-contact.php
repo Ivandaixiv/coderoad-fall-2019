@@ -16,7 +16,7 @@ get_header(); ?>
 		<div class="success-text-container">
         <h2>Thank you for your question!</h2>
         <h3>Keep an eye on your inbox for our reply.</h3>
-        <div class="testest"></div>
+        <div class="testest"><?php echo '<img class="success-illustration" src="https://raw.githubusercontent.com/redacademy/coderoad-fall-2019/master/themes/coderoad/assets/desktop-assets/illustrations/Illustration%201%403x.png?token=AL2TWV3EVML2CCVE2DRTU6K6ALRFW">'?></div>
         <div class="success-img-container">
         <?php if(get_field('contact_success')): ?>
     <?php while(the_repeater_field('contact_success')): ?>	

@@ -58,3 +58,11 @@
     justify-content: center;
     width: 400px;
 }
+
+.success-illustration{
+    display: none;
+    @include desktop {
+        height: 300px;
+        display: unset;
+    }
+}
