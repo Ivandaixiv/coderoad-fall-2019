@@ -119,19 +119,20 @@ get_header(); ?>
 <?php if(get_field('testimonial')): ?>
     <?php while(the_repeater_field('testimonial')): ?>
       
-    <div class="testimonial-single">
+<div class="testimonial-single">
     
  
         <p><?php the_sub_field('paragraph'); ?></p>
        
         <img src="<?php echo the_sub_field('profile_image'); ?>" >
         <h5><?php the_sub_field('profile-name'); ?></h5>
-    </div>
+</div>
    
       
     <?php endwhile; ?>
  <?php endif; ?>
-    </div>
+</div>
+
    
 <div class="create-instructions">
     <?php if(get_field('create_instructions')): ?>
@@ -143,6 +144,7 @@ get_header(); ?>
  <?php endif; ?>
  </div>
 
+
  <div class="steps">
 
  <?php if(get_field('steps')): ?>
@@ -151,9 +153,12 @@ get_header(); ?>
         <h2><?php the_sub_field('step'); ?></h2>
         <p><?php the_sub_field('paragraph'); ?></p>
     </div>
+
+
        <?php endwhile; ?>
  <?php endif; ?>
  </div>
+
 
 <div class="notification-email">
  <?php if(get_field('notification-email')): ?>
@@ -165,6 +170,8 @@ get_header(); ?>
  <?php endif; ?>
  
  </div>
+
+
 <div class="email-input">
  <?php echo do_shortcode( '[contact-form-7 id="214" title="Email for notification"]' ); ?>
  </div>

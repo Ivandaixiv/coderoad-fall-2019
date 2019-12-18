@@ -15,7 +15,7 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<div class="single-header-info">
-						<?php the_title( '<h2 class="tutorial-archive-title">', '<span class="single-rectangle"></span></h2>' ); ?>
+						<?php the_title( '<h2 class="tutorial-archive-title"><p>', '</p><span class="single-rectangle"></span></h2>' ); ?>
 						<img class="bookmark-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/Bookmark@3x.png"/>
 					</div>
 					<?php if ( has_post_thumbnail() ) : ?>
