@@ -798,149 +798,148 @@ object {
 .site-info {
   background-color: #40389e;
   height: 300px; }
-
-.footer-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 3em;
-  padding-top: 1em; }
-  @media screen and (min-width: 700px) {
-    .footer-navigation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      float: right; } }
-
-.resources {
-  color: #ffffff; }
-  @media screen and (min-width: 700px) {
-    .resources {
-      padding-right: 8em; } }
-  .resources h5 {
-    font-family: "Space Mono";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    margin-bottom: 5px; }
-    @media screen and (min-width: 700px) {
-      .resources h5 {
-        font-size: 20px; } }
-
-ul {
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: "Montserrat"; }
-  @media screen and (min-width: 700px) {
-    ul {
-      font-size: 16px;
-      line-height: 2;
-      font-weight: 500; } }
-
-a {
-  text-align: left;
-  text-decoration: none; }
-
-.about-us {
-  color: #ffffff; }
-  @media screen and (min-width: 700px) {
-    .about-us {
-      padding-right: 8em; } }
-  .about-us h5 {
-    font-family: "Space Mono";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    margin-bottom: 5px; }
-    @media screen and (min-width: 700px) {
-      .about-us h5 {
-        font-size: 20px; } }
-  .about-us ul {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    @media screen and (min-width: 700px) {
-      .about-us ul {
+  .site-info .footer-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1em;
+    padding-top: 1em;
+    grid-gap: 20px; }
+    @media screen and (min-width: 1000px) {
+      .site-info .footer-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: right; } }
+    .site-info .footer-navigation .resources {
+      color: #ffffff; }
+      @media screen and (min-width: 1000px) {
+        .site-info .footer-navigation .resources {
+          padding-right: 8em; } }
+      .site-info .footer-navigation .resources h5 {
+        font-family: "Space Mono";
+        font-weight: bold;
+        font-style: normal;
         font-size: 16px;
-        line-height: 2;
-        font-weight: 500; } }
-  .about-us a {
-    text-decoration: none;
-    color: #ffffff; }
-
-.support {
-  color: #ffffff; }
-  @media screen and (min-width: 700px) {
-    .support {
-      padding-right: 8em; } }
-  .support h5 {
-    font-family: "Space Mono";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    margin-bottom: 5px; }
-    @media screen and (min-width: 700px) {
-      .support h5 {
-        font-size: 20px; } }
-  .support ul {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    @media screen and (min-width: 700px) {
-      .support ul {
+        line-height: 0.4; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .resources h5 {
+            font-size: 20px; } }
+      .site-info .footer-navigation .resources ul {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Montserrat";
+        line-height: 2; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .resources ul {
+            font-size: 16px;
+            line-height: 2;
+            font-weight: 500; } }
+        .site-info .footer-navigation .resources ul a {
+          color: #ffffff;
+          text-align: left;
+          text-decoration: none; }
+    .site-info .footer-navigation .about-us {
+      color: #ffffff; }
+      @media screen and (min-width: 1000px) {
+        .site-info .footer-navigation .about-us {
+          padding-right: 8em; } }
+      .site-info .footer-navigation .about-us h5 {
+        font-family: "Space Mono";
+        font-weight: bold;
+        font-style: normal;
         font-size: 16px;
-        line-height: 2;
-        font-weight: 500; } }
-  .support a {
-    text-decoration: none;
-    color: #ffffff; }
-
-.language {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 3em;
-  margin-top: 3em; }
-  @media screen and (min-width: 700px) {
-    .language {
-      padding: 3em 0 0 3em; } }
-  .language svg {
-    margin-top: 6px; }
-    @media screen and (min-width: 700px) {
-      .language svg {
-        margin-top: 15px;
-        width: 30px;
-        height: 30px; } }
-  .language p {
+        line-height: 0.4; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .about-us h5 {
+            font-size: 20px; } }
+      .site-info .footer-navigation .about-us ul {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Montserrat";
+        line-height: 2; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .about-us ul {
+            font-size: 16px;
+            line-height: 2;
+            font-weight: 500; } }
+      .site-info .footer-navigation .about-us a {
+        text-decoration: none;
+        color: #ffffff; }
+    .site-info .footer-navigation .support {
+      color: #ffffff; }
+      @media screen and (min-width: 1000px) {
+        .site-info .footer-navigation .support {
+          padding-right: 8em; } }
+      .site-info .footer-navigation .support h5 {
+        font-family: "Space Mono";
+        font-weight: bold;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 0.4; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .support h5 {
+            font-size: 20px; } }
+      .site-info .footer-navigation .support ul {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Montserrat";
+        line-height: 2; }
+        @media screen and (min-width: 1000px) {
+          .site-info .footer-navigation .support ul {
+            font-size: 16px;
+            line-height: 2;
+            font-weight: 500; } }
+      .site-info .footer-navigation .support a {
+        text-decoration: none;
+        color: #ffffff; }
+  .site-info .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 3em;
+    margin-top: 3em; }
+    @media screen and (min-width: 1000px) {
+      .site-info .language {
+        padding: 3em 0 0 3em; } }
+    .site-info .language svg {
+      margin-top: 6px; }
+      @media screen and (min-width: 1000px) {
+        .site-info .language svg {
+          margin-top: 15px;
+          width: 30px;
+          height: 30px; } }
+    .site-info .language p {
+      font-size: 10px;
+      margin-left: 5px;
+      font-family: "Montserrat";
+      color: #ffffff; }
+      @media screen and (min-width: 1000px) {
+        .site-info .language p {
+          font-size: 16px;
+          font-weight: 500; } }
+  .site-info .copyright {
+    color: #ffffff;
+    text-align: center;
     font-size: 10px;
-    margin-left: 5px;
-    font-family: "Montserrat";
-    color: #ffffff; }
-    @media screen and (min-width: 700px) {
-      .language p {
-        font-size: 16px;
-        font-weight: 500; } }
-
-.copyright {
-  color: #ffffff;
-  text-align: center;
-  font-size: 10px;
-  font-family: "Montserrat"; }
-  @media screen and (min-width: 700px) {
-    .copyright {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 17px;
-      font-weight: 500;
-      padding: 7em 0 0 7em; } }
+    font-family: "Montserrat"; }
+    @media screen and (min-width: 1000px) {
+      .site-info .copyright {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 7em 0 0 7em; } }
 
 .main-navigation {
   display: -webkit-box;
@@ -1018,7 +1017,8 @@ a {
   .main-navigation .menu-menu-container .menu {
     z-index: 4;
     width: 70vw;
-    height: 70vh; }
+    height: 70vh;
+    font-family: "Montserrat"; }
   .main-navigation .menu-menu-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1048,7 +1048,7 @@ a {
   background: #ffffff;
   padding-top: 5em; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .main-navigation {
     height: 75px;
     -ms-flex-pack: distribute;
@@ -1087,12 +1087,14 @@ a {
     .main-navigation .drop-menu {
       top: 8vh; }
       .main-navigation .drop-menu h2 {
-        width: 50vw; }
+        width: 50vw;
+        font-family: "Space Mono"; }
     .main-navigation .desktop-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      z-index: 1; }
+      z-index: 1;
+      font-family: "Montserrat"; }
       .main-navigation .desktop-navigation a {
         color: #2ed199;
         font-weight: 600;
@@ -1169,7 +1171,7 @@ a {
       left: 133px;
       top: 23px;
       z-index: -1; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorial-h2 h2::before {
           background-color: #6487a5;
           border: 1px solid #6487a5;
@@ -1199,7 +1201,7 @@ a {
       left: 32px;
       bottom: -1px;
       z-index: -1; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .profile-h2 h2::before {
           height: 22px;
           width: 182px;
@@ -1225,7 +1227,7 @@ a {
   width: 385px;
   margin-left: 80px;
   margin-top: 165px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .image-container1 {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1292,7 +1294,7 @@ a {
   width: 385px;
   margin-left: 80px;
   margin-top: 165px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .image-container2 {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1349,7 +1351,7 @@ a {
   line-height: 28px;
   text-align: center;
   width: 100%; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .contact-title {
       font-size: 2.3rem; } }
 
@@ -1359,7 +1361,7 @@ a {
   width: 400px;
   margin: 0 auto;
   z-index: 1; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .contact-title-container {
       width: 310px;
       font-size: 1.2rem; } }
@@ -1376,7 +1378,7 @@ a {
   bottom: 0px;
   right: 25.5%;
   border-radius: 10px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .contact-rectangle {
       right: 41.5%; } }
 
@@ -1409,7 +1411,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .container-contact {
       margin-bottom: 5rem; } }
 
@@ -1417,11 +1419,11 @@ a {
   font-family: "Space Mono";
   z-index: 1;
   position: relative; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .contact-question {
       text-align: left; } }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .contact-main-container {
     width: 600px;
     margin: 0 auto; } }
@@ -1476,7 +1478,7 @@ span.wpcf7-not-valid-tip {
     max-height: 100%;
     border: none;
     border-radius: none; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .code-image img {
         max-width: 100%; } }
   .code-image .title-content-wrapper {
@@ -1500,7 +1502,7 @@ span.wpcf7-not-valid-tip {
       top: 5px;
       z-index: 1;
       border-radius: 4px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .code-image .title-content-wrapper::before {
           width: 750px;
           height: 140px;
@@ -1520,7 +1522,7 @@ span.wpcf7-not-valid-tip {
       top: 10px;
       z-index: 1;
       border-radius: 4px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .code-image .title-content-wrapper::after {
           width: 66px;
           height: 371px;
@@ -1540,7 +1542,7 @@ span.wpcf7-not-valid-tip {
     line-height: 0.3;
     max-width: 90%;
     margin: 0 auto; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .code-image .title-content {
         width: 900px;
         height: 300px;
@@ -1548,14 +1550,14 @@ span.wpcf7-not-valid-tip {
         line-height: 0; } }
     .code-image .title-content h2 {
       color: black; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .code-image .title-content h2 {
           font-size: 110px; } }
     .code-image .title-content p {
       font-family: "Montserrat";
       line-height: 1.5;
       font-size: 12px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .code-image .title-content p {
           font-size: 37px;
           padding-bottom: 3px; } }
@@ -1565,8 +1567,9 @@ span.wpcf7-not-valid-tip {
     border-radius: 4px;
     color: black;
     font-family: "Space Mono";
-    font-weight: 550; }
-    @media screen and (min-width: 700px) {
+    font-weight: 550;
+    text-decoration: none; }
+    @media screen and (min-width: 1000px) {
       .code-image a {
         padding: 19px 90px;
         font-size: 25px; } }
@@ -1577,7 +1580,7 @@ span.wpcf7-not-valid-tip {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .why-title {
       font-size: 45px;
       padding-top: 2em; } }
@@ -1595,7 +1598,7 @@ span.wpcf7-not-valid-tip {
   .why-code h3 {
     font-size: 14px;
     font-family: "Montserrat"; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .why-code h3 {
         font-size: 39px;
         font-weight: 600; } }
@@ -1603,14 +1606,14 @@ span.wpcf7-not-valid-tip {
     font-size: 10px;
     font-family: "Montserrat";
     line-height: 2; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .why-code p {
         font-size: 18px;
         padding: 0 4em;
         line-height: 1.4; } }
   .why-code .image-why {
     height: 100px; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .why-code .image-why {
         height: 250px; } }
     .why-code .image-why img {
@@ -1619,8 +1622,8 @@ span.wpcf7-not-valid-tip {
       width: 100%;
       height: 100%; }
 
-@media screen and (min-width: 700px) {
-  .tutorial {
+@media screen and (min-width: 1000px) {
+  .tutorial-fp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1628,51 +1631,51 @@ span.wpcf7-not-valid-tip {
     margin-top: 200px;
     height: 41em; } }
 
-.tutorial iframe {
+.tutorial-fp iframe {
   margin-top: 3em;
   max-height: 200px;
   width: 51em;
   border-radius: 3%; }
-  @media screen and (min-width: 700px) {
-    .tutorial iframe {
+  @media screen and (min-width: 1000px) {
+    .tutorial-fp iframe {
       min-height: 28em;
       width: 49em; } }
 
-.tutorial .video {
+.tutorial-fp .video {
   max-width: 80%;
   margin-left: 3em; }
-  @media screen and (min-width: 700px) {
-    .tutorial .video .video {
+  @media screen and (min-width: 1000px) {
+    .tutorial-fp .video .video {
       width: 80px; } }
 
-.tutorial .tutorial-info {
+.tutorial-fp .tutorial-info {
   font-family: "Montserrat";
   padding: 0 3em; }
-  @media screen and (min-width: 700px) {
-    .tutorial .tutorial-info {
+  @media screen and (min-width: 1000px) {
+    .tutorial-fp .tutorial-info {
       padding: 5em 7em 0 2em; } }
-  .tutorial .tutorial-info h2 {
+  .tutorial-fp .tutorial-info h2 {
     font-family: "Montserrat";
     font-weight: 600;
     font-style: normal;
     color: black;
     font-size: 13px; }
-    @media screen and (min-width: 700px) {
-      .tutorial .tutorial-info h2 {
+    @media screen and (min-width: 1000px) {
+      .tutorial-fp .tutorial-info h2 {
         font-size: 32px; } }
-  .tutorial .tutorial-info h3 {
+  .tutorial-fp .tutorial-info h3 {
     font-weight: 500;
     font-style: normal;
     font-size: 13px;
     color: black; }
-    @media screen and (min-width: 700px) {
-      .tutorial .tutorial-info h3 {
+    @media screen and (min-width: 1000px) {
+      .tutorial-fp .tutorial-info h3 {
         font-size: 22px; } }
-  .tutorial .tutorial-info p {
+  .tutorial-fp .tutorial-info p {
     line-height: 1.2;
     font-size: 14px; }
-    @media screen and (min-width: 700px) {
-      .tutorial .tutorial-info p {
+    @media screen and (min-width: 1000px) {
+      .tutorial-fp .tutorial-info p {
         font-size: 18px; } }
 
 .social-media {
@@ -1693,8 +1696,9 @@ span.wpcf7-not-valid-tip {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 2em; }
-    @media screen and (min-width: 700px) {
+    padding-bottom: 2em;
+    text-decoration: none; }
+    @media screen and (min-width: 1000px) {
       .tutorials-section a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1704,13 +1708,13 @@ span.wpcf7-not-valid-tip {
             -ms-flex-direction: column;
                 flex-direction: column;
         padding-right: 5em; } }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .tutorials-section a .tutorial-info {
         margin-left: 0; } }
     .tutorials-section a .tutorial-info h2 {
       font-size: 13px;
       font-family: "Montserrat"; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorials-section a .tutorial-info h2 {
           font-size: 23px; } }
     .tutorials-section a .tutorial-info h5 {
@@ -1718,7 +1722,7 @@ span.wpcf7-not-valid-tip {
       font-family: "Montserrat";
       font-weight: 400;
       font-size: 10px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorials-section a .tutorial-info h5 {
           font-size: 18px; } }
     .tutorials-section a .tutorial-info h4 {
@@ -1726,10 +1730,10 @@ span.wpcf7-not-valid-tip {
       font-family: "Montserrat";
       font-weight: 500;
       font-size: 13px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorials-section a .tutorial-info h4 {
           font-size: 18px; } }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .tutorials-section {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1739,7 +1743,7 @@ span.wpcf7-not-valid-tip {
     width: 13em;
     height: 8em;
     border-radius: 9px; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .tutorials-section img {
         width: 22em;
         height: 16em; } }
@@ -1752,13 +1756,13 @@ span.wpcf7-not-valid-tip {
       padding-bottom: 3px;
       font-weight: 600;
       font-size: 13px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorials-section .tutorial-info h2 {
           font-size: 23px; } }
     .tutorials-section .tutorial-info p {
       font-size: 10px;
       padding-top: 5px; }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 1000px) {
         .tutorials-section .tutorial-info p {
           font-size: 15px; } }
 
@@ -1766,7 +1770,7 @@ span.wpcf7-not-valid-tip {
   font-size: 14px;
   position: relative;
   color: black; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .testimonial-title {
       font-size: 32px; } }
   .testimonial-title h2 {
@@ -1785,7 +1789,7 @@ span.wpcf7-not-valid-tip {
     top: 10px;
     z-index: 1;
     border-radius: 4px; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial-title::before {
         width: 180px;
         height: 75px;
@@ -1802,7 +1806,7 @@ span.wpcf7-not-valid-tip {
     top: 0px;
     z-index: 1;
     border-radius: 4px; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial-title::after {
         width: 75px;
         height: 180px;
@@ -1820,7 +1824,7 @@ span.wpcf7-not-valid-tip {
     font-size: 13px;
     padding: 1em 6em;
     line-height: 1.3; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial p {
         text-align: left;
         font-size: 18px;
@@ -1829,14 +1833,14 @@ span.wpcf7-not-valid-tip {
     width: 6em;
     margin: 0;
     padding: 0; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial img {
         width: 11em;
         padding-top: 3em; } }
   .testimonial h5 {
     font-family: "Montserrat";
     font-weight: 400; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial h5 {
         font-size: 23px; } }
 
@@ -1853,7 +1857,7 @@ span.wpcf7-not-valid-tip {
     left: 34px;
     top: 50px;
     color: #157c99; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial-single::before {
         left: 340px;
         top: 30px; } }
@@ -1866,7 +1870,7 @@ span.wpcf7-not-valid-tip {
     right: 34px;
     top: 50px;
     color: #157c99; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .testimonial-single::after {
         left: 730px;
         top: 30px; } }
@@ -1887,7 +1891,6 @@ span.wpcf7-not-valid-tip {
   padding-bottom: 5em;
   padding-left: 3em; }
   .flickity-page-dots li {
-    color: #157c99;
     font-size: 30px; }
 
 .create-instructions {
@@ -1897,7 +1900,7 @@ span.wpcf7-not-valid-tip {
   font-size: 16px;
   font-family: "Space Mono";
   color: black; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .create-instructions {
       font-size: 30px; } }
   .create-instructions p {
@@ -1905,7 +1908,7 @@ span.wpcf7-not-valid-tip {
     font-size: 12px;
     padding: 1em 5em;
     line-height: 1.7; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .create-instructions p {
         font-size: 22px;
         padding: 1em 17em;
@@ -1914,7 +1917,7 @@ span.wpcf7-not-valid-tip {
 .steps {
   line-height: 0.1;
   padding: 0 3em; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .steps {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1946,7 +1949,7 @@ span.wpcf7-not-valid-tip {
       left: -1%;
       border-radius: 4px;
       z-index: 1; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .steps .step {
         height: 23em;
         padding: 0;
@@ -1959,7 +1962,7 @@ span.wpcf7-not-valid-tip {
     font-family: "Montserrat";
     font-weight: 500;
     padding-top: 2em; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .steps h2 {
         font-size: 45px;
         padding-top: 1em; } }
@@ -1968,7 +1971,7 @@ span.wpcf7-not-valid-tip {
     font-size: 16px;
     padding: 9px 30px;
     line-height: 1.7; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .steps p {
         font-size: 18px; } }
 
@@ -1980,7 +1983,7 @@ span.wpcf7-not-valid-tip {
     line-height: 1.5;
     font-family: "Space Mono";
     color: black; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .notification-email h2 {
         font-size: 30px;
         margin-top: 4em; } }
@@ -1989,7 +1992,7 @@ span.wpcf7-not-valid-tip {
     font-size: 14px;
     padding: 1em 3em;
     line-height: 1.7; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .notification-email p {
         font-size: 16px;
         width: 700px;
@@ -2015,9 +2018,29 @@ span.wpcf7-not-valid-tip {
 
 .home .email-input .wpcf7-submit {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 7px; }
+  top: 2px;
+  right: 5px;
+  border-radius: 7px;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.home .fa {
+  font-size: 30px;
+  text-shadow: 1px 2px #22b4de; }
+
+.home .wpcf7-validation-errors {
+  font-family: "Space Mono";
+  display: block;
+  border: none;
+  color: #af3535; }
+
+.home .wpcf7-mail-sent-ok {
+  font-family: "Space Mono";
+  display: block;
+  border: none;
+  color: #af3535; }
 
 .sign-up-content {
   height: 475px; }
@@ -2069,7 +2092,7 @@ span.wpcf7-not-valid-tip {
   font-family: "Space Mono";
   margin-top: 1.5rem;
   margin-left: 1rem; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .sign-up-submit {
       margin-bottom: 3.5rem;
       margin-left: 1rem; } }
@@ -2083,7 +2106,7 @@ span.wpcf7-not-valid-tip {
   margin-bottom: 3rem; }
   .sign-up-container p {
     margin: 0px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .sign-up-container {
       margin-bottom: 4rem; } }
 
@@ -2094,7 +2117,6 @@ span.wpcf7-not-valid-tip {
   background: #41ffbe;
   right: 116px;
   top: 62px;
-  opacity: 0.75;
   border-radius: 1rem; }
 
 .register-rectangle-two {
@@ -2104,18 +2126,17 @@ span.wpcf7-not-valid-tip {
   background: #9389ff;
   right: 96px;
   top: 76px;
-  opacity: .9;
   border-radius: 1rem; }
 
 .register-content {
   position: relative;
   width: 400px;
   margin: 0 auto; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .register-content {
       margin-top: 3rem; } }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .register-container {
     background: #d4e5f3;
     width: 600px;
@@ -2124,19 +2145,20 @@ span.wpcf7-not-valid-tip {
 .wpcf7-not-valid {
   border-color: red; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .sign-up-main-container {
     margin-top: 7rem; } }
+
+article {
+  margin: 0;
+  padding: 0; }
 
 .archive-tutorial {
   width: 80vw;
   margin: 0 auto; }
-<<<<<<< HEAD
-=======
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .archive-tutorial {
       width: 100vw; } }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
 
 .archive-tutorial {
   font-family: "Montserrat";
@@ -2158,14 +2180,13 @@ span.wpcf7-not-valid-tip {
     display: inline-block;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+    @media screen and (min-width: 1000px) {
+      .archive-tutorial .contact-rectangle {
+        height: 40px;
+        display: inline-block;
+        -webkit-transform: translateY(-58%);
+                transform: translateY(-58%); } }
   .archive-tutorial .tutorial-info {
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    margin-bottom: 30px; }
-    .archive-tutorial .tutorial-info .tutorial-date {
-      margin-top: 30px; }
-=======
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2177,123 +2198,163 @@ span.wpcf7-not-valid-tip {
       width: 60em; }
     .archive-tutorial .tutorial-info .button-container {
       display: none; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
   .archive-tutorial .tutorial-icon {
     width: 30px;
     margin: 0 5px;
     -webkit-transform: translateY(25%);
             transform: translateY(25%); }
-<<<<<<< HEAD
-
-@media screen and (min-width: 700px) {
-  .archive-tutorial .tutorial-archive-title {
-    font-size: 2rem;
-    max-width: 50%; } }
-=======
   .archive-tutorial .title-container {
     margin-top: 30px; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
 
 .entry-content {
   font-weight: bold; }
   .entry-content p {
     font-weight: normal; }
 
-<<<<<<< HEAD
-.wp-post-image {
-  border: 2px solid black;
-  border-radius: 5px;
-  max-width: 480px;
-  max-height: 300px; }
-=======
 .list-headings {
   display: none; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .archive-tutorial .tutorial-archive-title {
     font-size: 2rem;
     max-width: 50%; }
+  .thumbnail {
+    width: 12em;
+    margin-top: 33px;
+    margin-right: 42px; }
   .list-headings {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 74px; }
+  .list-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px; }
+  .rating {
+    margin-right: 30px; }
+  .wishlist {
+    margin-right: 30px; }
   .tutorial-index {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 80px; }
+    height: 80px;
+    padding-bottom: 12em; }
   .paragraph-container p {
     position: relative; }
   .tutorial-date {
     position: absolute;
     left: 388px;
-    padding-top: 33px;
+    padding-top: 8rem;
     font-size: 0.8em; }
   .vsc-button {
-    background-color: green;
+    background-color: #29cfff;
+    font-size: 10px;
     color: black;
-    height: 20px;
-    width: 65px; }
+    height: 40px;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .share-button {
-    background-color: green;
+    border: 1.5px solid black;
+    font-size: 10px;
     color: black;
-    height: 20px;
-    width: 65px; }
-  .tutorial-date {
-    margin-top: 30px; } }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
+    height: 40px;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .entry-content p {
+    margin-right: -50px; }
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 180px;
+    width: 200px; }
+  .tutorial-name {
+    margin-right: 20px; }
+  .tut-h2 {
+    display: none; } }
 
 .archive-single {
   width: 90%;
   margin: 0 auto;
   font-family: "Montserrat"; }
-<<<<<<< HEAD
-=======
   .archive-single h2 {
     font-size: 1.5rem; }
   .archive-single p {
     font-size: 16px; }
+  .archive-single .tutorial-archive-title {
+    z-index: 2; }
+    .archive-single .tutorial-archive-title p {
+      font-size: 1.75rem; }
+  .archive-single .single-rectangle {
+    background: #9389ff;
+    display: inline-block;
+    border-radius: 5px;
+    width: 120%;
+    height: 30px;
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+    z-index: -1; }
+  .archive-single .bookmark-icon {
+    margin: auto 10vw;
+    height: 30px; }
   .archive-single .entry-header {
     text-align: center; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
   .archive-single .single-header-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    height: 15vh; }
   .archive-single .tutorial-single-title {
     font-family: "Space Mono"; }
   .archive-single .wp-post-image {
-<<<<<<< HEAD
-    border-radius: 15px; }
-=======
     border-radius: 15px;
     max-width: 100%; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
   .archive-single .tutorial-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: .8rem; }
-<<<<<<< HEAD
-    .archive-single .tutorial-info .tutorial-date, .archive-single .tutorial-info .tutorial-text {
-      margin-top: 30px; }
-=======
     .archive-single .tutorial-info p {
       margin: 5px; }
     .archive-single .tutorial-info .tutorial-date, .archive-single .tutorial-info .tutorial-text {
       margin-top: 15px; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
   .archive-single .tutorial-icon {
     width: 30px;
     margin: 0 5px;
     -webkit-transform: translateY(25%);
             transform: translateY(25%); }
-<<<<<<< HEAD
-=======
   .archive-single .tutorial-requirements-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2336,12 +2397,58 @@ span.wpcf7-not-valid-tip {
     border: 1px solid #000000;
     border-radius: 5px; }
   .archive-single .form-submit input {
+    padding: 15px 15vw;
     background: #fff;
     border: 1px solid #000000;
     border-radius: 5px;
     position: absolute;
     right: 5%; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
+  .archive-single .empty-comments .comment-respond {
+    height: 25vh; }
+  .archive-single .empty-comments-logged-out .comment-respond {
+    height: 55vh; }
+
+@media screen and (min-width: 1000px) {
+  .archive-single {
+    margin: 0 5vw;
+    width: 45%; }
+    .archive-single .entry-content p {
+      font-size: 1.5rem; }
+    .archive-single .tutorial-info {
+      width: 30vw; }
+      .archive-single .tutorial-info p {
+        font-size: 1.25rem; }
+      .archive-single .tutorial-info img {
+        width: 50px; }
+    .archive-single .tutorial-date {
+      position: relative;
+      padding: 0;
+      left: 0; }
+    .archive-single .tutorial-tags-list {
+      width: 25vw; }
+      .archive-single .tutorial-tags-list p {
+        font-size: 1rem; }
+    .archive-single .entry-header img {
+      display: none; }
+    .archive-single .comment-form {
+      width: 25vw; }
+      .archive-single .comment-form p {
+        font-size: 1rem; }
+    .archive-single .comment-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .archive-single .comment-content p {
+        font-size: 1rem; }
+    .archive-single .form-submit input {
+      position: relative;
+      padding: 15px 5vw;
+      margin: 0 20px;
+      left: 12vw; }
+    .archive-single .tutorial-requirements-list p {
+      font-size: 1rem; }
+    .archive-single .reply {
+      display: none; } }
 
 .rectangle-create {
   height: 27px;
@@ -2354,7 +2461,7 @@ span.wpcf7-not-valid-tip {
   bottom: -11px;
   left: 16.5%;
   border-radius: 4px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .rectangle-create {
       left: -1.5%;
       height: 41px;
@@ -2365,7 +2472,7 @@ span.wpcf7-not-valid-tip {
   position: relative;
   width: 400px;
   margin: 0 auto; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .create-container {
       width: 500px; } }
 
@@ -2380,7 +2487,7 @@ span.wpcf7-not-valid-tip {
   position: relative;
   z-index: 1;
   font-family: "Space Mono"; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .create-title {
       width: 100%;
       font-size: 2.6em;
@@ -2403,7 +2510,7 @@ span.wpcf7-not-valid-tip {
   background-color: #8bbbe5;
   font-family: "Montserrat";
   margin-bottom: 2.5rem; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .text-below-container {
       height: 142px;
       margin-top: 6rem;
@@ -2411,14 +2518,14 @@ span.wpcf7-not-valid-tip {
   .text-below-container h2 {
     font-weight: 500;
     margin-left: 3rem; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .text-below-container h2 {
         width: 100%;
         font-size: 2.5rem;
         text-align: left; } }
 
 .steps-container:nth-of-type(2) .steps-wrapper::before {
-  background-color: #9389FF;
+  background-color: #6054e1;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   left: unset;
@@ -2429,7 +2536,7 @@ span.wpcf7-not-valid-tip {
   height: 29px; }
 
 .steps-container:nth-of-type(3) .steps-wrapper::before {
-  background-color: #29CFFF;
+  background-color: #29cfff;
   top: unset;
   right: 3px;
   bottom: -7px;
@@ -2441,10 +2548,9 @@ span.wpcf7-not-valid-tip {
     content: '';
     height: 27px;
     width: 130px;
-    opacity: .75;
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
-    background-color: #2ED199;
+    background-color: #2ed199;
     position: absolute;
     top: -1.5%;
     left: -1%;
@@ -2478,7 +2584,7 @@ span.wpcf7-not-valid-tip {
   position: relative;
   z-index: 99;
   font-family: "Montserrat"; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .steps-content {
       height: 369px;
       width: 367px; }
@@ -2487,14 +2593,14 @@ span.wpcf7-not-valid-tip {
   .steps-content p {
     margin-left: 5%;
     margin-right: 5%; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .steps-content p {
         font-size: 1.2rem;
         margin-left: 8%;
         margin-right: 8%; } }
   .steps-content h2 {
     font-size: 1.5rem; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
       .steps-content h2 {
         font-size: 2.5rem; } }
   .steps-content h3 {
@@ -2533,7 +2639,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   background-color: #41ffbe;
   text-align: center; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .tutorial-share-container {
       height: 169px; }
       .tutorial-share-container h2 {
@@ -2552,7 +2658,7 @@ span.wpcf7-not-valid-tip {
           box-sizing: border-box;
   height: 434px;
   width: 334px;
-  border: 14px solid #3F576B;
+  border: 14px solid #3f576b;
   border-radius: 14px;
   margin: 0 auto;
   position: relative;
@@ -2560,11 +2666,13 @@ span.wpcf7-not-valid-tip {
   margin-bottom: 2rem;
   font-family: "Montserrat"; }
   .created-index-container h2 {
-    font-family: "Space Mono"; }
-    @media screen and (min-width: 700px) {
+    font-family: "Space Mono";
+    font-size: 1.6rem;
+    text-align: center; }
+    @media screen and (min-width: 1000px) {
       .created-index-container h2 {
         font-size: 2rem; } }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .created-index-container {
       height: 472px;
       width: 794px;
@@ -2576,7 +2684,7 @@ span.wpcf7-not-valid-tip {
   display: flex;
   text-align: center;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .title-index-container {
       font-size: 1.4rem; } }
 
@@ -2585,8 +2693,9 @@ span.wpcf7-not-valid-tip {
   text-decoration: underline;
   text-align: left;
   margin-left: 1rem;
-  line-height: 2; }
-  @media screen and (min-width: 700px) {
+  line-height: 2;
+  font-weight: 500; }
+  @media screen and (min-width: 1000px) {
     .create-lang-title {
       text-align: unset; } }
 
@@ -2600,39 +2709,16 @@ span.wpcf7-not-valid-tip {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  font-weight: 400; }
 
-.created-index-rectangle {
-  position: relative; }
-  .created-index-rectangle::before {
-    content: "";
-    height: 34px;
-    width: 193px;
-    opacity: .75;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-color: #157c99;
-    position: absolute;
-    bottom: -25.4rem;
-    left: -4%;
-    border-radius: 4px;
-    z-index: 1; }
-    @media screen and (min-width: 700px) {
-      .created-index-rectangle::before {
-        bottom: -22rem;
-        left: -16.5%;
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-        width: 15rem;
-        height: 4rem; } }
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .steps-main-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .main-container-share-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2641,7 +2727,45 @@ span.wpcf7-not-valid-tip {
     .main-container-share-content img {
       height: 200px; } }
 
-<<<<<<< HEAD
+.created-section-main {
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 1000px) {
+    .created-section-main {
+      position: relative;
+      z-index: 1;
+      width: 790px;
+      margin: 0 auto; }
+      .created-section-main::before {
+        content: "";
+        height: 60px;
+        width: 195px;
+        -webkit-transform: rotate(1turn);
+                transform: rotate(1turn);
+        background-color: #6054e1;
+        position: absolute;
+        top: -8.4%;
+        right: -4%;
+        border-radius: 4px; } }
+
+@media screen and (min-width: 1000px) {
+  .second-rectangle-created {
+    position: relative;
+    z-index: 1;
+    width: 790px;
+    margin: 0 auto; }
+    .second-rectangle-created::before {
+      content: "";
+      height: 61px;
+      width: 250px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      background-color: #157c99;
+      position: absolute;
+      border-radius: 4px;
+      bottom: 16%;
+      left: -16%; } }
+
 .success-title-container {
   text-align: center;
   color: #404040;
@@ -2651,7 +2775,7 @@ span.wpcf7-not-valid-tip {
   width: 80%;
   border-bottom: 1px solid #40389E;
   margin: 0 auto; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .success-title-container {
       display: none; } }
 
@@ -2675,7 +2799,7 @@ span.wpcf7-not-valid-tip {
   top: 46%;
   right: 17%;
   height: 250px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .success-images {
       display: none; } }
 
@@ -2683,7 +2807,7 @@ span.wpcf7-not-valid-tip {
   height: 445px;
   width: 400px;
   margin: 0 auto; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1000px) {
     .success-main-container {
       width: 80%; } }
 
@@ -2695,11 +2819,67 @@ span.wpcf7-not-valid-tip {
       -ms-flex-pack: center;
           justify-content: center;
   width: 400px; }
-=======
+
+.success-illustration {
+  display: none; }
+  @media screen and (min-width: 1000px) {
+    .success-illustration {
+      height: 300px;
+      display: unset; } }
+
 .search .entry-title {
   display: block; }
 
 .search .site-content {
+  height: 100vh;
   max-width: 1120px;
-  margin: 0 auto; }
->>>>>>> 5a014d46ecbb1f784847cc812c7251bad784779b
+  margin: 0 auto;
+  padding: 0 auto; }
+
+.search .search-content h1 {
+  font-family: "Space Mono";
+  text-align: center;
+  font-size: 32px;
+  padding: 2em; }
+  .search .search-content h1 span {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #157c99; }
+  @media screen and (min-width: 1000px) {
+    .search .search-content h1 {
+      padding-top: 1em;
+      padding-bottom: 2em;
+      font-size: 40px; } }
+
+.search .search-content h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 25px; }
+  @media screen and (min-width: 1000px) {
+    .search .search-content h2 {
+      padding: 0;
+      text-align: center; } }
+
+.search .search-content a {
+  color: #22b4de; }
+
+.search .search-content p {
+  font-size: 16px;
+  padding: 3em;
+  font-family: "Montserrat"; }
+  @media screen and (min-width: 1000px) {
+    .search .search-content p {
+      padding: 0 5em;
+      margin: 0;
+      font-size: 20px; } }
+
+.search article {
+  padding: 0;
+  margin: 0; }
+
+.search .entry-header {
+  padding: 0;
+  margin: 0; }
+
+.search form {
+  display: none; }
