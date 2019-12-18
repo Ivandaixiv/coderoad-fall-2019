@@ -1,6 +1,10 @@
 .archive-tutorial {
   width: 80vw;
   margin: 0 auto;
+
+  @include desktop {
+    width: 100vw;
+  }
 }
 
 .archive-tutorial {
@@ -25,11 +29,18 @@
     transform: translateY(-50%);
   }
   .tutorial-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: flex;
     margin-bottom: 30px;
-    .tutorial-date {
+    p {
+      width: 154px;
+    //   align-self: flex-end;
+    }
+    .tutorial-date p {
       margin-top: 30px;
+      width: 60em;
+    }
+    .button-container {
+      display: none;
     }
   }
   .tutorial-icon {
@@ -37,24 +48,71 @@
     margin: 0 5px;
     transform: translateY(25%);
   }
-}
-@include desktop {
-  .archive-tutorial {
-    .tutorial-archive-title {
-      font-size: 2rem;
-      max-width: 50%;
-    }
+  .title-container {
+    margin-top: 30px;
   }
 }
+// @include desktop {
+//   .archive-tutorial {
+//     .tutorial-archive-title {
+//       font-size: 2rem;
+//       max-width: 50%;
+//     }
+//   }
+// }
+
 .entry-content {
   font-weight: bold;
   p {
     font-weight: normal;
   }
 }
-.wp-post-images {
-  border: 2px solid black;
-  border-radius: 5px;
-  max-width: 480px;
-  max-height: 300px;
+.list-headings {
+  display: none;
+}
+
+@include desktop {
+
+
+    .archive-tutorial {
+        .tutorial-archive-title {
+          font-size: 2rem;
+          max-width: 50%;
+        }
+      }
+
+  .list-headings {
+    display: flex;
+    justify-content: space-around;
+  }
+  .tutorial-index {
+    display: flex;
+    height: 80px;
+  }
+  .paragraph-container p {
+    position: relative;
+  }
+  .tutorial-date {
+    position: absolute;
+    left: 388px;
+    padding-top: 33px;
+    font-size: 0.8em;
+  }
+
+  .vsc-button {
+    background-color: green;
+    color: black;
+    height: 20px;
+    width: 65px;
+  }
+
+  .share-button {
+    background-color: green;
+    color: black;
+    height: 20px;
+    width: 65px;
+  }
+  .tutorial-date{
+      margin-top: 30px;
+  }
 }
