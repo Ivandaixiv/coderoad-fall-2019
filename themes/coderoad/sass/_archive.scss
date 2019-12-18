@@ -1,3 +1,8 @@
+article {
+  margin: 0;
+  padding: 0;
+}
+
 .archive-tutorial {
   width: 80vw;
   margin: 0 auto;
@@ -70,13 +75,15 @@
     }
   }
   .thumbnail {
-    margin-right: 60px;
+    width: 12em;
+    margin-top: 33px;
+    margin-right: 42px;
   }
 
   .list-headings {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 126px;
+    margin-left: 74px;
   }
 
   .list-group {
@@ -90,35 +97,45 @@
     margin-right: 30px;
   }
 
+  .tutorial-index {
+    display: flex;
+    height: 80px;
+    padding-bottom: 12em;
+  }
+  .paragraph-container p {
+    position: relative;
+  }
 
-.tutorial-index {
-  display: flex;
-  height: 80px;
-}
-.paragraph-container p {
-  position: relative;
-}
-.tutorial-date {
-  position: absolute;
-  left: 388px;
-  padding-top: 33px;
-  font-size: 0.8em;
-}
+  .tutorial-date {
+    position: absolute;
+    left: 388px;
+    padding-top: 8rem;
+    font-size: 0.8em;
+  }
 
-.vsc-button {
-  background-color: green;
-  color: black;
-  height: 20px;
-  width: 65px;
-}
+  .vsc-button {
+    background-color: #29cfff;
+    @include archive_button;
+  }
 
-.share-button {
-  background-color: green;
-  color: black;
-  height: 20px;
-  width: 65px;
-}
-.tutorial-date {
-  margin-top: 30px;
-}
+  .share-button {
+    border: 1.5px solid black;
+    @include archive_button;
+  }
+
+  .entry-content {
+    p {
+      margin-right: -50px;
+    }
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 200px;
+  }
+
+  .tutorial-name {
+    margin-right: 20px;
+  }
 }

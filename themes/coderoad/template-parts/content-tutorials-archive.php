@@ -40,20 +40,26 @@
 		</div>
 
 		<div class="tutorial-info">
-			<p><img class="tutorial-icon" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/component/Stars/Group 3@3x.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
 
-			<p><img class="tutorial-icon" src="<?php echo get_template_directory_uri() ?>/assets/mobile-assets/Mobile Icons_Header/Icons/User@3x.png"><?php echo get_post_meta($post->ID, 'enrolled_students', true); ?>
+			<p><img class="tutorial-icon icon1" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/icons/bookmark.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
+
+			<p><img class="tutorial-icon icon2" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/component/Stars/Group 3@3x.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
+
+			<p><img class="tutorial-icon icon3" src="<?php echo get_template_directory_uri() ?>/assets/mobile-assets/Mobile Icons_Header/Icons/User@3x.png"><?php echo get_post_meta($post->ID, 'enrolled_students', true); ?>
 			</p>
+
 
 			<?php the_date('m / Y', '<p class="tutorial-date"> Uploaded ', '</p>') ?>
 
-			<section class="button-container">
-				<a class="vsc-button" href="http://localhost:3000/coderoad/vs-code/">Start in VS Code</a>
 
-				<a class="share-button" href="http://localhost:3000/coderoad/my-tutorials/">Share Tutorial</a>
-			</section>
 
 
 		</div>
+		<div class="button-container">
+			<a class="vsc-button" href="http://localhost:3000/coderoad/vs-code/">Start in VS Code</a> <br>
+
+			<a class="share-button" href="http://localhost:3000/coderoad/my-tutorials/">Share Tutorial</a>
+		</div>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
