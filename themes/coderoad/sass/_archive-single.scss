@@ -160,6 +160,10 @@
                 display: none;
             }
         }
+        .tutorial-icon {
+            max-width: none;
+            width: 60px;
+        }
         .comment-form {
             width: 25vw;
             p {
@@ -170,6 +174,16 @@
             display: flex;
             p {
                 font-size: 1rem;
+                margin: 0 30px;
+            }
+        }
+        .comment-meta {
+            flex-direction: column;
+            
+        }
+        .comment-metadata {
+            a {
+                display: none;
             }
         }
         .form-submit {
