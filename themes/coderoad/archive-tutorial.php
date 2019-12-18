@@ -22,7 +22,7 @@ get_header(); ?>
 				<h3 class="rating">Rating</h3>
 				<h3 class="enrolled">Enrolled</h3>
 			</div>
-			
+
 		</section>
 		<?php if (have_posts()) : ?>
 
@@ -40,6 +40,7 @@ get_header(); ?>
 			<?php get_template_part('template-parts/content', 'none'); ?>
 
 		<?php endif; ?>
+
 
 	</main><!-- #main -->
 </div><!-- #primary -->

@@ -53,3 +53,18 @@
   bottom: -1px;
   z-index: -1;
 }
+
+// Archive list buttons
+
+@mixin archive_button(){
+    font-size: 10px;
+    color: black;
+    height: 40px;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
