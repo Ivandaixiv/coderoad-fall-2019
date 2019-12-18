@@ -28,7 +28,7 @@
 .create-title {
 	height: 32px;
 	width: 100%;
-	color: #000000;
+	color: $color_theme-black;
 	font-size: 24px;
 	letter-spacing: 0.69px;
     line-height: 28px;
@@ -75,7 +75,7 @@
     &:nth-of-type(2){
         .steps-wrapper {
             &::before {
-                background-color: #9389FF;
+                background-color: $color__secondary-medium;
                 transform: rotate(90deg);
                 left: unset;
                 right: -72px;
@@ -89,7 +89,7 @@
     &:nth-of-type(3){
         .steps-wrapper {
             &::before {
-                background-color: #29CFFF;
+                background-color: $color__primary-light;
                 top: unset;
                 right: 3px;
                 bottom: -7px;
@@ -105,9 +105,8 @@
         content: '';
         height: 27px;
         width: 130px;
-        opacity: .75;
         transform: rotate(1turn);
-        background-color:#2ED199;
+        background-color: $color__green-medium;
         position: absolute;
         top: -1.5%;
         left: -1%;
@@ -126,7 +125,7 @@
         width: 126px;
         opacity: .75;
         transform: rotate(1turn);
-        background-color: #6054e1;
+        background-color: $color__secondary-medium;
         position: absolute;
         top: -42px;
         left: 49%;
@@ -233,7 +232,7 @@
 	box-sizing: border-box;
 	height: 434px;
 	width: 334px;
-	border: 14px solid #3F576B;
+	border: 14px solid $color__blue-dark;
     border-radius: 14px;
     margin: 0 auto;
     position: relative;
@@ -284,29 +283,7 @@
 
 
 
-.created-index-rectangle{
-    position: relative;
-    &::before {
-        content: "";
-        height: 34px;
-        width: 193px;
-        opacity: .75;
-        transform: rotate(1turn);
-        background-color: #157c99;
-        position: absolute;
-        bottom: -25.4rem;
-        left: -4%;
-        border-radius: 4px;
-        z-index: 1;
-        @include desktop{
-            bottom: -22rem;
-            left: -16.5%;
-            transform: rotate(90deg);
-            width: 15rem;
-            height: 4rem;
-        }
-    }
-}
+
 
 .steps-main-container{
     @include desktop {
@@ -322,3 +299,30 @@
             }
         }
     }
+
+    .created-section-main{
+        position: relative;
+        z-index: 1;
+        @include desktop{
+            position: relative;
+            z-index: 1;
+            width: 790px;
+            margin: 0 auto;
+        
+            &::before {
+                content: "";
+                height: 60px;
+                width: 195px;
+                transform: rotate(1turn);
+                background-color:$color__secondary-medium;
+                position: absolute;
+                top: -8.4%;
+                right: -4%;
+                border-radius: 4px;
+        
+        }
+    }
+}
+
+
+
