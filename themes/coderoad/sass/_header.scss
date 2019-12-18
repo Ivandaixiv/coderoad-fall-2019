@@ -85,6 +85,7 @@
             z-index: 4;
             width: 70vw;
             height: 70vh;
+            font-family: $font__paragraph;
         }
         ul {
             display: flex;
@@ -172,11 +173,13 @@
             top: 8vh;
             h2 {
                 width: 50vw;
+                font-family: $font__header;
             }
         }
         .desktop-navigation {
             display: flex;
             z-index: 1;
+            font-family: $font__paragraph;
             a {
                 color: $color__green-medium;
                 font-weight: 600;
