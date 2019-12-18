@@ -24,7 +24,6 @@ get_header(); ?>
 <div class="steps-main-container">
 		<?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
-
 		<section class="steps-container">
 			<div class="steps-wrapper">
 				<div class="steps-content">
