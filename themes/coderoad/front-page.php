@@ -48,7 +48,7 @@ get_header(); ?>
 
 
 
- <section class="tutorial">
+ <section class="tutorial-fp">
 
 <div class="video">
  <iframe width="560" height="315" src="<?php the_field('video'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
