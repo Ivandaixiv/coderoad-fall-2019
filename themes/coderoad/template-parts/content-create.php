@@ -66,33 +66,34 @@ get_header(); ?>
 <?php if( have_rows('created_index') ): ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
+<div class="second-rectangle-created">
+<section class="created-section-main">
+	<div class="created-index-container">
+
+		<div class="created-title-container">
 
 
-<div class="created-index-container">
-
-	<div class="created-title-container">
-	<div class="wrapper">
-	<div class="created-index-wrapper"></div>	
-	<div class="created-index-rectangle"></div>
-	</div>
 	
-	<h2><?php the_sub_field('title'); ?></h2>
-	</div>
-	  <?php if( have_rows('name_and_videos') ): ?>
+		<h2><?php the_sub_field('title'); ?></h2>
+
+	  		<?php if( have_rows('name_and_videos') ): ?>
 
 			<?php while( have_rows('name_and_videos') ): the_row(); ?>
 				<section class="title-index-container">
-			  <div class="create-lang-title">
+			<div class="create-lang-title">
 				<?php the_sub_field('title'); ?> 
 			</div>
 				<div class="create-lang-amount">
-			   <?php the_sub_field('videos_available'); ?>
+			   		<?php the_sub_field('videos_available'); ?>
 				</div>
 				</section>
 			<?php endwhile; ?>
 
 		  <?php endif; ?>
-
+		</div>
+	</div>
+</section>
+</div>
 <?php endwhile; ?>
 
 <?php else : ?>

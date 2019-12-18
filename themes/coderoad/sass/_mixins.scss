@@ -6,6 +6,12 @@
   }
 }
 
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content
+  }
+}
+
 // Rem output with px fallback
 
 @mixin font-size($sizeValue: 1) {
