@@ -32,6 +32,12 @@ article {
   .contact-rectangle {
     display: inline-block;
     transform: translateY(-50%);
+
+    @include desktop {
+      height: 40px;
+      display: inline-block;
+      transform: translateY(-58%);
+    }
   }
   .tutorial-info {
     display: flex;
