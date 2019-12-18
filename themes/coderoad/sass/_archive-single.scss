@@ -127,5 +127,66 @@
     }
 }
 @include desktop {
-
+    .archive-single {
+        margin: 0 5vw;
+        width: 45%;
+        .entry-content {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        .tutorial-info {
+            width: 30vw;
+            p {
+                font-size: 1.25rem;
+            }
+            img {
+                width: 50px;
+            }
+        }
+        .tutorial-date {
+            position: relative;
+            padding: 0;
+            left: 0;
+        }
+        .tutorial-tags-list {
+            width: 25vw;
+            p {
+                font-size: 1rem;
+            }
+        }
+        .entry-header {
+            img {
+                display: none;
+            }
+        }
+        .comment-form {
+            width: 25vw;
+            p {
+                font-size: 1rem;
+            }
+        }
+        .comment-content {
+            display: flex;
+            p {
+                font-size: 1rem;
+            }
+        }
+        .form-submit {
+            input {
+                position: relative;
+                padding: 15px 5vw;
+                margin: 0 20px;
+                left: 12vw;
+            }
+        }
+        .tutorial-requirements-list {
+            p {
+                font-size: 1rem;
+            }
+        }
+        .reply {
+            display: none;
+        }
+    }
 }
