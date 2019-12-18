@@ -28,3 +28,11 @@
     </div><!-- .entry-content -->
 </article><!-- #post-## -->
             
+
+
+
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    location = 'http://localhost:3000/coderoad/success-contact/';
+}, false );
+</script>

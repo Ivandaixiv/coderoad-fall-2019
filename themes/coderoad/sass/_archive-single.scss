@@ -8,13 +8,31 @@
     p {
         font-size: 16px;
     }
+    .tutorial-archive-title {
+        z-index: 2;
+        p {
+            font-size: 1.75rem;
+        }
+    }
+    .single-rectangle {
+        background: $color__secondary-light;
+        display: inline-block;
+        width: 120%;
+        height: 30px;
+        transform: translateY(-130%);
+        z-index: -1;
+    }
+    .bookmark-icon {
+        margin: auto 10vw;
+        height: 30px;
+    }
     .entry-header {
         text-align: center;
     }
     .single-header-info {
         display: flex;
         justify-content: space-between;
-        
+        height: 15vh;
     }
     .tutorial-single-title {
         font-family: $font__header;
@@ -75,9 +93,28 @@
         .comment-meta {
             display: flex;
             margin: 5px 5px;
+            font-weight: 500;
             div {
                 margin: 5px;
             }
         }
+    }
+    .form-control {
+        height: 100px;
+        border: 1px solid $color_theme-black;
+        border-radius: 5px;
+    }
+    .form-submit {
+        input {
+            padding: 15px 15vw;
+            background: $color__background-body;
+            border: 1px solid $color_theme-black;
+            border-radius: 5px;
+            position: absolute;
+            right: 5%;
+        }
+    }
+    .comment-form {
+        height: 25vh;
     }
 }

@@ -22,11 +22,13 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			Comments:
         </h2>
-        
+
         <?php comment_form( array(
-		'title_reply'          => esc_html( 'Post a Comment' ),
-		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
-		'label_submit'         => esc_html( 'Submit' ),
+		'title_reply'          => esc_html( '' ),
+        'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
+        'logged_in_as'  => '',
+        'comment_field' =>  '<p>Leave a comment or ask a question:<textarea placeholder="Start typing a comment or question..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+		'label_submit'         => esc_html( 'Send' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
     ) ); ?>
     
@@ -42,6 +44,7 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
+        
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
@@ -61,14 +64,24 @@ if ( post_password_required() ) {
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>
-
-	<?php endif; // Check for have_comments(). ?>
+        <?php elseif (!have_comments()) :
+        comment_form( array(
+            'title_reply'          => esc_html( '' ),
+            'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
+            'logged_in_as'  => '',
+            'comment_field' =>  '<p>Leave a comment or ask a question:<textarea placeholder="Start typing a comment or question..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+            'label_submit'         => esc_html( 'Send' ),
+            'cancel_reply_link'    => esc_html( '[Cancel reply]' )
+        ) ); ?>
+    <?php endif; // Check for have_comments(). ?>
+    
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
-	<?php endif; ?>
+    <?php endif; ?>
+    
 
 </div><!-- #comments -->
