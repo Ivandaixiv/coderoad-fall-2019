@@ -240,6 +240,8 @@
     margin-bottom: 2rem;
     h2{
         font-family: $font__header;
+        font-size: 1.6rem;
+        text-align: center;
         @include desktop{
             font-size: 2rem;
         }
@@ -268,6 +270,7 @@
     text-align: left;
     margin-left: 1rem;
     line-height: 2;
+    font-weight: 500;
     @include desktop{
         text-align: unset;
     }
@@ -279,6 +282,7 @@
     display: flex;
     justify-content: center;
     align-self: center;
+    font-weight: 400;
 }
 
 
