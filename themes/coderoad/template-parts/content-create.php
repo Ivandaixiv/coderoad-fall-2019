@@ -66,7 +66,7 @@ get_header(); ?>
 <?php if( have_rows('created_index') ): ?>
 
 <?php while ( have_rows('created_index') ) : the_row(); ?>
-
+<div class="second-rectangle-created">
 <section class="created-section-main">
 	<div class="created-index-container">
 
@@ -93,6 +93,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+</div>
 <?php endwhile; ?>
 
 <?php else : ?>

@@ -319,10 +319,28 @@
                 top: -8.4%;
                 right: -4%;
                 border-radius: 4px;
-        
         }
     }
 }
 
 
 
+.second-rectangle-created{
+    @include desktop{
+        position: relative;
+        z-index: 1;
+        width: 790px;
+        margin: 0 auto;
+    &::before {
+        content: "";
+        height: 61px;
+        width: 250px;
+        transform: rotate(90deg);
+        background-color: $color__primary-dark;
+        position: absolute;
+        border-radius: 4px;
+        bottom: 16%;
+        left: -16%;
+    }
+    }
+}
