@@ -25,3 +25,15 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+add_action( 'pre_get_posts', 'coderoad_search' );
+
+
+function coderoad_search ($query){
+	if ( ! is_admin() &&
+	$query->is_search()
+	){
+		$query->set( 'post_type', array( 'post', 'tutorial'));
+
+	}
+  return $query;
+}
