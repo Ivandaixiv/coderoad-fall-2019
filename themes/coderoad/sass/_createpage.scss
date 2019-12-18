@@ -305,7 +305,7 @@
             height: 35px;
             width: 148px;
             transform: rotate(1turn);
-            background-color: #6054e1;
+            background-color: $color__secondary-dark;
             position: absolute;
             top: -1.4%;
             right: 7.7%;
@@ -339,14 +339,14 @@
         content: "";
         height: 35px;
         width: 200px;
-        background-color: #157c99;
+        background-color: $color__primary-dark;
         position: absolute;
         border-radius: 4px;
         bottom: 9.5%;
         left: 18.8%;
     }
     
-
+    
 
     @include desktop{
         position: relative;
