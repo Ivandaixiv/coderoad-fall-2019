@@ -165,7 +165,9 @@ get_header(); ?>
  <?php endif; ?>
  
  </div>
-
+<div class="email-input">
+ <?php echo do_shortcode( '[contact-form-7 id="214" title="Email for notification"]' ); ?>
+ </div>
 
    
    
