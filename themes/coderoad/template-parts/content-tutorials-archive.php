@@ -20,9 +20,11 @@
 	<div class="entry-content tutorial-index">
 		<div class="thumbandpost">
 			<div class="thumbnail">
-				<?php if (has_post_thumbnail()) : ?>
-					<?php the_post_thumbnail('large'); ?>
-				<?php endif; ?>
+				<a href="<?php the_permalink()?>">
+					<?php if (has_post_thumbnail()) : ?>
+						<?php the_post_thumbnail('large'); ?>
+					<?php endif; ?>
+				</a>
 			</div>
 
 

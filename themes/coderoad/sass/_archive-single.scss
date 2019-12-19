@@ -154,6 +154,7 @@
         .archive-tutorial-share {
             display: flex;
             margin-top: 15vh;
+            cursor: pointer;
             p {
                 display: flex;
                 height: 50px;
@@ -178,7 +179,7 @@
             }
         }
         .tutorial-info {
-            width: 30vw;
+            min-width: 30vw;
             p {
                 font-size: 1.25rem;
             }
