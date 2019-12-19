@@ -42,6 +42,7 @@ article {
   .tutorial-info {
     display: flex;
     margin-bottom: 30px;
+    margin-left: 210px;
     p {
       width: 154px;
     }
@@ -69,6 +70,7 @@ article {
     font-weight: normal;
   }
 }
+
 .list-headings {
   display: none;
 }
@@ -117,6 +119,7 @@ article {
     left: 388px;
     padding-top: 8rem;
     font-size: 0.8em;
+    display: none;
   }
 
   .vsc-button {
