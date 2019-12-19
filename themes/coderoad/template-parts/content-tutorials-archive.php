@@ -56,9 +56,9 @@
 
 		</div>
 		<div class="button-container">
-			<a class="vsc-button" href="http://localhost:3000/coderoad/vs-code/">Start in VS Code</a> <br>
+			<a class="vsc-button" href="https://code.visualstudio.com/" target="_blank">Start in VS Code</a> <br>
 
-			<a class="share-button" href="http://localhost:3000/coderoad/my-tutorials/">Share Tutorial</a>
+			<a class="share-button" href="https://www.facebook.com/" target="_blank">Share Tutorial</a>
 		</div>
 
 	</div><!-- .entry-content -->
