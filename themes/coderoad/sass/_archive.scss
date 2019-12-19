@@ -11,6 +11,9 @@ article {
     width: 100vw;
   }
 }
+.button-container {
+  display: none;
+}
 
 .archive-tutorial {
   font-family: $font__paragraph;
@@ -42,9 +45,14 @@ article {
   .tutorial-info {
     display: flex;
     margin-bottom: 30px;
-    margin-left: 210px;
+    margin: 0 auto;
+    width: 18rem;
+
     p {
       width: 154px;
+    }
+    .tutorial-date {
+      display: none;
     }
     .tutorial-date p {
       margin-top: 30px;
@@ -110,6 +118,7 @@ article {
     height: 80px;
     padding-bottom: 12em;
   }
+
   .paragraph-container p {
     position: relative;
   }
