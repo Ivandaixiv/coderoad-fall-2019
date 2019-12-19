@@ -5,7 +5,7 @@
     font-size: 1rem;
     line-height: 28px;
     width: 80%;
-    border-bottom: 1px solid #40389E;
+    border-bottom: 1px solid $color__secondary-dark;
     margin: 0 auto;
     @include desktop {
         display: none;
