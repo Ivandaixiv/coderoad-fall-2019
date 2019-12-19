@@ -75,7 +75,7 @@ get_header(); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
-				<p class="vs-launch">Start in VS Code</p>
+				<a href="https://code.visualstudio.com/"><p class="vs-launch">Start in VS Code</p></a>
 			<div>
 		<?php endwhile; // End of the loop. ?>
 
