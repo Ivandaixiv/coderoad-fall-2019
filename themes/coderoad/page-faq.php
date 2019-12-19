@@ -29,9 +29,9 @@ get_header(); ?>
         </div>
 
         <div class="link-container">
-            <a href="http://localhost:3000/coderoad/faq-response1/">Where an I see my progress ?</a>
-            <a href="http://localhost:3000/coderoad/faq-response2/">How do I create a tutorial ?</a>
-            <a href="http://localhost:3000/coderoad/faq-response3">Can I edit my posted tutorial ?</a>
+            <a href="<?php echo get_home_url()?>/faq-response1/">Where an I see my progress ?</a>
+            <a href="<?php echo get_home_url()?>/faq-response2/">How do I create a tutorial ?</a>
+            <a href="<?php echo get_home_url()?>/faq-response3">Can I edit my posted tutorial ?</a>
         </div>
     </section>
 
@@ -41,8 +41,8 @@ get_header(); ?>
             <div class="profile-accent"></div>
         </div>
         <div class="link-container">
-            <a href="http://localhost:3000/coderoad/faq-response4">How do I change my profile picture ?</a>
-            <a href="http://localhost:3000/coderoad/faq-response5">How do I change my password ?</a>
+            <a href="<?php echo get_home_url()?>/faq-response4">How do I change my profile picture ?</a>
+            <a href="<?php echo get_home_url()?>/faq-response5">How do I change my password ?</a>
         </div>
 
     </section>
