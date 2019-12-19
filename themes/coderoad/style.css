@@ -2621,9 +2621,9 @@ article {
     position: absolute;
     right: 5%; }
   .archive-single .empty-comments .comment-respond {
-    height: 25vh; }
+    height: 250px; }
   .archive-single .empty-comments-logged-out .comment-respond {
-    height: 55vh; }
+    height: 550px; }
 
 .archive-single-desktop {
   display: none; }
@@ -2640,15 +2640,29 @@ article {
       margin: 0 auto; }
       .archive-single .archive-single-desktop .wp-post-image {
         width: 25vw; }
+      .archive-single .archive-single-desktop .vs-launch {
+        padding: 15px;
+        border-radius: 5px;
+        background: #29cfff;
+        font-weight: 700;
+        cursor: pointer; }
     .archive-single .archive-tutorial-share {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-top: 15vh; }
       .archive-single .archive-tutorial-share p {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        height: 50px;
+        margin: 10px 10px; }
+      .archive-single .archive-tutorial-share .share-icon {
+        width: 50px;
         height: 50px; }
+      .archive-single .archive-tutorial-share .save-icon {
+        width: 35px;
+        height: 40px; }
     .archive-single .site-main {
       display: grid;
       grid-template-columns: 1fr 1fr; }
