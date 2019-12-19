@@ -109,6 +109,5 @@ get_header(); ?>
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<div class="footer-fix"> <!-- temp fix -->
 	<?php get_footer(); ?>
 	</div>
