@@ -1,6 +1,9 @@
 .site-info {
   background-color: $color__secondary-dark;
   height: 300px;
+  @include tablet {
+    height: 390px;
+  }
 
   .footer-navigation {
     display: grid;
@@ -11,6 +14,9 @@
     @include desktop {
       display: flex;
       float: right;
+    }
+    @include tablet {
+      padding-top: 3em;
     }
 
     .resources {
@@ -161,6 +167,7 @@
     text-align: center;
     font-size: 10px;
     font-family: $font__paragraph;
+
     @include desktop {
       display: flex;
       font-size: 17px;

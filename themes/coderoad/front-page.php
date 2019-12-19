@@ -150,6 +150,7 @@ get_header(); ?>
  <?php if(get_field('steps')): ?>
     <?php while(the_repeater_field('steps')): ?>
         <div class="step">
+      
         <h2><?php the_sub_field('step'); ?></h2>
         <p><?php the_sub_field('paragraph'); ?></p>
     </div>
