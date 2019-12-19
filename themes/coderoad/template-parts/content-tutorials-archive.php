@@ -41,7 +41,7 @@
 
 		<div class="tutorial-info">
 
-			<p><img class="tutorial-icon icon1" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/icons/bookmark.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
+			<p><img class="tutorial-icon icon1" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/Icons/Bookmark.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
 
 			<p><img class="tutorial-icon icon2" src="<?php echo get_template_directory_uri() ?>/assets/desktop-assets/component/Stars/Group 3@3x.png"><?php echo get_post_meta($post->ID, 'rating', true); ?></p>
 

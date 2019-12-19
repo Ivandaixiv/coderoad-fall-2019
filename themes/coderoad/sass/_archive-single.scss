@@ -130,31 +130,31 @@
     display: none;
 }
 @include desktop {
-    .site-content {
-        margin: 0 auto;
-    }
-    .archive-single-desktop {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        .wp-post-image{
-            width: 25vw;
-        }
-    }
-    .archive-tutorial-share {
-        display: flex;
-        p {
-            display: flex;
-            height: 50px;
-        }
-    }
-    .site-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .archive-single {
         margin: 0 5vw;
         width: 90%;
+        .site-content {
+            margin: 0 auto;
+        }
+        .archive-single-desktop {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            .wp-post-image{
+                width: 25vw;
+            }
+        }
+        .archive-tutorial-share {
+            display: flex;
+            p {
+                display: flex;
+                height: 50px;
+            }
+        }
+        .site-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         .entry-content {
             p {
                 font-size: 1.5rem;

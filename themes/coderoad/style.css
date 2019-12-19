@@ -2621,29 +2621,29 @@ article {
   display: none; }
 
 @media screen and (min-width: 1000px) {
-  .site-content {
-    margin: 0 auto; }
-  .archive-single-desktop {
-    display: block;
-    text-align: center;
-    margin: 0 auto; }
-    .archive-single-desktop .wp-post-image {
-      width: 25vw; }
-  .archive-tutorial-share {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .archive-tutorial-share p {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      height: 50px; }
-  .site-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
   .archive-single {
     margin: 0 5vw;
     width: 90%; }
+    .archive-single .site-content {
+      margin: 0 auto; }
+    .archive-single .archive-single-desktop {
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+      .archive-single .archive-single-desktop .wp-post-image {
+        width: 25vw; }
+    .archive-single .archive-tutorial-share {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .archive-single .archive-tutorial-share p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 50px; }
+    .archive-single .site-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
     .archive-single .entry-content p {
       font-size: 1.5rem; }
     .archive-single .tutorial-info {
