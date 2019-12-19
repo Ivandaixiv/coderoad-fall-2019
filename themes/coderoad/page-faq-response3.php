@@ -23,10 +23,10 @@ get_header(); ?>
 
             </div>
             <div class="question-answer">
-              
-                <h4 class="h4-header">How do I create a tutorial?</h4>
 
-                <p>Please see the Create a Tutorial screen for more information on creating tutorials.
+                <h4 class="h4-header">Can I edit my posted tutorial?</h4>
+
+                <p>Please see the screen _____ for more information on _____.
                 </p>
             </div>
         </section>

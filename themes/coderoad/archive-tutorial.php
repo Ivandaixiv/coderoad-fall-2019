@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area archive-tutorial">
 	<main id="main" class="site-main" role="main">
-		<h2>Tutorials</h2>
+		<h2 class="tut-h2">Tutorials</h2>
 		<p class="tutorial-archive-title">
 			Find what to learn next<span class="contact-rectangle archive-rectangle"></span>
 		</p>
