@@ -185,6 +185,7 @@
 .tutorial-fp {
   @include desktop {
     display: flex;
+
     margin-left: 3em;
     margin-top: 200px;
     height: 41em;
@@ -263,9 +264,9 @@
 }
 
 .tutorials-section {
-  margin-top: 5em;
-  margin: 0 auto;
-  padding: 1rem;
+  // margin-top: 5em;
+  // margin: 0 auto;
+  // padding: 1rem;
   @include tablet {
     margin-left: 10em;
   }
