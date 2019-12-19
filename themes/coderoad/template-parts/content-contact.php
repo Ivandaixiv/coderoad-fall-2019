@@ -33,6 +33,6 @@
 
 <script>
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-    location = 'http://localhost:3000/coderoad/success-contact/';
+    location = 'https://coderoad.van.cp.academy.red/success-contact/';
 }, false );
 </script>
