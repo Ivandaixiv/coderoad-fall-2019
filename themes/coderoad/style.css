@@ -1704,6 +1704,10 @@ span.wpcf7-not-valid-tip {
       top: 5px;
       z-index: 1;
       border-radius: 4px; }
+      @media screen and (min-width: 700px) {
+        .code-image .title-content-wrapper::before {
+          left: 220px;
+          top: 5px; } }
       @media screen and (min-width: 1000px) {
         .code-image .title-content-wrapper::before {
           width: 750px;
@@ -1724,6 +1728,10 @@ span.wpcf7-not-valid-tip {
       top: 10px;
       z-index: 1;
       border-radius: 4px; }
+      @media screen and (min-width: 700px) {
+        .code-image .title-content-wrapper::after {
+          right: 228px;
+          top: 5px; } }
       @media screen and (min-width: 1000px) {
         .code-image .title-content-wrapper::after {
           width: 66px;
@@ -2150,14 +2158,14 @@ span.wpcf7-not-valid-tip {
       width: 130px;
       background-color: #2ed199;
       position: absolute;
-      top: -30px;
-      left: -15px;
+      top: 0;
+      left: 0;
       border-radius: 4px;
       z-index: 1; }
     .steps .step:nth-child(2)::before {
-      background-color: red; }
+      background-color: #6054e1; }
     .steps .step:nth-child(3)::before {
-      background-color: green; }
+      background-color: #22b4de; }
     @media screen and (min-width: 1000px) {
       .steps .step {
         height: 23em;
@@ -2613,9 +2621,9 @@ article {
     position: absolute;
     right: 5%; }
   .archive-single .empty-comments .comment-respond {
-    height: 25vh; }
+    height: 250px; }
   .archive-single .empty-comments-logged-out .comment-respond {
-    height: 55vh; }
+    height: 550px; }
 
 .archive-single-desktop {
   display: none; }
@@ -2632,15 +2640,29 @@ article {
       margin: 0 auto; }
       .archive-single .archive-single-desktop .wp-post-image {
         width: 25vw; }
+      .archive-single .archive-single-desktop .vs-launch {
+        padding: 15px;
+        border-radius: 5px;
+        background: #29cfff;
+        font-weight: 700;
+        cursor: pointer; }
     .archive-single .archive-tutorial-share {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-top: 15vh; }
       .archive-single .archive-tutorial-share p {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        height: 50px;
+        margin: 10px 10px; }
+      .archive-single .archive-tutorial-share .share-icon {
+        width: 50px;
         height: 50px; }
+      .archive-single .archive-tutorial-share .save-icon {
+        width: 35px;
+        height: 40px; }
     .archive-single .site-main {
       display: grid;
       grid-template-columns: 1fr 1fr; }
