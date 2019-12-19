@@ -1,0 +1,49 @@
+.tutorial-response2-container {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  margin-left: 56px;
+  margin-top: 45px;
+}
+
+.image-container2 {
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../../assets/desktop-assets/illustrations/Illustration 2.png');
+  }
+  background-repeat: no-repeat;
+  width: 385px;
+  margin-left: 80px;
+  margin-top: 165px;
+}
+
+.tutorial-res2-h2 {
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  margin-top: 115px;
+
+  .tutorial-element {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    font-family: 'Space Mono';
+
+    &::before {
+      content: '';
+      @include faqAccent1Green;
+    }
+  }
+}
+
+.faq-container2 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 60px 0px 60px;
+}
+
+.question-answer {
+  max-width: 420px;
+}

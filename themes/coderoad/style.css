@@ -1048,7 +1048,7 @@ object {
   background: #ffffff;
   padding-top: 5em; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .main-navigation {
     height: 75px;
     -ms-flex-pack: distribute;
@@ -2300,7 +2300,13 @@ article {
     height: 180px;
     width: 200px; }
   .tutorial-name {
+<<<<<<< HEAD
     margin-right: 20px; } }
+=======
+    margin-right: 20px; }
+  .tut-h2 {
+    display: none; } }
+>>>>>>> ba6cb9e4f25dff296e107a60428abda8acbcdbce
 
 .archive-single {
   width: 90%;
@@ -2407,6 +2413,7 @@ article {
   .archive-single .empty-comments-logged-out .comment-respond {
     height: 55vh; }
 
+<<<<<<< HEAD
 .archive-single-desktop {
   display: none; }
 
@@ -2434,6 +2441,12 @@ article {
   .archive-single {
     margin: 0 5vw;
     width: 90%; }
+=======
+@media screen and (min-width: 1000px) {
+  .archive-single {
+    margin: 0 5vw;
+    width: 45%; }
+>>>>>>> ba6cb9e4f25dff296e107a60428abda8acbcdbce
     .archive-single .entry-content p {
       font-size: 1.5rem; }
     .archive-single .tutorial-info {
@@ -2452,9 +2465,12 @@ article {
         font-size: 1rem; }
     .archive-single .entry-header img {
       display: none; }
+<<<<<<< HEAD
     .archive-single .tutorial-icon {
       max-width: none;
       width: 60px; }
+=======
+>>>>>>> ba6cb9e4f25dff296e107a60428abda8acbcdbce
     .archive-single .comment-form {
       width: 25vw; }
       .archive-single .comment-form p {
@@ -2462,6 +2478,7 @@ article {
     .archive-single .comment-content {
       display: -webkit-box;
       display: -ms-flexbox;
+<<<<<<< HEAD
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -2478,6 +2495,11 @@ article {
               flex-direction: column; }
     .archive-single .comment-metadata a {
       display: none; }
+=======
+      display: flex; }
+      .archive-single .comment-content p {
+        font-size: 1rem; }
+>>>>>>> ba6cb9e4f25dff296e107a60428abda8acbcdbce
     .archive-single .form-submit input {
       position: relative;
       padding: 15px 5vw;
@@ -2486,7 +2508,11 @@ article {
     .archive-single .tutorial-requirements-list p {
       font-size: 1rem; }
     .archive-single .reply {
+<<<<<<< HEAD
       width: 100px; } }
+=======
+      display: none; } }
+>>>>>>> ba6cb9e4f25dff296e107a60428abda8acbcdbce
 
 .rectangle-create {
   height: 27px;
