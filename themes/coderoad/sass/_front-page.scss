@@ -42,8 +42,8 @@
         height: 140px;
         background: $color__blue-dark;
         position: absolute;
-        left: 197px;
-        top: 320px;
+        left: 209px;
+        top: 322px;
         z-index: 1;
         border-radius: 23px;
       }
@@ -61,7 +61,7 @@
       @include desktop {
         width: 66px;
         height: 371px;
-        background: #22b4de;
+        background: $color__blue-light;
         position: absolute;
         right: 250px;
         top: 40px;
@@ -81,6 +81,7 @@
     line-height: 0.3;
     max-width: 90%;
     margin: 0 auto;
+
     @include desktop {
       width: 900px;
       height: 300px;
@@ -189,6 +190,9 @@
       min-height: 28em;
       width: 49em;
     }
+    @include tablet {
+      min-height: 23em;
+    }
   }
   .video {
     max-width: 80%;
@@ -254,6 +258,9 @@
   margin-top: 5em;
   margin: 0 auto;
   padding: 1rem;
+  @include tablet {
+    margin-left: 10em;
+  }
   a {
     display: flex;
     padding-bottom: 2em;
@@ -507,6 +514,7 @@
 .steps {
   line-height: 0.1;
   padding: 0 3em;
+  // position: relative;
   @include desktop {
     display: flex;
     margin: 0 auto;
@@ -515,18 +523,29 @@
 
   .step {
     position: relative;
+    // z-index: 10;
     &::before {
       content: '';
-      height: 27px;
+      height: 30px;
       width: 130px;
-      opacity: 0.75;
-      transform: rotate(1turn);
-      background-color: #2ed199;
+
+      background-color: $color__green-medium;
       position: absolute;
-      top: -1.5%;
-      left: -1%;
+      top: -30px;
+      left: -15px;
       border-radius: 4px;
       z-index: 1;
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-color: red;
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        background-color: green;
+      }
     }
     border: $color__blue-dark;
     border-radius: 30px;

@@ -19,14 +19,14 @@ get_header(); ?>
         <section class="tutorial-response2-container">
             <div class="tutorial-res2-h2">
 
-                <h2 class="tutorial-element">Tutorials/ Creating</h2>
+                <h2 class="tutorial-element">Profile/ Account</h2>
 
             </div>
             <div class="question-answer">
-              
-                <h4 class="h4-header">How do I create a tutorial?</h4>
 
-                <p>Please see the Create a Tutorial screen for more information on creating tutorials.
+                <h4 class="h4-header">How do I change my profile picture?</h4>
+
+                <p>Please see the screen _____ for more information on _____.
                 </p>
             </div>
         </section>

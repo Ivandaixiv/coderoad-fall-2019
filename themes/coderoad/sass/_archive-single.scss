@@ -126,10 +126,35 @@
         }
     }
 }
+.archive-single-desktop {
+    display: none;
+}
 @include desktop {
+    .site-content {
+        margin: 0 auto;
+    }
+    .archive-single-desktop {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        .wp-post-image{
+            width: 25vw;
+        }
+    }
+    .archive-tutorial-share {
+        display: flex;
+        p {
+            display: flex;
+            height: 50px;
+        }
+    }
+    .site-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .archive-single {
         margin: 0 5vw;
-        width: 45%;
+        width: 90%;
         .entry-content {
             p {
                 font-size: 1.5rem;
@@ -172,9 +197,12 @@
         }
         .comment-content {
             display: flex;
+            justify-content: space-between;
+            width: 100%;
             p {
                 font-size: 1rem;
-                margin: 0 30px;
+                max-width: 25vw;
+                margin: 0 30px 0 30px;
             }
         }
         .comment-meta {
@@ -200,7 +228,7 @@
             }
         }
         .reply {
-            display: none;
+            width: 100px;
         }
     }
 }
