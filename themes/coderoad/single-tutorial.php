@@ -69,12 +69,13 @@ get_header(); ?>
 			</article><!-- #post-## -->
 			<div class="archive-single-desktop">
 				<div class="archive-tutorial-share">
-					<p><img class="share-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/Bookmark@3x.png"/>Add To Wishlsit</p>
-					<p><img class="share-icon" src="<?php echo get_template_directory_uri()?>/assets/desktop-assets/Icons/Share@3x.png"/>Share Tutorial</p>
+					<img class="save-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/Bookmark@3x.png"/><p>Add To Wishlist</p>
+					<img class="share-icon" src="<?php echo get_template_directory_uri()?>/assets/desktop-assets/Icons/Share@3x.png"/><p>Share Tutorial</p>
 				</div>
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
+				<p class="vs-launch">Start in VS Code</p>
 			<div>
 		<?php endwhile; // End of the loop. ?>
 
