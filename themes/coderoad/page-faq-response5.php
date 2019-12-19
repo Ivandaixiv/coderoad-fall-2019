@@ -19,7 +19,7 @@ get_header(); ?>
         <section class="tutorial-response2-container">
             <div class="tutorial-res2-h2">
 
-                <h2 class="tutorial-element">Tutorials/ Creating</h2>
+                <h2 class="tutorial-element">Profile/ Account</h2>
 
             </div>
             <div class="question-answer">

@@ -31,7 +31,7 @@ get_header(); ?>
         <div class="link-container">
             <a href="http://localhost:3000/coderoad/faq-response1/">Where an I see my progress ?</a>
             <a href="http://localhost:3000/coderoad/faq-response2/">How do I create a tutorial ?</a>
-            <a href="http://localhost:3000/coderoad/faq-response-3-can-i-edit-my-posted-tutorial/">Can I edit my posted tutorial ?</a>
+            <a href="http://localhost:3000/coderoad/faq-response3">Can I edit my posted tutorial ?</a>
         </div>
     </section>
 
@@ -41,8 +41,8 @@ get_header(); ?>
             <div class="profile-accent"></div>
         </div>
         <div class="link-container">
-            <a href="http://localhost:3000/coderoad/faq-response-4-how-do-i-change-my-profile-picture/">How do I change my profile picture ?</a>
-            <a href="http://localhost:3000/coderoad/faq-response-5-how-do-i-change-my-password/">How do I change my password ?</a>
+            <a href="http://localhost:3000/coderoad/faq-response4">How do I change my profile picture ?</a>
+            <a href="http://localhost:3000/coderoad/faq-response5">How do I change my password ?</a>
         </div>
 
     </section>
