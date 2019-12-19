@@ -2650,7 +2650,8 @@ article {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-top: 15vh; }
+      margin-top: 15vh;
+      cursor: pointer; }
       .archive-single .archive-tutorial-share p {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2669,7 +2670,7 @@ article {
     .archive-single .entry-content p {
       font-size: 1.5rem; }
     .archive-single .tutorial-info {
-      width: 30vw; }
+      min-width: 30vw; }
       .archive-single .tutorial-info p {
         font-size: 1.25rem; }
       .archive-single .tutorial-info img {
