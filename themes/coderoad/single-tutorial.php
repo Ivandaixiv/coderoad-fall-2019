@@ -67,7 +67,15 @@ get_header(); ?>
 					<?php comments_template('/comments-tutorial.php');?>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
-
+			<div class="archive-single-desktop">
+				<div class="archive-tutorial-share">
+					<p><img class="share-icon" src="<?php echo get_template_directory_uri()?>/assets/mobile-assets/Mobile Icons_Header/Icons/Bookmark@3x.png"/>Add To Wishlsit</p>
+					<p><img class="share-icon" src="<?php echo get_template_directory_uri()?>/assets/desktop-assets/Icons/Share@3x.png"/>Share Tutorial</p>
+				</div>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>
+			<div>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
